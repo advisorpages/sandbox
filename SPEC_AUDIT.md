@@ -7,7 +7,7 @@
 
 ## 1. Executive summary
 
-**Overall: PARTIAL.** The HTML source substantially preserves all three business goals, four locked pages, five mortgage scenarios, both approved working examples and the crucial writing-agent **net-of-broker/upline** distinction. This is not an argument to remove recruiting or compensation. Page 2 is legitimately both business-opportunity and compensation content.
+**Overall: PARTIAL.** **Additional high-priority finding (owner correction, 2026-10-18): the kit does not establish the actual credibility of 8Twelve Mortgage; it relies on an ambiguous temporary “A12” label and introduces an unnamed specialist without telling families why this licensed brokerage is worth considering. See Section 11 and A12-11/A12-12.** The HTML source substantially preserves all three business goals, four locked pages, five mortgage scenarios, both approved working examples and the crucial writing-agent **net-of-broker/upline** distinction. This is not an argument to remove recruiting or compensation. Page 2 is legitimately both business-opportunity and compensation content.
 
 Significant remaining issues are **precision of specialist/team identity and consent**, **field usability and stronger personal follow-through**, **weak QA that can pass inappropriate words in the wrong place or miss text/visual defects**, and **unverified real-size rendered quality**. The owner-confirmed compensation working amount is **not independently verified against an active written program** and must remain labelled as such. A successful Actions workflow is useful evidence of the existing automated checks, not owner approval.
 
@@ -15,7 +15,7 @@ Significant remaining issues are **precision of specialist/team identity and con
 
 | Requirement | Rating | Evidence / caveat |
 |---|---|---|
-| Attract mortgage clients | **PASS** in source | Page 1 five scenarios, specific figures, invitation and risk caveat; response effectiveness not user-tested. |
+| Attract mortgage clients | **PARTIAL** | Page 1 covers scenarios, math and next step, but fails to substantiate **why 8Twelve Mortgage** is a credible specialist partner. |
 | Attract potential teammates | **PARTIAL** | Page 2 has explicit business-building and compensation, but limited orientation to real work, support and licensing; page 3 separate recruiting path is appropriate. |
 | Equip agents to converse, introduce and follow up | **PARTIAL** | Page 3 offers good starting questions but no clear dated follow-up example or explicit permission to pass contact details. |
 | Page 1 required financial example | **PASS** in source | $3,500 − $2,800 = $700/month; $700 × 12 = $8,400; hypothetical and costs/interest cautions shown. |
@@ -27,6 +27,7 @@ Significant remaining issues are **precision of specialist/team identity and con
 | Exactly four letter portrait pages; four PNGs; PDF | **PASS** in automation design; **NOT VERIFIED** independently rendered | Print CSS, Playwright, PDF/PNG validations exist; latest Actions success, but no accessible proof for independent visual review. |
 | Mobile preview | **PARTIAL / NOT VERIFIED** | JS `zoom` scales pages to viewport; behaviour not checked on actual device; DOM geometry/fit tests are print-only. |
 | Automated QA aligns with current spec | **PARTIAL** | Important content tests exist; checks are easily defeated by static string presence and do not independently assess voice, accessibility or PDF visual quality. |
+| Correct 8Twelve company name and credibility | **FAIL** in current presentation | Current source displays “A12” throughout, not the full 8Twelve Mortgage name, and presents no company-specific evidence of licensing, lender reach or service. `SPEC.md` separately authorizes “A12” as a *temporary placeholder*; owner clarifies real name and need for credibility. | 
 | Human approval | **NOT VERIFIED** | README and SPEC explicitly say unapproved; do not mark final. |
 
 ## 3. Page-by-page assessment
@@ -115,10 +116,12 @@ These are editorial proposals **not yet applied**. They preserve the exact compe
 | A12-08 | Moderate | Print quality | tiny CSS notes/labels | May be hard to read | Review four physical-size proof pages and adjust density/type | `index.html` CSS / `dist` proofs | **Unverified visual hypothesis** |
 | A12-09 | Moderate | Visual/accessibility QA | geometrical child bounds | Could miss overlaps/occlusions | Render PDF pages to pixels, mobile screenshots, pairwise overlap for essential areas and inspect humanly | `scripts/render-qa.mjs`, `scripts/verify-pdf.py` | **Verified test limitation** |
 | A12-10 | Low | Lead with action rather than slogan | “GOOD SERVICE OPENS DOORS” | Some campaign polish | Replace with more practical human copy | `index.html` P2, Brand Hub | **Verified editorial judgment** |
+| A12-11 | **High** | Credibility of the actual mortgage partner | Header calls partner “A12”; source mentions unnamed licensed specialist | No substantive “Why 8Twelve?” trust reason; an introduction to an unidentified provider is a weak client invitation | Name **8Twelve Mortgage**; incorporate a compact proof cluster (licensed mortgage brokerage in Ontario; FSRA #13072 as published; 65+ lender relationships / 7,000+ products as company-reported and partly corroborated by NerdWallet) and show that a personally known specialist handles advice | `index.html` P1–3, `SPEC.md` cross-brand, mortgage KB, public 8Twelve sources; see §11 | **Verified source gap; external claims source-qualified** |
+| A12-12 | **High** | Brand/identity authority and clean business boundary | `SPEC.md` expressly permits “A12” as temporary label while owner now clarifies **8Twelve**; Page 2 displays A12 alongside advisor recruiting copy | Production brand correction needs controlled spec amendment; branded Page 2 may falsely imply recruits join 8Twelve rather than the advisor's brokerage | Record owner name correction, propose changing placeholder specification after approval; explicitly distinguish separate 8Twelve licensed mortgage service from advisor team-building opportunity | `SPEC.md` Brand/Visual sections; `index.html` headers; KB mortgage guide and recruiting doctrine | **Verified spec/owner-direction tension** |
 
 ## 9. Proposed implementation order — after audit
 
-1. Retain all locked claims/objectives. Correct specialist identity and narrow intro/contact sharing consent. Add concrete follow-up.
+1. Retain all locked claims/objectives. Correct full **8Twelve Mortgage** naming and add a succinct, source-backed credibility case (not just generic specialist wording), then narrow intro/contact sharing consent and add concrete follow-up. Where this requires changing the temporary “A12” label authorized by `SPEC.md`, record the owner clarification and seek approval to amend the spec before modifying locked branding directions.
 2. Clean up overly generic / existing-broker copy, reinforce brief realistic recruiting path without crowding Page 2.
 3. Extend CI tests for page-specific content, disclosures, exact locked math and consent. Never remove recruiting/commission to make CI green.
 4. Render fresh PDF + four PNGs. Visually inspect each at printed US Letter size (including lower corners/footer and tiny disclosure lines), mobile preview, and contrast/overlaps. Adjust type and spacing without cutting required information.
@@ -127,7 +130,7 @@ These are editorial proposals **not yet applied**. They preserve the exact compe
 
 ## 10. Final validation ledger — audit checkpoint
 
-- **Issues found:** A12-01 through A12-10 (some unverified visual hypotheses; see classifications).
+- **Issues found:** A12-01 through A12-12 (including new high-priority 8Twelve credibility/identity findings; some unverified visual hypotheses; see classifications).
 - **Files modified during audit checkpoint:** only `SPEC_AUDIT.md` (report creation); source implementation unchanged.
 - **Corrections completed:** none; major changes intentionally deferred pending this report.
 - **Commits:** audit report commit to be recorded by GitHub; last observed existing workflow commit `f25345165a1bb21874999da462aa3b743b5ae7a4`.
@@ -135,3 +138,56 @@ These are editorial proposals **not yet applied**. They preserve the exact compe
 - **Existing CI:** observed Actions run 39105922611 **success**; it does **not** imply editorial or regulatory acceptance.
 - **PDF / previews (claimed by README but unable to open here):** https://advisorpages.github.io/sandbox/proofs/mortgage-conversation-kit.pdf ; https://advisorpages.github.io/sandbox/proofs/page-1.png , page-2.png , page-3.png , page-4.png.
 - **Outstanding:** live proof inspection, physical print review, program/legal verification, owner approval. **Status: DRAFT / NOT APPROVED**.
+
+
+## 11. Owner follow-up: 8Twelve Mortgage credibility (2026-10-18)
+
+**Finding: FAIL — required credibility is missing from the current presentation, and the original independent audit overlooked that strategic gap. Severity: HIGH.**
+
+### Actual implementation and why it fails
+
+The HTML headers repeatedly say **“A12 MORTGAGE”**. Page 1 does not give the reader a real reason to trust the provider beyond a generic offer to introduce “a qualified mortgage specialist.” Page 2 mentions a specialist but never demonstrates the lender network, registration or service rationale. Page 3 speaks about “a mortgage specialist I work with” without naming 8Twelve. Page 4 asks permission for an unnamed specialist.
+
+For a family deciding whether to speak with someone new about their largest debt, **“Why this brokerage? Why trust this introduction?”** is a central conversion question. Trust cannot rely solely on the hypothetical $700/month payment illustration; a hypothetical saving is not a credibility credential.
+
+### Credibility evidence checked 2026-10-18 — claim status matters
+
+| Potential proof | Public evidence and claim type | Audit use |
+|---|---|---|
+| Canadian mortgage brokerage operating under **8Twelve Mortgage Corporation** | [8Twelve licensing page](https://8twelve.mortgage/licenses/) reports Ontario brokerage **FSRA #13072** and other jurisdictional credentials; independent [NerdWallet Canada profile](https://www.nerdwallet.com/ca/mortgages/8twelve-mortgage) describes it as a licensed Canadian brokerage. | **Candidate core proof.** Recheck current registry/licence and exact legal trade name directly with regulator/compliance before field distribution. Licensing by itself is not an endorsement of quality. |
+| Broad lender access | [8Twelve About](https://www.8twelve.ca/about) reports **65+ lender partners** and **7,000+ mortgage options**; [NerdWallet Canada profile](https://www.nerdwallet.com/ca/mortgages/8twelve-mortgage) separately describes 65+ lenders and thousands of products, though it is an 8Twelve commercial partner. | **Candidate practical differentiator.** “More lender choices than one bank’s products” is understandable; avoid “best rate guaranteed,” “all lenders,” or an implied qualified rate. |
+| Public reviews | [8Twelve About](https://www.8twelve.ca/about) reports 4.9 stars / 1,000+ five-star reviews; [8Twelve's SingleKey page](https://8twelve.mortgage/singlekey/about-8twelve/) reports 4.9/5 and 700+ reviews. | **Not approved for printed numbers.** First-hand statistics differ between live company pages; independently confirm platform, date, count and permission to use. |
+| Funded mortgage originations | [8Twelve homepage](https://www.8twelve.ca/) currently claims **$3B+ funded**, while [its SingleKey page](https://8twelve.mortgage/singlekey/about-8twelve/) says **$2B+**. | **Not approved for printed number.** Could reflect different as-of dates, but no reconciled dated evidence; obtain audited/current company-approved statement before use. |
+| Independent company footprint | [NerdWallet Canada](https://www.nerdwallet.com/ca/mortgages/8twelve-mortgage) describes Canadian brokerage/lender comparison; [BBB business profile](https://www.bbb.org/ca/on/markham/profile/mortgage-broker/8twelve-mortgage-corporation-0107-1393082) lists 8Twelve Mortgage Corporation and an A+ BBB rating at audit time. | **Additional source leads.** Do not imply BBB endorses mortgage recommendations. Ratings change and need date/source if used. |
+| Personal accountability | [Tribe PRI mortgage agent guide](https://github.com/advisorpages/tribe-pri-kb/blob/main/kb/40_LEARNING_AND_DEVELOPMENT/job_aids/mortgage_opportunity_agent_guide.md) requires a *personally known mortgage specialist on the extended team*, with agent ownership of handoff/follow-up. | **Primary relational credibility.** Describe the known person and personal follow-through, **while correctly disclosing that 8Twelve is a separate licensed mortgage brokerage**, not part of the advisor's licensed entity. |
+
+### Recommended placement: do not add a fifth page
+
+**Page 1 — high priority:** Add an elegant, short **“Why we're introducing you to 8Twelve Mortgage”** proof element, integrated with the existing $700/month illustration and next step. Prefer **two compelling, checkable trust cues** (licensed Canadian brokerage / access to 65+ lender partners) plus the assurance of a *personal introduction* over a stack of unverifiable marketing accolades. Explain in plain language why checking across lenders can reveal options a person might not see at a single bank; it does not guarantee cheaper borrowing.
+
+**Page 2 — business credibility distinct from recruiting:** Briefly explain the reliable specialist capacity the advisor can introduce clients to, **then preserve** the full writing-agent compensation example and independent advisor business-building opportunity. Do not make it sound like becoming a teammate equals employment, mortgage licensing or compensation automatically through 8Twelve.
+
+**Page 3 — introduction confidence:** Natural, not robotic: “I work with a licensed mortgage specialist at 8Twelve Mortgage. They can compare options from different lenders. If you'd like, I can make the introduction and follow up to make sure you connect.” No promise of the lowest rate, approval or saving; specific specialist identity may be inserted only once verified and kept up to date.
+
+**Page 4 — precise consent:** Identify **8Twelve Mortgage** by name (or properly controlled local specialist name) and specify the minimal information the client allows the agent to share.
+
+### Suggested client-facing copy (editorial proposal, not approved)
+
+> **Why 8Twelve Mortgage?**  
+> Instead of looking at one bank, you can have a licensed mortgage specialist compare options from multiple lenders. 8Twelve Mortgage reports working with more than 65 lenders across Canada. I'll personally introduce you to a specialist I work with and stay in touch while they review your choices. The specialist provides mortgage advice through 8Twelve, a separate licensed brokerage. Your options depend on your situation.
+
+This is intentionally grounded in client value and a personal relationship, not a generic “award-winning” claim. Verify company-approved marketing wording, brokerage details, licensing and permission to use statistics before print release.
+
+### Master spec issue and change-control decision
+
+`SPEC.md` explicitly says “The visual label ‘A12’ is a temporary stand-in” and “A12 identity only,” while the owner now clarifies the **real company name is 8Twelve Mortgage** and notes omitted credibility. **Do not silently rewrite SPEC.md to make source changes appear compliant.** Log this as an owner-requested specification correction, obtain explicit approval for the precise new naming/proof requirement, then update SPEC.md and implementation together. Logo/artwork remains deferred and is **not** a blocker.
+
+### New quality gates to add to CI (with human review)
+
+1. Correct full spelling **8Twelve Mortgage** in at least one prominent client-facing location and in the consent recipient.
+2. Assert a **specific credibility claim** is present on Page 1 (with its maintained source reference), not merely a floating brand label or generic “trusted” adjective.
+3. Prevent unsourced hardcoded reviews, rankings, funded-volume claims or guarantees from slipping in.
+4. Preserve Page 2 compensation and separate advisor-business recruiting; **no change** to existing locked example.
+5. Human review: Ask whether someone unfamiliar with 8Twelve can answer: **Who are they? Why would I speak with them? What happens to my information? Who stays accountable?**
+
+**Scope of this addendum:** audit-report correction only. The presentation, `SPEC.md`, and CI have **not** been edited as part of this follow-up.
