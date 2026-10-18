@@ -1,4 +1,4 @@
-// Source-aware acceptance gates for the six-sheet 8Twelve kit.
+// Source-aware acceptance gates for the seven-sheet 8Twelve kit.
 // Print proof and human editorial review are separate approval gates.
 import { readFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
@@ -17,15 +17,15 @@ function numberOn(page, token) {
   return match ? Number(match[1].replaceAll(',', '')) : NaN;
 }
 
-check(pages.length === 6, 'Exactly six distinct US Letter pages: 4 presentation + 2 advisor tools');
+check(pages.length === 7, 'Exactly seven portrait sheets: 4 presentation + 3 advisor tools');
 check(pages.every((p,i) => p.number === i + 1), 'Page numbers are in order');
-check(pages.map(p => p.part).join(',') === 'presentation,presentation,presentation,presentation,tools,tools',
-  'Pages 1–4 presentation; pages 5–6 separately detachable field tools');
+check(pages.map(p => p.part).join(',') === 'presentation,presentation,presentation,presentation,tools,tools,tools',
+  'Pages 1–4 presentation; pages 5–7 separately detachable field tools');
 check(html.includes('@page{size:letter;margin:0}') && html.includes('width:8.5in;height:11in'),
   'US Letter portrait print size');
 check(html.includes('.print-tools .sheet[data-part="presentation"]') && html.includes('.print-main .sheet[data-part="tools"]'),
   'Separate printable presentation and tool PDFs');
-for (let i = 1; i <= 6; i++) {
+for (let i = 1; i <= 7; i++) {
   check(has(i, 'class="footer"') && has(i, '8Twelve'), 'Footer and 8Twelve identity: page ' + i);
 }
 for (const term of ['Buy a Home','Renew Your Mortgage','Refinance Your Home','Consolidate Debt','Increase Cash Flow'])
@@ -81,12 +81,13 @@ check((pages[4].html.match(/class="question"/g) ?? []).length >= 8 &&
 check(has(5, 'Asks about joining the team') && has(5, 'Keep this separate.'),
   'No forced recruiting pivot during the client conversation');
 check((pages[5].html.match(/class="field"/g) ?? []).length >= 12 &&
-  has(6, 'notes-lines') && has(6, 'form-grid'), 'Field-ready, handwriting-friendly worksheet');
+  has(7, 'notes-lines') && has(6, 'form-grid'), 'Field-ready, handwriting-friendly worksheet');
 check(has(6, 'share my name') && has(6, 'phone or email above') &&
   has(6, '8Twelve Mortgage specialist') && has(6, 'Any other worksheet details need separate permission'),
   'Specific named minimum-data consent for contact details');
-check(has(6, 'Do not record SIN') && has(6, 'Share completed forms only through an approved secure process'),
-  'Data minimization and secure handling on worksheet');
+check(has(6, 'Do not record SIN') && has(6, 'Share completed forms only through an approved secure process') && has(7, 'Do not record SIN'),
+  'Data minimization and secure handling on both worksheets');
+check(has(7, 'Questions for the licensed mortgage specialist') && has(7, 'Agreed next step') && has(7, 'short-lines'), 'Optional second worksheet offers spacious lined notes and follow-up');
 check(!/\bA12\b|Primerica|Tribe PRI|game.changing|explosive growth|\bsynergy\b/i.test(html),
   'No obsolete brand name, cross-brand claims or hype');
 check(html.includes('Development draft') && !/FINAL APPROVED|Ready for distribution/i.test(html),
