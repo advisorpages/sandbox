@@ -119,8 +119,8 @@ h1,h2,h3,p{margin:0}h1,h2,.serif{font-family:Georgia,"Times New Roman",serif;fon
 /* In the field tools, maximise actual writing and question space before decoration. */
 .page5 .kicker,.page6 .kicker{margin-top:17px;margin-bottom:7px}
 .page5 .lead{font-size:16px;margin-top:9px}
-.page6.sheet{padding-top:38px;padding-bottom:32px}
-.page5.sheet{padding-top:43px;padding-bottom:37px}
+.page6.sheet{padding-top:32px;padding-bottom:21px}
+.page5.sheet{padding-top:34px;padding-bottom:24px}
 .print-tools .sheet[data-part="presentation"],.print-main .sheet[data-part="tools"]{display:none!important}
 @media screen{.sheet{zoom:var(--preview-zoom,1)}}
 @media print{
@@ -137,7 +137,7 @@ h1,h2,h3,p{margin:0}h1,h2,.serif{font-family:Georgia,"Times New Roman",serif;fon
 <body>
 <div class="toolbar">
   <div><strong>8Twelve Mortgage — Conversation Kit</strong><small>Two client pages · Two opportunity pages · Two separate advisor tools · Development draft</small></div>
-  <nav aria-label="Proof links"><a href="./proofs/mortgage-conversation-kit.pdf" target="_blank" rel="noopener">Four-page presentation PDF</a><a href="./proofs/mortgage-agent-tools.pdf" target="_blank" rel="noopener">Two-page agent tools PDF</a><button type="button" onclick="window.print()">Print</button></nav>
+  <nav aria-label="Proof links"><a href="./proofs/mortgage-conversation-kit.pdf" target="_blank" rel="noopener">Four-page presentation PDF</a><a href="./proofs/mortgage-agent-tools.pdf" target="_blank" rel="noopener">Two-page agent tools PDF</a><button type="button" onclick="printPart('print-main')">Print presentation</button><button type="button" onclick="printPart('print-tools')">Print tools</button></nav>
 </div>
 <main class="pages">
 <section class="sheet page1" data-page="1" data-part="presentation">
@@ -291,6 +291,8 @@ h1,h2,h3,p{margin:0}h1,h2,.serif{font-family:Georgia,"Times New Roman",serif;fon
 </main>
 <script>
 function fitPages(){const z=Math.min(1,(window.innerWidth-24)/816);document.documentElement.style.setProperty('--preview-zoom',z)}
+function printPart(part){const root=document.documentElement;root.classList.remove('print-main','print-tools');root.classList.add(part);window.print()}
+window.addEventListener('afterprint',()=>document.documentElement.classList.remove('print-main','print-tools'));
 window.addEventListener('resize',fitPages);fitPages();
 </script>
 </body>
