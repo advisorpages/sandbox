@@ -30,7 +30,7 @@ for i, page in enumerate(reader.pages, 1):
     print(f"PASS page {i}: PDF {width:g}x{height:g} pt, preview {w}x{h}px")
 mobile = base / "mobile-preview.png"
 data = mobile.read_bytes()
-assert data[:8] == b"\\x89PNG\\r\\n\\x1a\\n", "Mobile screenshot is not PNG"
+assert data[:8] == bytes((137, 80, 78, 71, 13, 10, 26, 10)), "Mobile screenshot is not PNG"
 mw, mh = struct.unpack(">II", data[16:24])
 assert mw == 390 and mh > 844, f"Mobile preview unexpected size: {mw} x {mh}"
 print(f"PASS mobile preview {mw}x{mh}px")
