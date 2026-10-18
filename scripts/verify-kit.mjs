@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
 
 const html = readFileSync('index.html', 'utf8');
-const pages = [...html.matchAll(/<section class="sheet" data-page="(\d)"[^>]*>([\s\S]*?)(?=<section class="sheet"|<\/main>)/g)];
+const pages = [...html.matchAll(/<section class="sheet(?: [^"]+)?" data-page="(\d)"[^>]*>([\s\S]*?)(?=<section class="sheet(?: [^"]+)?"|<\/main>)/g)];
 const checks = [];
 function check(ok, reason) { checks.push([!!ok, reason]); if (!ok) console.error('FAIL: ' + reason); }
 function has(page, text) { return pages[page - 1]?.[2].includes(text) ?? false; }
