@@ -57,6 +57,7 @@ jobs:
         run: |
           mkdir -p site
           cp index.html site/index.html
+          cp -R dist site/proofs
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
