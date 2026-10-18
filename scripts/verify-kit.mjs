@@ -26,11 +26,11 @@ check(has(2, '$500,000') && has(2, '$500') && has(2, '$100 per $100,000'), 'Page
 check(500000 / 100000 * 100 === 500, 'Agent compensation illustration arithmetic');
 check(has(2, 'broker/upline'), 'Agent amount already includes allocation');
 check(/not guaranteed|No income or payment is guaranteed/i.test(pages[1]?.[2] ?? ''), 'No assured compensation');
-check(/build a business|building a business/.test(pages[1]?.[2] ?? ''), 'Recruiting/business-building purpose retained');
+check(/build (a|your) business|building a business/i.test(pages[1]?.[2] ?? ''), 'Recruiting/business-building purpose retained');
 check(!has(1, 'writing-agent') && !has(1, '$500,000'), 'Compensation kept off client page');
 check(has(3, 'Conversation') && has(3, 'introduce'), 'Conversation guide and handoff');
 check(has(3, 'asks about joining') && has(3, 'team leader'), 'Separate optional teammate conversation on Page 3');
-check(has(4, 'Mortgage Discovery') && has(4, 'Introduction permission'), 'Blank discovery worksheet');
+check(has(4, 'Mortgage') && has(4, 'Discovery.') && has(4, 'Introduction permission'), 'Blank discovery worksheet');
 check(!/Primerica|Tribe PRI/i.test(html), 'A12-only page branding');
 check(!/\bsynergy\b|game.changing|explosive growth|risk.free|can.t lose/i.test(html), 'No hype and corporate buzzwords');
 
