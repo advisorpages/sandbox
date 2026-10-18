@@ -10,6 +10,20 @@ function check(ok, reason) { checks.push([!!ok, reason]); if (!ok) console.error
 function has(page, text) { return pages[page - 1]?.[2].includes(text) ?? false; }
 
 check(pages.length === 4, 'Exactly 4 separate pages');
+for (let i = 1; i <= 4; i++) {
+  check(pages[i - 1]?.[2]?.includes('p1-footer'), 'Premium print footer on Page ' + i);
+}
+check((html.match(/<section class="sheet sheet--premium"/g) ?? []).length === 4,
+  'All four pages use the approved development design system');
+check(!has(1, 'class="card"') && !has(1, 'class="grid"'),
+  'Premium client page must not regress to generic card-grid layout');
+check(has(1, 'p1-case-result'), 'Page 1 has a prominent financial illustration');
+check(has(2, 'p2-earn-numbers'), 'Page 2 has a prominent compensation illustration');
+check((pages[2]?.[2].match(/class="p3-question"/g) ?? []).length >= 4,
+  'Page 3 has at least four usable spoken conversation openers');
+check(has(4, 'p4-notes') && (pages[3]?.[2].match(/class="p4-field"/g) ?? []).length >= 10,
+  'Page 4 has a substantial blank discovery worksheet');
+
 for (let i = 1; i <= 4; i++) check(pages[i - 1]?.[1] === String(i), 'Page ' + i + ' in order');
 check(html.includes('@page{size:letter;margin:0}'), 'Letter portrait print CSS');
 check(html.includes('width:8.5in;height:11in'), 'Printed page dimensions');
