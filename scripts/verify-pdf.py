@@ -12,6 +12,15 @@ for i, page in enumerate(reader.pages, 1):
     width, height = float(page.mediabox.width), float(page.mediabox.height)
     assert abs(width - 612) < 0.5 and abs(height - 792) < 0.5, (
         f"Page {i} is {width} x {height} PDF points; expected 612 x 792")
+    text = "".join((page.extract_text() or "").split())
+    expected = {
+        1: ["YourMortgage.", "MoreOptions.", "$3,500/mo", "$2,800/mo", "$700/month", "$8,400peryear"],
+        2: ["MoreWaystoHelp.", "MoreWaystoEarn.", "$500,000", "$500"],
+        3: ["Mortgage", "ConversationGuide."],
+        4: ["Mortgage", "Discovery."],
+    }
+    for phrase in expected[i]:
+        assert phrase in text, f"Page {i} PDF text missing: {phrase!r}"
     image = base / f"page-{i}.png"
     data = image.read_bytes()
     assert data[:8] == b"\x89PNG\r\n\x1a\n", f"{image}: not a PNG"
