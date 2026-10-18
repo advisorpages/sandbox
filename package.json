@@ -1,0 +1,14 @@
+{
+  "name": "a12-mortgage-conversation-kit",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Four-page mortgage conversation kit development preview",
+  "type": "module",
+  "scripts": {
+    "verify": "node scripts/verify-kit.mjs",
+    "render": "node scripts/render-qa.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}
