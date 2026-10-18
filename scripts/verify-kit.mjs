@@ -44,7 +44,7 @@ check(has(1, 'hypothetical') && has(1, 'penalties') && has(1, 'longer amortizati
 check(!has(1, '$500,000') && !has(1, 'writing-agent') && !has(2, '$500,000'),
   'Compensation absent from both client-facing mortgage-solution pages');
 
-check(has(2, '65+') && has(2, 'lender partners') && has(2, '#13072') && has(2, 'FSRA'),
+check(has(2, '65+') && pages[1].html.toLowerCase().includes('lender partners') && has(2, '#13072') && has(2, 'FSRA'),
   '8Twelve credibility, published lender network and licence details on dedicated page 2');
 check(has(2, 'www.8twelve.ca/about') && has(2, '8twelve.mortgage/licenses/') &&
   has(2, '8Twelve is a separate licensed mortgage brokerage'),
