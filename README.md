@@ -9,6 +9,9 @@ Current voice and dialogue standards live in the **Tribe PRI knowledge base** (`
 
 ## Preview and deliverables
 - GitHub Pages preview: https://advisorpages.github.io/sandbox/
+- CI-generated PDF proof: https://advisorpages.github.io/sandbox/proofs/mortgage-conversation-kit.pdf
+- CI-generated portrait page images: https://advisorpages.github.io/sandbox/proofs/page-1.png through page-4.png
+- All four pages have a coordinated **premium editorial draft**. They are awaiting visual review and are not approved for distribution.
 - Source: `index.html`; four US Letter portrait pages.
 - Page 1 attracts clients; Page 2 explains service, compensation and team-building; Page 3 provides conversations; Page 4 is a blank discovery form.
 - Brand treatment is provisional during development.
