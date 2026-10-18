@@ -22,6 +22,12 @@ jobs:
       - name: Check public preview
         run: |
           test -s index.html
+          test "$(grep -o 'class=\"sheet\"' index.html | wc -l | tr -d ' ')" = "4"
+          grep -q '@page{size:letter;margin:0}' index.html
+          grep -q '\$3,500/mo' index.html
+          grep -q '\$2,800/mo' index.html
+          grep -q '\$700/month' index.html
+          grep -q '\$8,400 per year' index.html
           if grep -Eiq 'writing.agent compensation|\$500,000 funded|mortgage conversation guide|client agrees to be contacted' index.html; then
             echo "Blocked: internal or intake content found in public preview."
             exit 1
