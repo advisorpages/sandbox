@@ -38,10 +38,22 @@ try {
   const pdfOpts={printBackground:true,preferCSSPageSize:true,
     margin:{top:0,bottom:0,left:0,right:0}};
   await page.evaluate(()=>document.documentElement.classList.add('print-main'));
-  await page.pdf({...pdfOpts,path:'dist/mortgage-conversation-kit.pdf'}); // 4-page handout
-  await page.evaluate(()=>document.documentElement.classList.replace('print-main','print-tools'));
-  await page.pdf({...pdfOpts,path:'dist/mortgage-agent-tools.pdf'}); // 2-page agent tools
-  await page.evaluate(()=>document.documentElement.classList.remove('print-tools'));
+  const activeMain=await page.evaluate(()=>[...document.querySelectorAll('.sheet')].filter(x=>getComputedStyle(x).display!=='none').length);
+  if(activeMain!==4)throw new Error('Print-main media unexpectedly shows '+activeMain+' sheets');
+  await page.pdf({...pdfOpts,path:'dist/mortgage-conversation-kit.pdf'}); // four page presentation
+  await page.evaluate(()=>document.documentElement.classList.remove('print-main'));
+
+  // Use a fresh Chromium page for the distinct print media selection. Re-using a
+  // prior page after a PDF render can preserve stale pagination in headless Chromium.
+  const toolPage=await browser.newPage({viewport:{width:1360,height:1200},deviceScaleFactor:1});
+  await toolPage.goto('file://' + resolve('index.html'), {waitUntil:'load'});
+  await toolPage.evaluate(()=>document.documentElement.classList.add('print-tools'));
+  await toolPage.emulateMedia({media:'print'});
+  await toolPage.evaluate(()=>document.body.offsetHeight);
+  const activeTools=await toolPage.evaluate(()=>[...document.querySelectorAll('.sheet')].filter(x=>getComputedStyle(x).display!=='none').length);
+  if(activeTools!==2)throw new Error('Print-tools media unexpectedly shows '+activeTools+' sheets');
+  await toolPage.pdf({...pdfOpts,path:'dist/mortgage-agent-tools.pdf'}); // two page field aids
+  await toolPage.close();
 
   // Mobile preview intentionally scales each printable sheet, retaining fixed page geometry.
   const mobile=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:1});
