@@ -1,6 +1,6 @@
 # 8Twelve Mortgage Conversation Kit — Master Specification
 
-**Status:** Restored master plan, approved direction 2026-10-18; owner-directed 8Twelve naming and credibility correction 2026-10-18. Everything else remains locked. This file is the design/content authority for `advisorpages/sandbox`. The knowledge base supplies the voice, doctrine and supporting facts, not a second competing production spec.
+**Status:** Active master specification. Owner-directed six-sheet restructuring on 2026-10-18 supersedes the earlier four-sheet format only. All approved objectives, numbers, brokerage boundaries and voice requirements remain locked. Draft pending owner approval. This file is the design/content authority for `advisorpages/sandbox`. The knowledge base supplies the voice, doctrine and supporting facts, not a second competing production spec.
 
 ## Why we are making it
 
@@ -11,7 +11,7 @@ The kit serves three related needs:
 2. **Attract potential teammates:** give a clear, accurate introduction to a business-building opportunity; no pressure or earnings promises.
 3. **Help agents act:** supply natural questions, a personal introduction process and a usable discovery worksheet.
 
-It is **not** just a mortgage brochure, an earnings advertisement, or an underwriting form. Each page has a different audience and job. Never strip out recruiting or agent compensation to simplify the preview.
+It is **not** just a mortgage brochure, an earnings advertisement, or an underwriting form. Each sheet has a different audience and job. Never strip out recruiting or agent compensation to simplify the preview.
 
 ## The governing voice (required every time)
 
@@ -33,75 +33,97 @@ Apply the current KB authority, **not** a frozen paraphrase, whenever writing ne
 
 **Before approving copy:** Read each headline and spoken line aloud. Ask: "Would this sound natural across a kitchen table?" If not, revise. A passing automated build is *not* voice approval.
 
-## Four locked pages
+## Approved page architecture — two two-page presentations plus separate job aids
 
-| # | Page and audience | Job and required content |
-|---|---|---|
-| 1 | **Your Mortgage. More Options.** — client/prospect | Client-first overview, five goals, financial illustration, **8Twelve credibility** and a personal introduction to a licensed 8Twelve mortgage specialist. |
-| 2 | **More Ways to Help. More Ways to Earn.** — agent/potential teammate | Why mortgage introductions can expand service and business-building; **Ask → Introduce → Follow Through**; clear illustrative agent compensation and candid next step to explore joining the team. |
-| 3 | **Mortgage Conversation Guide** — agent | Real questions for owners, buyers, renewing clients and people under payment pressure; natural objection responses; consent, introduction, follow-up; a separate, non-pushy path when someone asks about the business. |
-| 4 | **Mortgage Discovery Form** — client and agent | Blank, handwriting-friendly needs worksheet: purpose, home/property plans, renewal/timing, approximate financial context, cash-flow goals, questions, consent and follow-up. |
+The owner found the earlier four-page combined kit too cramped and difficult to scan. The approved correction is **two pages devoted to mortgage solutions**, followed by **two pages devoted to the business opportunity**. The **Mortgage Conversation Guide and Discovery Form remain valuable and must not be deleted or compressed into those four marketing pages**. They are now a **separate two-page advisor tools PDF**, generated from the same HTML source.
 
-### Page 1 content contract
-The five main goals must appear as written:
+| # | Artifact / audience | Primary purpose | Essential content |
+|---|---|---|---|
+| **1** | Presentation — families | **Your Mortgage. More Options.** | Five client goals and the hypothetical before/after cash-flow illustration. One dominant numerical example; clear cost warning. |
+| **2** | Presentation — families | **One Conversation. More Choices.** | Why 8Twelve Mortgage is credible, responsible access to multiple lenders, personal introduction and next step. |
+| **3** | Presentation — potential teammates / advisors | **More Ways to Help. More Ways to Earn.** | Ask → Introduce → Follow Through and the writing-agent funded-volume compensation illustration with eligibility caveats. |
+| **4** | Presentation — potential teammates | **Start Part-Time. Build With Support.** | Financial brokerage work, trainer-supported start, licensing, responsibility, optional team-building and a natural invitation. |
+| **5** | Separate agent tool | **Mortgage Conversation Guide.** | Real spoken questions, concerns, personal handoff, follow-up and separate optional recruiting discussion. |
+| **6** | Separate agent tool | **Mortgage Discovery.** | Blank appointment worksheet, optional information, introduction consent, follow-up and data minimization. |
+
+**Publishing contract:** The preview shows all six pages in the order above, clearly separating presentation from advisor tools. Render one **four-page PDF** named `mortgage-conversation-kit.pdf` from pages 1–4 and one **two-page PDF** named `mortgage-agent-tools.pdf` from pages 5–6. Produce six individual portrait PNG proofs and one mobile preview screenshot. Print-ready output is **not** a six-page combined sales handout; the guide/form are detachable working documents.
+
+### Pages 1–2 — mortgage solutions for families
+
+All five goals must appear on Page 1 with the exact labels:
 **Buy a Home · Renew Your Mortgage · Refinance Your Home · Consolidate Debt · Increase Cash Flow.**
 
-**8Twelve Mortgage credibility is mandatory on Page 1.** Answer in plain English: who this brokerage is, why clients would speak with its mortgage professionals, why access to options across multiple lenders matters, and who personally introduces the client. Current company-published reference claims (accessed 2026-10-18) include **65+ lender partners** (https://www.8twelve.ca/about) and Ontario mortgage brokerage licence **FSRA #13072** (https://8twelve.mortgage/licenses/). Attribution to company is required for the lender-network figure; before field distribution, confirm claims and use with the relevant company/compliance team. Do not insert unverified ratings, funded volumes, awards, best-rate guarantees or client stories. Trust must never depend solely on the hypothetical savings illustration. Keep this concise and composed; do not add a fifth page.
+The hypothetical comparison is **$3,500/month before → $2,800/month after = $700/month difference or $8,400/year**. It is not a quote, a real client example, guaranteed eligibility or a promise of lower lifetime cost. Fees, penalties, longer amortization and more total interest must be disclosed. Do not invent mortgage rates, balances, loan terms, actual approval decisions or borrowing outcomes.
 
-Other scenarios may appear only if accurately supported, without overwhelming the page. The **hypothetical payment illustration** is `$3,500/month before → $2,800/month after = $700/month` or `$8,400/year`. This is a monthly payment difference, not a claim of lower lifetime cost or guaranteed eligibility. Do **not** invent a rate, principal, qualification result or real customer story. The explanation must flag possible fees/penalties, longer amortization and more total interest; a specialist reviews costs and options.
+Page 2 gives 8Twelve's real reason to believe and should answer: **Who is the brokerage? Why consider its specialists? What options can they explore? Who makes the personal introduction and follows through?** Company-published information currently reports **65+ lender partners** (https://www.8twelve.ca/about), and Ontario brokerage licence **FSRA #13072** (https://8twelve.mortgage/licenses/). Include dated attribution and independent verification before field distribution. More lender choices do not guarantee any rate, approval or savings. 8Twelve Mortgage operates as a separate licensed mortgage brokerage. Do not invent stars, rankings, funded mortgage volumes, awards or company logos.
 
-### Page 2 content contract
-Restore and **feature** the previously confirmed *working example* for the **writing agent**:
-- Approx. **$100 per $100,000 of funded mortgage volume**.
-- Thus **$500,000 funded → approximately $500 to the writing agent**.
-- This figure **already accounts for broker/upline allocation**; do not incorrectly split it again.
-- It is illustrative, not a current published rate, guarantee or automatic referral payment. Actual amounts depend on licensing/eligibility, current program terms, funding, disclosures and timing. Verify the current written arrangement before team distribution.
+### Pages 3–4 — business and compensation
 
-Explain service first, compensation second, team-building third. Present the introduced mortgage specialist as a personally known member of the **extended mortgage team** at 8Twelve. Make it clear that agent recruiting/business-building belongs to the advisor's own financial brokerage, not to 8Twelve Mortgage. Recruiting invites a conversation about the *actual* business model, support, work and obligations. Do not infer team-building automatically produces income; never imply recruiting itself triggers this mortgage commission.
+Page 3 explains serving an existing client first, agent activity second and potential compensation third, without collapsing into an earnings advertisement. Present the clear **Ask → Introduce → Follow through** sequence and the owner-confirmed working compensation illustration:
+- **Approximately $100 per $100,000 of funded mortgage volume to the writing agent.**
+- Thus **$500,000 funded → approximately $500 writing-agent compensation**.
+- The $500 is **already after the broker/upline allocation**; it is not split again.
+- It is an illustrative assumption, not a published current pay rate or guaranteed result. Actual payments require completed funding and current program eligibility, relevant licensing/registration, terms, disclosures and timing, to be verified in writing with program/compliance before distribution. Do not claim that recruiting creates a mortgage commission.
 
-### Page 3 content contract
-Write realistic short dialogue with who/why/context; useful responses to "I'm just looking" and "I already have a broker" without confrontation. Give agents a natural answer to "Who is 8Twelve and why should I talk with them?": licensed separate brokerage, access to multiple lenders, personally known specialist, personal introduction and follow-up; no guarantees. The introduction asks permission to share contact details, and the follow-up has an agreed day. Agent identifies and introduces; only appropriately licensed mortgage specialists discuss rates, suitability, approval and recommendations. Follow up on the introduction without collecting confidential underwriting details. If the other person expresses business interest, offer a separate introduction to a leader rather than abruptly pivoting the mortgage conversation.
+Page 4 explains an actual business-building path: possible part-time start, trainer-led experience, licensing and approved qualification, serving families and possible development of a team. Show real obligations and no guarantee of earnings, leads, clients or recruiting outcomes. Provide one separate, voluntary conversation invitation. The recruiting/business opportunity concerns the advisor's **own financial brokerage**, **not a licence to practise mortgage brokering** and not automatic employment or ownership with 8Twelve Mortgage.
 
-### Page 4 content contract
-Prioritise real appointment usability: clear blanks, large handwriting areas, purchase/renewal/refinance branches, optional rough amount and timing fields, goals, specialist questions and explicit permission for personal introduction **naming 8Twelve Mortgage and specifying that only the client's name and chosen phone or email are shared**. Sharing additional financial worksheet information requires separate permission and an approved secure handoff. No real client records, SIN, bank credentials, government ID, credit reports or underwriting documentation in the public repository.
+### Page 5 — agent conversation guide
 
-## Premium visual contract
+Practical, short and speakable questions around renewal, payments, buying, debt/refinancing and common responses (“I'm just looking,” “I already have a broker,” “Who is 8Twelve?”). Diagnose first, respect a no, introduce the specialist personally and request permission to share the minimum contact details. Provide a concrete follow-up day. Only properly licensed 8Twelve mortgage professionals discuss mortgage rates, suitability, approvals, underwriting, recommendations and applications. If someone independently asks about joining the business, create a **separate** low-pressure leader introduction.
 
-Exactly **four 8.5 × 11-inch portrait pages**, one sheet per page, not landscape or a stitched image. The PDF must contain exactly four `612 × 792 pt` pages; each individual PNG must be portrait at the matching ratio.
+### Page 6 — working discovery form
 
-**Premium means intentional editorial craft, not empty minimalism:**
-- Confident typography with meaningful contrast between page titles, explanations, key figures and notes.
-- Strong alignment, calm white space, considered page rhythm and tailored compositions.
-- Page 1 should foreground the `$700/month` hypothetical comparison; Page 2 the `$500,000 → ~$500` example; Page 3 clearly actionable dialogue; Page 4 writable fields.
-- Avoid a stack of generic bordered cards, repeated cookie-cutter layouts, stock imagery, excessive icons, unreadably small disclosures or overly salesy language.
-- Correct written **8Twelve Mortgage** identity only; logo and visual assets/colors may remain **placeholders during development** per owner direction. Do not invent a corporate logo. Avoid suggesting the advisor recruiting opportunity is offered by 8Twelve itself.
-- A single HTML/CSS source drives browser preview, print PDF and individual PNGs. A print format has priority; mobile preview must preserve page dimensions without clipping.
+Large handwriting blanks for name and one chosen contact channel, purpose, timing, purchase/renewal/refinancing details, approximate existing mortgage context, financial goals, questions, introduction permission and follow-up. Consent must clearly name **8Twelve Mortgage** and authorize only name and provided phone/email for a personal specialist introduction. Further worksheet details require separate permission and a secure handoff. No SIN, government ID, bank credentials, credit reports or underwriting records in the public repository.
+
+**Protection of objectives:** This restructuring **adds breathing room**; it is not permission to remove recruiting, compensation, caveats, business-building, agent guidance or the form.
+
+
+## Premium visual and format contract
+
+**Exactly six US Letter 8.5 × 11-inch portrait sheets in the HTML**, each **612 × 792 pt in PDF**. The first four are a client/business presentation; last two are detached agent aids. No A4/landscape, clipped text, overlap or unexpected blank pages. HTML is a shared production source for preview, two PDFs, and six standalone PNGs.
+
+**Whitespace has a job:** the earlier kit was correctly judged too dense. Make each sheet understandable within seconds. Give it one dominant message, an obvious first-to-last reading path, larger body text and accessible disclosures, calm page margins, fewer simultaneous components and enough natural white space. Do not squeeze all proof points and sales/process/worksheet information onto one sheet.
+
+- **Page 1:** solution menu + one clear, dominant $700/month illustration.
+- **Page 2:** 8Twelve credibility + how mortgage comparison works + personal introduction.
+- **Page 3:** service steps + dominant $500,000→~$500 working illustration, correctly qualified.
+- **Page 4:** spacious supported business-building path, responsibilities and invitation.
+- **Page 5:** glanceable agent dialogue, no long scripts.
+- **Page 6:** writable discovery fields with informed consent.
+- Avoid generic stacks of bordered cards, decorative icons and stock photos. Prefer an editorial composition with purposeful hierarchy, alignment, legible numbers and proportionate serif/sans typography.
+- Correct spelled **8Twelve Mortgage** name; corporate logo/brand graphics are deferred. Do not invent them.
+- Mobile preview must scale each print page without cropping. It is a print-first proof, not necessarily a reflowed mobile article.
+
+The design acceptance test includes a **human skim test**, viewing all six page PNGs at actual print size and on a mobile phone. A green script alone never means visually approved.
 
 ## Publishing and quality gates
 
-The repository and GitHub Pages site are **public by the owner's design** for development. All four *draft* pages, including the recruiting and compensation illustration, may be visible. This does **not** authorize posting actual client records, credentials or confidential contractual documents.
+This repository and GitHub Pages preview are intentionally public **for development only**. Never publish real client data, program contracts, credentials or private company files.
 
-Before saying a deliverable is final:
-1. Validate **four** portrait sheets and correct page titles and audiences.
-2. Check five mortgage categories, `$3,500 - $2,800 = $700`, `$700 × 12 = $8,400`, and `$500,000 / $100,000 × $100 = ~$500`.
-3. Keep **client** mortgage information distinct from **agent** compensation; compensation belongs on Page 2 only. Assert clear **8Twelve Mortgage** naming and substantiated credibility on Page 1; do not silently revert to the obsolete A12 placeholder.
-4. Confirm the specialist-vs-introducer role, realistic risk/eligibility language, and **no income guarantee**.
-5. Confirm conversation copy with the live KB voice/role guides before editorial approval.
-6. Render in Chromium; verify no text overflows a sheet, PDF exactly four `612 × 792 pt` pages, and four portrait preview PNGs.
-7. Do a **human visual quality review** at realistic print and mobile sizes. A build can pass while design quality fails.
-8. Record missing factual verification separately rather than filling it with invented numbers.
+Before declaring any deliverable final:
+1. Validate **six** portrait sheets and intended audience order: client/client, opportunity/opportunity, tool/tool.
+2. Check all five mortgage goals, $3,500−$2,800=$700, $700×12=$8,400 and $500,000 ÷ $100,000×$100=approximately $500.
+3. Keep client mortgage information away from recruiting/compensation; the latter belong to Pages 3–4.
+4. Verify 8Twelve credibility claims, attribution and separate-licence boundary; never promise lowest rate, approval or savings.
+5. Confirm the writing agent is shown as receiving the approximate amount **after broker/upline allocation**, with current-program uncertainty and licence eligibility.
+6. Retain distinct optional recruitment discussion, useful agent follow-up and named minimum-data consent.
+7. Run content QA and Chromium rendering. Assert **4-page presentation PDF + 2-page tools PDF**, US Letter geometry, six portrait PNGs and overflow detection.
+8. Conduct actual visual review of the PNGs/PDFs, particularly financial notes and handwriting room; check mobile.
+9. Obtain current written program, brokerage marketing and applicable compliance checks before distribution. **Owner approval is required** to mark FINAL or APPROVED.
+
+A passing GitHub Actions build means only the automated checks pass. It is not legal/compliance, voice, visual or owner approval.
 
 ## Current development checkpoint
 
-- Four coordinated premium editorial **draft** pages now exist in `index.html`, with the owner-directed 8Twelve naming and credibility correction. They are **not yet owner-approved** and must not be called final.
-- The headline hierarchy, restrained rules, typography, prominent money examples and substantial blank worksheet are the working design reference. Brand assets remain deferred.
-- The Pages workflow renders the same HTML to one four-page PDF and four PNGs and checks geometry and core content.
-- If rendered visual QA shows clipping or cramped copy, repair the page without removing a required business objective or changing approved numbers.
-- Before the next design iteration, review the exported PDF and individual PNGs together at actual print size; seek owner acceptance of the style. Never silently substitute generic bordered-card layouts.
+- Owner requested a more breathable split: two client mortgage pages, two business-opportunity pages, with the existing two valuable tools **retained separately**.
+- `index.html` now uses the six-sheet structure. CI scripts must enforce the new contract and produce two distinct PDFs.
+- No change to the five mortgage categories, example numbers, commission allocation, KB authority or service/recruiting boundaries.
+- Print proof, human reading-path evaluation, compliance-source verification and final owner review remain essential; status remains **draft**.
+
 
 ## Workflow and change control
 
-**Read this spec and the current KB voice doctrine → draft copy → check facts/math/role → design HTML → render PDF/PNGs → run CI → review Pages preview → owner approves.**
+**Read this spec and the current KB voice doctrine → draft copy → check facts/math/roles → design six sheets → render both PDFs and six PNGs → run CI → inspect at print/mobile size → owner approves.**
 
 Treat this file as the production contract; make explicit, reviewed changes when objectives or locked numbers change. GitHub Pages deployment is **not** the same as editorial/compliance approval. Do not modify the knowledge base solely to make the front-end build pass.
 
