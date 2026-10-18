@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>A12 Mortgage Conversation Kit | Preview</title>
+<html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>8Twelve Mortgage Conversation Kit | Preview</title>
 <style>
 :root{--ink:#172d40;--muted:#516374;--blue:#276a92;--light:#edf4f7;--line:#d6e1e8;--paper:#fff;--background:#e9eef2}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--background);color:var(--ink);font:14px/1.48 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
@@ -16,6 +16,19 @@ h1{font-size:36px;line-height:1.1;letter-spacing:-.04em;margin:0 0 14px;font-wei
 .band{background:var(--light);border-left:3px solid var(--blue);padding:13px 16px;margin:10px 0 16px;font-size:13px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel{border:1px solid var(--line);padding:14px 15px}.panel p,.panel li{font-size:12px;color:var(--muted)}ul{padding-left:17px;margin:6px 0 0}.question{border-bottom:1px solid var(--line);padding:11px 0;font-size:13px}.question:first-child{padding-top:0}.question small{display:block;color:var(--muted);margin-top:4px;font-size:11px}
 .fields{display:grid;grid-template-columns:1fr 1fr;gap:12px 18px;margin-top:10px}.field label{display:block;font-size:11px;color:var(--muted);margin-bottom:5px}.line{height:24px;border-bottom:1px solid #9aafbe}.full{grid-column:1/-1}.choices{font-size:12px;line-height:2.2}.write-lines{background:repeating-linear-gradient(to bottom,transparent 0,transparent 30px,#bac9d2 31px,#bac9d2 32px);height:96px}.disclaimer{font-size:10px;color:var(--muted);margin-top:12px}
 
+
+/* Credibility works alongside the client money example, not as decoration. */
+.p1-trust{display:grid;grid-template-columns:1.14fr .58fr 1.12fr;align-items:start;gap:16px;margin-top:15px;padding-top:12px;border-top:1px solid #b7c4ca}
+.p1-trust-title small{display:block;font-size:9px;letter-spacing:.14em;color:#607686;font-weight:750;margin-bottom:5px}
+.p1-trust-title strong{display:block;font:normal 17px/1.16 Georgia,serif;color:#1d3647}
+.p1-trust-count b{font:normal 29px/1 Georgia,serif;display:block;color:#294e64}
+.p1-trust-count span{font-size:10px;line-height:1.26;display:block;color:#586f7c;margin-top:3px}
+.p1-trust-licence strong{font-size:11px;display:block;color:#304d5f}
+.p1-trust-licence span{font-size:10px;line-height:1.35;display:block;color:#536b78;margin-top:3px}
+.p1-trust-source{font-size:8.5px;line-height:1.35;color:#6d7b84;margin:6px 0 0}
+.sheet--premium .p1-goal{min-height:46px}
+.sheet--premium .p1-next{margin-top:13px}
+.sheet--premium .p1-case{margin-top:19px}
 
 /* Page 2: editorial opportunity layout; precise economics without earnings promises. */
 .p2-intro{padding:25px 0 11px}.p2-intro .p1-eyebrow{font-size:10px}
@@ -69,20 +82,20 @@ h1{font-size:36px;line-height:1.1;letter-spacing:-.04em;margin:0 0 14px;font-wei
 /* Page 4: writing-first paper form; keep lines and checkbox labels legible. */
 .p4-intro{padding:17px 0 5px}.sheet--premium .p4-intro h1{font-size:44px;line-height:1.04;margin:8px 0 8px}
 .p4-intro p{font-size:11px;color:#556774;line-height:1.4;margin:0}
-.p4-section-title{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:#3b5869;font-weight:750;border-bottom:1px solid #91a6b1;padding-bottom:5px;margin:11px 0 6px}
+.p4-section-title{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:#3b5869;font-weight:750;border-bottom:1px solid #91a6b1;padding-bottom:5px;margin:9px 0 6px}
 .p4-fields{display:grid;grid-template-columns:1fr 1fr;gap:5px 23px}
 .p4-field label{display:block;font-size:10px;color:#5c707b;font-weight:600}
-.p4-field .p4-line{display:block;height:26px;border-bottom:1px solid #b4c2c9}
+.p4-field .p4-line{display:block;height:24px;border-bottom:1px solid #b4c2c9}
 .p4-checkboxes{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:5px 0 7px;font-size:11px;color:#354e5d}
 .p4-box{display:inline-block;height:12px;width:12px;border:1px solid #5c7280;margin-right:7px;vertical-align:-2px}
-.p4-notes{height:100px;position:relative;background:repeating-linear-gradient(to bottom,transparent 0,transparent 28px,#b7c6cf 29px,#b7c6cf 30px)}
+.p4-notes{height:96px;position:relative;background:repeating-linear-gradient(to bottom,transparent 0,transparent 28px,#b7c6cf 29px,#b7c6cf 30px)}
 .p4-consent{font-size:10.5px;line-height:1.42;color:#384f5e;margin:5px 0 8px}
 .p4-fine{font-size:9px;line-height:1.38;color:#75828a;margin:8px 0 0}
 
 /* Page 1: premium editorial design reference. Scoped to avoid altering the other pages. */
 .sheet--premium{--p1-ink:#152635;--p1-blue:#30546a;--p1-soft:#e8e8e3;--p1-stone:#f6f4ef;--p1-gold:#b89d72;padding:49px 56px 43px;color:var(--p1-ink);font-family:Arial,Helvetica,sans-serif}
 .p1-header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #b9c1c5;padding-bottom:15px}
-.p1-brand{font-size:23px;font-weight:850;letter-spacing:.15em;line-height:1}.p1-brand span{font-size:9px;letter-spacing:.22em;font-weight:600;margin-left:10px}
+.p1-brand{font-size:21px;font-weight:850;letter-spacing:.15em;line-height:1}.p1-brand span{font-size:9px;letter-spacing:.22em;font-weight:600;margin-left:10px}
 .p1-header-tag{font-size:9px;letter-spacing:.22em;font-weight:750;color:#547080}
 .p1-hero{padding:29px 0 12px}.p1-eyebrow{font-size:10px;letter-spacing:.19em;font-weight:700;color:#677783;text-transform:uppercase;display:flex;align-items:center;gap:10px}
 .p1-eyebrow:before{content:"";height:1px;width:22px;background:var(--p1-gold)}
@@ -114,10 +127,10 @@ h1{font-size:36px;line-height:1.1;letter-spacing:-.04em;margin:0 0 14px;font-wei
 @media screen{.sheet{zoom:var(--preview-zoom,1)}}
 @media print{@page{size:letter;margin:0}html,body{background:#fff!important;margin:0;padding:0}.toolbar{display:none!important}.pages{padding:0}.sheet{zoom:1!important;width:8.5in;height:11in;box-shadow:none;margin:0;break-after:page;page-break-after:always}.sheet:last-child{break-after:auto;page-break-after:auto}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style></head><body>
-<div class="toolbar"><div><strong>A12 Mortgage Conversation Kit</strong><p>Four-page portrait proof · Development draft · Review before distribution</p></div><div class="toolbar-actions"><a href="./proofs/mortgage-conversation-kit.pdf" target="_blank" rel="noopener">View four-page PDF</a><button onclick="window.print()">Print / Save PDF</button></div></div>
+<div class="toolbar"><div><strong>8Twelve Mortgage Conversation Kit</strong><p>Four-page portrait proof · Development draft · Review before distribution</p></div><div class="toolbar-actions"><a href="./proofs/mortgage-conversation-kit.pdf" target="_blank" rel="noopener">View four-page PDF</a><button onclick="window.print()">Print / Save PDF</button></div></div>
 <main class="pages">
 <section class="sheet sheet--premium" data-page="1">
-  <header class="p1-header"><div class="p1-brand">A12 <span>MORTGAGE</span></div><span class="p1-header-tag">MORTGAGE SOLUTIONS&nbsp;&nbsp; / &nbsp;&nbsp;01</span></header>
+  <header class="p1-header"><div class="p1-brand">8Twelve <span>MORTGAGE</span></div><span class="p1-header-tag">MORTGAGE SOLUTIONS&nbsp;&nbsp; / &nbsp;&nbsp;01</span></header>
   <div class="p1-hero">
     <div class="p1-eyebrow">A CONVERSATION WORTH HAVING</div>
     <h1>Your Mortgage.<br><em>More Options.</em></h1>
@@ -140,18 +153,24 @@ h1{font-size:36px;line-height:1.1;letter-spacing:-.04em;margin:0 0 14px;font-wei
     <div class="p1-case-result"><b>$700/month</b><span><strong>$8,400 per year</strong> in lower payments</span></div>
     <p class="p1-case-note">Illustration only. Not a quote or guaranteed saving. A lower payment may involve fees, penalties or a longer amortization and more total interest. A mortgage specialist must review the actual balance, rates, costs and eligibility.</p>
   </div>
+  <div class="p1-trust">
+    <div class="p1-trust-title"><small>WHY 8TWELVE MORTGAGE?</small><strong>More lenders. More choices to review.</strong></div>
+    <div class="p1-trust-count"><b>65+</b><span>lender partners*</span></div>
+    <div class="p1-trust-licence"><strong>Licensed mortgage brokerage</strong><span>Ontario FSRA brokerage #13072. A licensed specialist reviews your options.</span></div>
+  </div>
+  <p class="p1-trust-source">*Lender network reported by 8Twelve Mortgage, Oct 2026. Licensing: 8twelve.mortgage/licenses/.</p>
   <div class="p1-next">
     <div class="p1-next-title">What happens<br><em>next?</em></div>
-    <div class="p1-next-copy"><strong>Start with what matters to you.</strong> We'll introduce you to a qualified mortgage specialist who can review the numbers, explain the trade-offs and help you decide whether a change makes sense.</div>
+    <div class="p1-next-copy"><strong>Start with what matters to you.</strong> I'll personally introduce you to a licensed specialist I work with at 8Twelve Mortgage. They'll review the costs and options; I'll stay in touch to make sure you connect.</div>
   </div>
-  <footer class="p1-footer"><span>A12 &nbsp;·&nbsp; Draft for review &nbsp;·&nbsp; Not a mortgage offer</span><span>01 &nbsp;/&nbsp; 04</span></footer>
+  <footer class="p1-footer"><span>8Twelve Mortgage &nbsp;·&nbsp; Draft for review &nbsp;·&nbsp; Not a mortgage offer</span><span>01 &nbsp;/&nbsp; 04</span></footer>
 </section>
 <section class="sheet sheet--premium" data-page="2">
-  <header class="p1-header"><div class="p1-brand">A12 <span>MORTGAGE</span></div><span class="p1-header-tag">BUSINESS OPPORTUNITY&nbsp;&nbsp; / &nbsp;&nbsp;02</span></header>
+  <header class="p1-header"><div class="p1-brand">8Twelve <span>MORTGAGE</span></div><span class="p1-header-tag">BUSINESS OPPORTUNITY&nbsp;&nbsp; / &nbsp;&nbsp;02</span></header>
   <div class="p2-intro">
     <div class="p1-eyebrow">GOOD SERVICE OPENS DOORS</div>
     <h1>More Ways to Help.<br><em>More Ways to Earn.</em></h1>
-    <p>Most families will have a mortgage question at some point. You don't need to be their mortgage expert. You can recognize the need, make an introduction and stay involved.</p>
+    <p>Most families will have a mortgage question at some point. You can spot the need, introduce a specialist you know at 8Twelve Mortgage and stay involved. 8Twelve is a separate licensed mortgage brokerage; your business opportunity is with your own financial brokerage team.</p>
   </div>
   <h2 class="p2-path-heading">Three steps. One useful introduction.</h2>
   <div class="p2-path">
@@ -171,17 +190,17 @@ h1{font-size:36px;line-height:1.1;letter-spacing:-.04em;margin:0 0 14px;font-wei
   </div>
   <h2 class="p2-value-heading">What can this lead to?</h2>
   <div class="p2-value">
-    <div><h3>Help a family.</h3><p>Bring their mortgage question to someone who can review the numbers and explain the choices.</p></div>
-    <div><h3>Build your business.</h3><p>Meet people who may want to learn how the team works, what support they get and what the work involves.</p></div>
+    <div><h3>Help a family.</h3><p>Personally introduce your client to a licensed 8Twelve Mortgage specialist. They review the mortgage options. You stay involved.</p></div>
+    <div><h3>Build your financial brokerage.</h3><p>When someone asks about the business, show how they can start part-time, learn with a trainer, and work toward licensing.</p></div>
   </div>
   <div class="p2-close">
     <b>Curious about<br><em>the opportunity?</em></b>
     <p>“I can show you how we work with families and how the business works. We'll go through the real numbers and what you'd actually do.”</p>
   </div>
-  <footer class="p1-footer"><span>A12 &nbsp;·&nbsp; Development draft &nbsp;·&nbsp; Program terms must be confirmed</span><span>02 &nbsp;/&nbsp; 04</span></footer>
+  <footer class="p1-footer"><span>8Twelve Mortgage &nbsp;·&nbsp; Development draft &nbsp;·&nbsp; Program terms must be confirmed</span><span>02 &nbsp;/&nbsp; 04</span></footer>
 </section>
 <section class="sheet sheet--premium" data-page="3">
-  <header class="p1-header"><div class="p1-brand">A12 <span>MORTGAGE</span></div><span class="p1-header-tag">CONVERSATION GUIDE&nbsp;&nbsp; / &nbsp;&nbsp;03</span></header>
+  <header class="p1-header"><div class="p1-brand">8Twelve <span>MORTGAGE</span></div><span class="p1-header-tag">CONVERSATION GUIDE&nbsp;&nbsp; / &nbsp;&nbsp;03</span></header>
   <div class="p3-intro">
     <div class="p1-eyebrow">A FEW BETTER QUESTIONS</div>
     <h1>Mortgage<br><em>Conversation Guide.</em></h1>
@@ -198,17 +217,17 @@ h1{font-size:36px;line-height:1.1;letter-spacing:-.04em;margin:0 0 14px;font-wei
     <div>
       <h2 class="p3-column-title">When they respond</h2>
       <div class="p3-answer"><small>“I'M JUST LOOKING.”</small><strong>That's okay.</strong><p>“What are you trying to figure out? Maybe I can connect you with someone who can answer that.”</p></div>
-      <div class="p3-answer"><small>“I ALREADY HAVE A BROKER.”</small><strong>Respect the relationship.</strong><p>“That's good. Have they had a chance to walk you through your options and the total costs?”</p></div>
+      <div class="p3-answer"><small>“I ALREADY HAVE A BROKER.”</small><strong>Respect the relationship.</strong><p>“That's good. Are you comfortable with the choices they've shown you, or is there something you're still trying to work out?”</p></div>
       <div class="p3-answer"><small>If someone asks about joining</small><strong>Make it a separate conversation.</strong><p>“There's a business side to this too. If you're curious, I can introduce you to a team leader who can walk you through the work and the numbers.”</p></div>
     </div>
   </div>
-  <div class="p3-handoff"><small>THE PERSONAL INTRODUCTION</small><p>“I've got a mortgage specialist I work with. Would you be open to a conversation so you can see what options you have?”</p></div>
-  <div class="p3-follow"><h2>Then follow through.</h2><p>Ask permission → Make the introduction → Confirm they connected → Check back. You own the relationship. The licensed mortgage specialist handles advice, rates, applications and eligibility.</p></div>
+  <div class="p3-handoff"><small>THE PERSONAL INTRODUCTION</small><p>“I know a licensed mortgage specialist at 8Twelve Mortgage. They can compare options from different lenders. Would you like me to introduce you?”</p></div>
+  <div class="p3-follow"><h2>Then follow through.</h2><p>Get permission to share contact details. Make the personal introduction. Confirm they connected. Agree on a check-in date: “Would Thursday work for me to check back?” You own the relationship; the licensed 8Twelve specialist handles mortgage advice, rates, applications and eligibility.</p></div>
   <p class="p3-boundary">Do not promise approval, quote mortgage rates, recommend products or request confidential underwriting details. A clear “no” is an answer to respect.</p>
-  <footer class="p1-footer"><span>A12 &nbsp;·&nbsp; Conversation training draft</span><span>03 &nbsp;/&nbsp; 04</span></footer>
+  <footer class="p1-footer"><span>8Twelve Mortgage &nbsp;·&nbsp; Conversation training draft</span><span>03 &nbsp;/&nbsp; 04</span></footer>
 </section>
 <section class="sheet sheet--premium" data-page="4">
-  <header class="p1-header"><div class="p1-brand">A12 <span>MORTGAGE</span></div><span class="p1-header-tag">DISCOVERY WORKSHEET&nbsp;&nbsp; / &nbsp;&nbsp;04</span></header>
+  <header class="p1-header"><div class="p1-brand">8Twelve <span>MORTGAGE</span></div><span class="p1-header-tag">DISCOVERY WORKSHEET&nbsp;&nbsp; / &nbsp;&nbsp;04</span></header>
   <div class="p4-intro">
     <div class="p1-eyebrow">START WITH THE PERSON, NOT THE PRODUCT</div>
     <h1>Mortgage <em>Discovery.</em></h1>
@@ -243,13 +262,13 @@ h1{font-size:36px;line-height:1.1;letter-spacing:-.04em;margin:0 0 14px;font-wei
   <h2 class="p4-section-title">05 &nbsp; NOTES / QUESTIONS FOR THE SPECIALIST</h2>
   <div class="p4-notes"></div>
   <h2 class="p4-section-title">06 &nbsp; Introduction permission and next step</h2>
-  <p class="p4-consent"><i class="p4-box"></i>Yes, you may introduce me to a mortgage specialist. &nbsp;&nbsp; <i class="p4-box"></i>Not yet — let's check back later.</p>
+  <p class="p4-consent"><i class="p4-box"></i>Yes. You may share my name and the phone number or email above with a licensed 8Twelve Mortgage specialist so they can contact me about my mortgage question. &nbsp; <i class="p4-box"></i>Not yet — check back later. Other worksheet details require separate permission.</p>
   <div class="p4-fields">
     <div class="p4-field"><label>Person making the introduction</label><span class="p4-line"></span></div>
     <div class="p4-field"><label>Follow-up date</label><span class="p4-line"></span></div>
   </div>
   <p class="p4-fine">This is a conversation worksheet, not a mortgage application. Please don't record SIN, banking credentials, ID numbers or private financial documents here. Share completed forms only through an approved secure process.</p>
-  <footer class="p1-footer"><span>A12 &nbsp;·&nbsp; Blank worksheet &nbsp;·&nbsp; Handle completed forms securely</span><span>04 &nbsp;/&nbsp; 04</span></footer>
+  <footer class="p1-footer"><span>8Twelve Mortgage &nbsp;·&nbsp; Blank worksheet &nbsp;·&nbsp; Handle completed forms securely</span><span>04 &nbsp;/&nbsp; 04</span></footer>
 </section>
 </main><script>
 function fitPages(){const zoom=Math.min(1,(window.innerWidth-24)/816);document.documentElement.style.setProperty('--preview-zoom',zoom)}
