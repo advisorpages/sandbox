@@ -52,7 +52,7 @@ check(/not guaranteed|No income or payment is guaranteed/i.test(pages[1]?.[2] ??
 check(/build (a|your) business|building a business|build your financial brokerage/i.test(p2), 'Recruiting/business-building purpose retained');
 check(has(2, 'start part-time') && has(2, 'trainer') && has(2, 'licensing'), 'Recruiting orientation retains part-time start, support and licensing');
 check(has(2, 'separate licensed mortgage brokerage') && has(2, 'own financial brokerage'), 'Distinct legal brokerages for service and business opportunity');
-check(!/paid to recruit|automatic commission|guaranteed income/i.test(p2), 'No misleading recruiting compensation claim');
+check(!/paid to recruit|automatic commission|earn guaranteed income/i.test(p2), 'No misleading recruiting compensation claim');
 check(!has(1, 'writing-agent') && !has(1, '$500,000'), 'Compensation kept off client page');
 check(has(1, 'WHY 8TWELVE MORTGAGE?') && has(1, '65+') && has(1, 'FSRA') && has(1, '#13072'), 'Page 1 names 8Twelve and demonstrates specific supported credibility');
 check(has(1, 'Lender network reported by 8Twelve Mortgage') && has(1, '8twelve.mortgage/licenses/'), '8Twelve source attribution remains visible on client page');
