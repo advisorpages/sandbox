@@ -1,17 +1,21 @@
-name: Publish A12 design preview to GitHub Pages
+name: Publish A12 Mortgage Kit Preview
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
-  group: pages
+  group: mortgage-pages
   cancel-in-progress: true
+
 jobs:
-  deploy:
+  qa-and-deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -19,25 +23,49 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Check public preview
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install test dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Install Chromium for print QA
+        run: npx playwright install --with-deps chromium
+
+      - name: Verify content, figures, and audience
+        run: npm run verify
+
+      - name: Render all pages and reject overflow
+        run: npm run render
+
+      - name: Verify PDF and page images
         run: |
-          test -s index.html
-          test "$(grep -o 'class=\"sheet\"' index.html | wc -l | tr -d ' ')" = "4"
-          grep -q '@page{size:letter;margin:0}' index.html
-          grep -q '\$3,500/mo' index.html
-          grep -q '\$2,800/mo' index.html
-          grep -q '\$700/month' index.html
-          grep -q '\$8,400 per year' index.html
-          if grep -Eiq 'writing.agent compensation|\$500,000 funded|mortgage conversation guide|client agrees to be contacted' index.html; then
-            echo "Blocked: internal or intake content found in public preview."
-            exit 1
-          fi
-      - name: Configure Pages
+          python -m pip install pypdf
+          python scripts/verify-pdf.py
+
+      - name: Save proof PDF and four page previews
+        uses: actions/upload-artifact@v4
+        with:
+          name: mortgage-kit-print-proof
+          path: dist/
+          retention-days: 30
+
+      - name: Prepare public development site
+        run: |
+          mkdir -p site
+          cp index.html site/index.html
+
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: site
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
