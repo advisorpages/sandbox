@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the 4-page presentation and distinct 2-page agent tools, all US Letter."""
+"""Validate the 4-page presentation and distinct 3-page agent tools, all US Letter."""
 from pathlib import Path
 from pypdf import PdfReader
 import struct
@@ -14,7 +14,8 @@ expected={
   ],
   "mortgage-agent-tools.pdf":[
     ["Mortgage", "ConversationGuide.", "8Twelve"],
-    ["Mortgage", "Discovery.", "sharemyname", "8Twelve"]
+    ["Mortgage", "Discovery.", "sharemyname", "8Twelve"],
+    ["Questions.", "NextSteps.", "licensedmortgagespecialist"]
   ]
 }
 all_pages=0
@@ -34,10 +35,10 @@ for filename,pages in expected.items():
         px_w,px_h=struct.unpack(">II",signature[16:24])
         assert (px_w,px_h)==(816,1056), f"{png}: wrong size {px_w}x{px_h}"
         print(f"PASS {filename} page {n}: 612x792pt, PNG {px_w}x{px_h}")
-assert all_pages==6
+assert all_pages==7
 mobile=(base/"mobile-preview.png").read_bytes()
 assert mobile[:8]==bytes((137,80,78,71,13,10,26,10))
 mw,mh=struct.unpack(">II",mobile[16:24])
 assert mw==390 and mh>844, f"Unexpected mobile image size {mw}x{mh}"
 print(f"PASS mobile preview {mw}x{mh}")
-print("PASS: exactly four presentation sheets and two independent advisor sheets")
+print("PASS: exactly four presentation sheets and three independent advisor sheets")
