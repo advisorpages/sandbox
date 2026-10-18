@@ -89,6 +89,14 @@ Before saying a deliverable is final:
 7. Do a **human visual quality review** at realistic print and mobile sizes. A build can pass while design quality fails.
 8. Record missing factual verification separately rather than filling it with invented numbers.
 
+## Current development checkpoint
+
+- Four coordinated premium editorial **draft** pages now exist in `index.html`. They are **not yet owner-approved** and must not be called final.
+- The headline hierarchy, restrained rules, typography, prominent money examples and substantial blank worksheet are the working design reference. Brand assets remain deferred.
+- The Pages workflow renders the same HTML to one four-page PDF and four PNGs and checks geometry and core content.
+- If rendered visual QA shows clipping or cramped copy, repair the page without removing a required business objective or changing approved numbers.
+- Before the next design iteration, review the exported PDF and individual PNGs together at actual print size; seek owner acceptance of the style. Never silently substitute generic bordered-card layouts.
+
 ## Workflow and change control
 
 **Read this spec and the current KB voice doctrine → draft copy → check facts/math/role → design HTML → render PDF/PNGs → run CI → review Pages preview → owner approves.**
