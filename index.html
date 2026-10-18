@@ -121,6 +121,17 @@ h1,h2,h3,p{margin:0}h1,h2,.serif{font-family:Georgia,"Times New Roman",serif;fon
 .page5 .lead{font-size:16px;margin-top:9px}
 .page6.sheet{padding-top:32px;padding-bottom:21px}
 .page5.sheet{padding-top:34px;padding-bottom:24px}
+/* OPTIONAL NOTES CONTINUATION: spacious, true write-in lines */
+.page6 .questions-note{font-size:12px;line-height:1.4;color:#526b78;margin:6px 0 2px}
+.page7 h1{font-size:53px}
+.page7 .lead{font-size:16px;max-width:620px}
+.page7 .notes-head{font-size:20px;margin:39px 0 15px;padding-bottom:9px;border-bottom:1px solid #9aadb7}
+.page7 .notes-lines{height:276px;flex-shrink:0;background:repeating-linear-gradient(to bottom,transparent 0,transparent 37px,#b9c8d0 38px,#b9c8d0 39px)}
+.page7 .short-lines{height:164px}
+.page7 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.page7 .field label{font-size:13px;color:#496270;display:block;margin-bottom:9px}
+.page7 .write{height:40px;border-bottom:1px solid #9db0b9}
+.page7 .privacy{font-size:11.5px;line-height:1.48;color:#526979;margin-top:29px}
 .print-tools .sheet[data-part="presentation"],.print-main .sheet[data-part="tools"]{display:none!important}
 @media screen{.sheet{zoom:var(--preview-zoom,1)}.section-marker{width:100%;max-width:100%;margin-left:auto;margin-right:auto}}
 @media print{
@@ -251,7 +262,7 @@ h1,h2,h3,p{margin:0}h1,h2,.serif{font-family:Georgia,"Times New Roman",serif;fon
   <div class="personal"><strong>Personal introduction</strong><p>“I know a licensed mortgage specialist at 8Twelve. Would you be open to me introducing you so they can review your options?”</p></div>
   <p class="follow"><strong>Follow through:</strong> Ask permission to share a name and chosen contact detail, make the introduction, confirm the connection and agree on a date: “Would Thursday work for me to check back?”</p>
   <p class="boundary-note">Do not quote rates, promise approval, recommend loans or request confidential underwriting records. 8Twelve is a separate licensed mortgage brokerage. Respect a clear “no.”</p>
-  <footer class="footer"><b>Agent field tool · Not client advertising</b><span>01 / 02</span></footer>
+  <footer class="footer"><b>Agent field tool · Not client advertising</b><span>01 / 03</span></footer>
 </section>
 
 <section class="sheet page6" data-page="6" data-part="tools">
@@ -279,14 +290,33 @@ h1,h2,h3,p{margin:0}h1,h2,.serif{font-family:Georgia,"Times New Roman",serif;fon
   <h2 class="form-head">04 / What matters most?</h2>
   <div class="checks"><span><i class="box"></i>Lower payment</span><span><i class="box"></i>Lower total cost</span><span><i class="box"></i>Pay sooner</span><span><i class="box"></i>Use equity</span><span><i class="box"></i>Flexibility</span></div>
   <h2 class="form-head">05 / Questions for the licensed mortgage specialist</h2>
-  <div class="notes-lines"></div>
+  <p class="questions-note">Use the optional continuation sheet for questions and notes. Keep this first sheet for the facts and introduction permission.</p>
   <h2 class="form-head">06 / Introduction permission</h2>
   <p class="consent"><i class="box"></i>Yes, you may share my name and the phone or email above with a licensed 8Twelve Mortgage specialist about this question. <i class="box"></i>Not yet — ask again later. Any other worksheet details need separate permission.</p>
   <div class="form-grid">
     <div class="field"><label>Person making the introduction</label><div class="write"></div></div><div class="field"><label>Follow-up date</label><div class="write"></div></div>
   </div>
   <p class="privacy">Do not record SIN, bank credentials, government ID, credit reports or private financial documents. Share completed forms only through an approved secure process.</p>
-  <footer class="footer"><b>Blank worksheet · Keep completed forms private</b><span>02 / 02</span></footer>
+  <footer class="footer"><b>Blank worksheet · Keep completed forms private</b><span>02 / 03</span></footer>
+</section>
+
+<section class="sheet page7" data-page="7" data-part="tools">
+  <header class="header"><div class="wordmark">8Twelve <em>MORTGAGE</em></div><small>OPTIONAL NOTES / 03</small></header>
+  <p class="kicker">Continue your mortgage discovery</p>
+  <h1>Questions.<br><em>Next Steps.</em></h1>
+  <p class="lead">Use this page when the first worksheet isn't enough. Write down what matters to the person, and what they want the licensed specialist to help them understand.</p>
+
+  <h2 class="notes-head">Questions for the licensed mortgage specialist</h2>
+  <div class="notes-lines"></div>
+  <h2 class="notes-head">What matters most about this decision?</h2>
+  <div class="notes-lines short-lines"></div>
+  <h2 class="notes-head">Agreed next step</h2>
+  <div class="form-grid">
+    <div class="field"><label>Who will make the personal introduction?</label><div class="write"></div></div>
+    <div class="field"><label>When will we check back?</label><div class="write"></div></div>
+  </div>
+  <p class="privacy">This page continues Mortgage Discovery. The client must give permission before sharing contact details. Do not record SIN, bank information, government ID or private underwriting records. Store completed pages securely.</p>
+  <footer class="footer"><b>Optional continuation · Not a mortgage application</b><span>03 / 03</span></footer>
 </section>
 </main>
 <script>
