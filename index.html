@@ -65,6 +65,20 @@ h1{font-size:36px;line-height:1.1;letter-spacing:-.04em;margin:0 0 14px;font-wei
 .p3-follow h2{font:normal 19px Georgia,serif;margin:0}.p3-follow p{font-size:11px;line-height:1.5;color:#4e616d;margin:0}
 .p3-boundary{font-size:9px;line-height:1.45;color:#73818b;margin:13px 0 0}
 
+
+/* Page 4: writing-first paper form; keep lines and checkbox labels legible. */
+.p4-intro{padding:25px 0 10px}.sheet--premium .p4-intro h1{font-size:48px;line-height:1.05;margin:10px 0 12px}
+.p4-intro p{font-size:12px;color:#556774;line-height:1.44;margin:0}
+.p4-section-title{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:#3b5869;font-weight:750;border-bottom:1px solid #91a6b1;padding-bottom:7px;margin:17px 0 9px}
+.p4-fields{display:grid;grid-template-columns:1fr 1fr;gap:9px 23px}
+.p4-field label{display:block;font-size:10px;color:#5c707b;font-weight:600}
+.p4-field .p4-line{display:block;height:28px;border-bottom:1px solid #b4c2c9}
+.p4-checkboxes{display:flex;flex-wrap:wrap;gap:9px 16px;align-items:center;margin:9px 0 11px;font-size:11px;color:#354e5d}
+.p4-box{display:inline-block;height:12px;width:12px;border:1px solid #5c7280;margin-right:7px;vertical-align:-2px}
+.p4-notes{height:115px;position:relative;background:repeating-linear-gradient(to bottom,transparent 0,transparent 28px,#b7c6cf 29px,#b7c6cf 30px)}
+.p4-consent{font-size:11px;line-height:1.5;color:#384f5e;margin:7px 0 9px}
+.p4-fine{font-size:9px;line-height:1.43;color:#75828a;margin:12px 0 0}
+
 /* Page 1: premium editorial design reference. Scoped to avoid altering the other pages. */
 .sheet--premium{--p1-ink:#152635;--p1-blue:#30546a;--p1-soft:#e8e8e3;--p1-stone:#f6f4ef;--p1-gold:#b89d72;padding:49px 56px 43px;color:var(--p1-ink);font-family:Arial,Helvetica,sans-serif}
 .p1-header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #b9c1c5;padding-bottom:15px}
@@ -193,16 +207,48 @@ h1{font-size:36px;line-height:1.1;letter-spacing:-.04em;margin:0 0 14px;font-wei
   <p class="p3-boundary">Do not promise approval, quote mortgage rates, recommend products or request confidential underwriting details. A clear “no” is an answer to respect.</p>
   <footer class="p1-footer"><span>A12 &nbsp;·&nbsp; Conversation training draft</span><span>03 &nbsp;/&nbsp; 04</span></footer>
 </section>
-<section class="sheet" data-page="4"><div class="brand"><strong>A12</strong><span>Mortgage discovery worksheet · Draft</span></div><div class="kicker">Conversation notes</div><h1>Mortgage Discovery.</h1><p class="lead">Use this worksheet to understand the client's goals before introducing a mortgage specialist. Share information only with the client's permission.</p>
-<div class="fields"><div class="field"><label>Client name</label><div class="line"></div></div><div class="field"><label>Date</label><div class="line"></div></div><div class="field"><label>Preferred contact method</label><div class="line"></div></div><div class="field"><label>Best time to connect</label><div class="line"></div></div></div>
-<h2>What brings you in?</h2><div class="choices">□ Purchase &nbsp;&nbsp; □ Renewal &nbsp;&nbsp; □ Refinance &nbsp;&nbsp; □ Debt consolidation &nbsp;&nbsp; □ Cash flow &nbsp;&nbsp; □ Other</div>
-<div class="fields"><div class="field"><label>Target timeline / renewal date (if known)</label><div class="line"></div></div><div class="field"><label>Property type / intended use</label><div class="line"></div></div><div class="field"><label>Approximate property value (optional)</label><div class="line"></div></div><div class="field"><label>Approximate mortgage balance (optional)</label><div class="line"></div></div><div class="field"><label>Current monthly mortgage payment (optional)</label><div class="line"></div></div><div class="field"><label>Desired monthly payment / budget (optional)</label><div class="line"></div></div><div class="field"><label>Current mortgage rate / term (if known)</label><div class="line"></div></div><div class="field"><label>Existing lender / penalty known? (optional)</label><div class="line"></div></div></div>
-<h2>What matters most?</h2><div class="choices">□ Lower monthly payment &nbsp; □ Lower total cost &nbsp; □ Pay off sooner &nbsp; □ Access equity &nbsp; □ Flexibility</div>
-<h2>Notes / questions for the specialist</h2><div class="write-lines"></div>
-<h2>Introduction permission</h2><div class="choices">□ Yes, you may introduce me to a mortgage specialist &nbsp;&nbsp; □ Not yet / follow up later</div>
-<div class="fields"><div class="field"><label>Advisor / introducer</label><div class="line"></div></div><div class="field"><label>Next follow-up date</label><div class="line"></div></div></div>
-<p class="disclaimer">Do not record SIN, banking credentials, government ID numbers or sensitive financial documents on this worksheet. This is a preliminary conversation tool, not a mortgage application or consent to share data beyond the agreed introduction.</p>
-<div class="footer"><span>A12 · Blank worksheet · Handle completed forms securely</span><span>04 / 04</span></div></section>
+<section class="sheet sheet--premium" data-page="4">
+  <header class="p1-header"><div class="p1-brand">A12 <span>MORTGAGE</span></div><span class="p1-header-tag">DISCOVERY WORKSHEET&nbsp;&nbsp; / &nbsp;&nbsp;04</span></header>
+  <div class="p4-intro">
+    <div class="p1-eyebrow">START WITH THE PERSON, NOT THE PRODUCT</div>
+    <h1>Mortgage<br><em>Discovery.</em></h1>
+    <p>Tell us what you'd like to do. We can help you connect with a mortgage specialist to review the choices and costs. Leave anything you don't know blank.</p>
+  </div>
+  <h2 class="p4-section-title">01 &nbsp; WHO ARE WE SPEAKING WITH?</h2>
+  <div class="p4-fields">
+    <div class="p4-field"><label>Name</label><span class="p4-line"></span></div>
+    <div class="p4-field"><label>Date</label><span class="p4-line"></span></div>
+    <div class="p4-field"><label>Preferred contact method</label><span class="p4-line"></span></div>
+    <div class="p4-field"><label>Best time to connect</label><span class="p4-line"></span></div>
+  </div>
+  <h2 class="p4-section-title">02 &nbsp; WHAT WOULD YOU LIKE TO DO?</h2>
+  <div class="p4-checkboxes"><span><i class="p4-box"></i>Buy</span><span><i class="p4-box"></i>Renew</span><span><i class="p4-box"></i>Refinance</span><span><i class="p4-box"></i>Consolidate debt</span><span><i class="p4-box"></i>Improve cash flow</span><span><i class="p4-box"></i>Other</span></div>
+  <div class="p4-fields">
+    <div class="p4-field"><label>When are you hoping to make a change?</label><span class="p4-line"></span></div>
+    <div class="p4-field"><label>Renewal date, if known</label><span class="p4-line"></span></div>
+  </div>
+  <h2 class="p4-section-title">03 &nbsp; WHAT DO YOU ALREADY KNOW? <span style="font-weight:400;letter-spacing:0;text-transform:none">(optional)</span></h2>
+  <div class="p4-fields">
+    <div class="p4-field"><label>Approximate home value or price</label><span class="p4-line"></span></div>
+    <div class="p4-field"><label>Approximate current mortgage balance</label><span class="p4-line"></span></div>
+    <div class="p4-field"><label>Current monthly mortgage payment</label><span class="p4-line"></span></div>
+    <div class="p4-field"><label>Payment or budget you're comfortable with</label><span class="p4-line"></span></div>
+    <div class="p4-field"><label>Current rate / mortgage term, if known</label><span class="p4-line"></span></div>
+    <div class="p4-field"><label>Current lender / possible penalty, if known</label><span class="p4-line"></span></div>
+  </div>
+  <h2 class="p4-section-title">04 &nbsp; WHAT MATTERS MOST?</h2>
+  <div class="p4-checkboxes"><span><i class="p4-box"></i>Lower payment</span><span><i class="p4-box"></i>Lower total cost</span><span><i class="p4-box"></i>Pay off sooner</span><span><i class="p4-box"></i>Use home equity</span><span><i class="p4-box"></i>More flexibility</span></div>
+  <h2 class="p4-section-title">05 &nbsp; NOTES / QUESTIONS FOR THE SPECIALIST</h2>
+  <div class="p4-notes"></div>
+  <h2 class="p4-section-title">06 &nbsp; INTRODUCTION PERMISSION AND NEXT STEP</h2>
+  <p class="p4-consent"><i class="p4-box"></i>Yes, you may introduce me to a mortgage specialist. &nbsp;&nbsp; <i class="p4-box"></i>Not yet — let's check back later.</p>
+  <div class="p4-fields">
+    <div class="p4-field"><label>Person making the introduction</label><span class="p4-line"></span></div>
+    <div class="p4-field"><label>Follow-up date</label><span class="p4-line"></span></div>
+  </div>
+  <p class="p4-fine">This is a conversation worksheet, not a mortgage application. Please don't record SIN, banking credentials, ID numbers or private financial documents here. Share completed forms only through an approved secure process.</p>
+  <footer class="p1-footer"><span>A12 &nbsp;·&nbsp; Blank worksheet &nbsp;·&nbsp; Handle completed forms securely</span><span>04 &nbsp;/&nbsp; 04</span></footer>
+</section>
 </main><script>
 function fitPages(){const zoom=Math.min(1,(window.innerWidth-24)/816);document.documentElement.style.setProperty('--preview-zoom',zoom)}
 window.addEventListener('resize',fitPages);fitPages();
