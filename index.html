@@ -15,18 +15,74 @@ h1{font-size:36px;line-height:1.1;letter-spacing:-.04em;margin:0 0 14px;font-wei
 .footer{margin-top:auto;border-top:1px solid var(--line);padding-top:11px;display:flex;justify-content:space-between;font-size:10px;color:var(--muted)}
 .band{background:var(--light);border-left:3px solid var(--blue);padding:13px 16px;margin:10px 0 16px;font-size:13px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel{border:1px solid var(--line);padding:14px 15px}.panel p,.panel li{font-size:12px;color:var(--muted)}ul{padding-left:17px;margin:6px 0 0}.question{border-bottom:1px solid var(--line);padding:11px 0;font-size:13px}.question:first-child{padding-top:0}.question small{display:block;color:var(--muted);margin-top:4px;font-size:11px}
 .fields{display:grid;grid-template-columns:1fr 1fr;gap:12px 18px;margin-top:10px}.field label{display:block;font-size:11px;color:var(--muted);margin-bottom:5px}.line{height:24px;border-bottom:1px solid #9aafbe}.full{grid-column:1/-1}.choices{font-size:12px;line-height:2.2}.write-lines{background:repeating-linear-gradient(to bottom,transparent 0,transparent 30px,#bac9d2 31px,#bac9d2 32px);height:96px}.disclaimer{font-size:10px;color:var(--muted);margin-top:12px}
+
+/* Page 1: premium editorial design reference. Scoped to avoid altering the other pages. */
+.sheet--premium{--p1-ink:#152635;--p1-blue:#30546a;--p1-soft:#e8e8e3;--p1-stone:#f6f4ef;--p1-gold:#b89d72;padding:49px 56px 43px;color:var(--p1-ink);font-family:Arial,Helvetica,sans-serif}
+.p1-header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #b9c1c5;padding-bottom:15px}
+.p1-brand{font-size:23px;font-weight:850;letter-spacing:.15em;line-height:1}.p1-brand span{font-size:9px;letter-spacing:.22em;font-weight:600;margin-left:10px}
+.p1-header-tag{font-size:9px;letter-spacing:.22em;font-weight:750;color:#547080}
+.p1-hero{padding:29px 0 12px}.p1-eyebrow{font-size:10px;letter-spacing:.19em;font-weight:700;color:#677783;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.p1-eyebrow:before{content:"";height:1px;width:22px;background:var(--p1-gold)}
+.sheet--premium h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.054em;font-size:58px;line-height:1.01;margin:14px 0 14px;color:var(--p1-ink)}
+.sheet--premium h1 em{font-weight:400;font-style:italic;color:var(--p1-blue)}
+.p1-lead{max-width:617px;font-size:14px;line-height:1.52;color:#475965;margin:0}
+.p1-section-top{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid #8fa2ac;padding-bottom:10px;margin:12px 0 0}
+.sheet--premium .p1-section-top h2{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:20px;font-weight:400;letter-spacing:-.025em}
+.p1-section-top small{font-size:9px;letter-spacing:.16em;color:#75828b;font-weight:700}
+.p1-goal{display:grid;grid-template-columns:39px 230px 1fr;align-items:center;gap:8px;min-height:49px;border-bottom:1px solid #dbe1e3}
+.p1-goal-index{font-family:Georgia,serif;font-size:12px;color:#8f9ca3}.p1-goal-title{font-size:14px;font-weight:700;letter-spacing:-.013em}
+.p1-goal-desc{font-size:11px;line-height:1.4;color:#556672}
+.p1-case{background:#162e3d;color:#f7f8f7;margin:23px 0 0;padding:19px 23px 18px;position:relative}
+.p1-case:before{content:"";position:absolute;top:0;left:23px;width:58px;height:3px;background:#b89d72}
+.p1-case-eyebrow{font-size:9px;font-weight:800;letter-spacing:.2em;color:#bdcbd1}
+.p1-case-figures{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:15px 0 11px}
+.p1-case-figure{border-bottom:1px solid #59707d;padding-bottom:10px}.p1-case-figure small{font-size:10px;color:#b8cbd4;display:block;letter-spacing:.12em}
+.p1-case-figure strong{font-size:24px;font-weight:650;letter-spacing:-.04em}.p1-case-figure:last-child strong{color:#f0d7ad}
+.p1-case-result{display:flex;align-items:baseline;gap:16px}.p1-case-result b{font-size:38px;line-height:1;font-weight:700;letter-spacing:-.05em;color:#fff}
+.p1-case-result span{font-size:12px;color:#d1dce1}.p1-case-result strong{font-weight:700;color:#f0d7ad}
+.p1-case-note{font-size:9px;line-height:1.45;color:#c0cdd2;margin:12px 0 0}
+.p1-next{display:grid;grid-template-columns:174px 1fr;gap:24px;margin:19px 0 8px;align-items:start}
+.p1-next-title{font-family:Georgia,serif;font-size:21px;line-height:1.16;letter-spacing:-.03em}
+.p1-next-copy{font-size:12px;line-height:1.48;color:#4d616c;padding-top:1px}
+.p1-next-copy strong{font-weight:750;color:var(--p1-ink)}
+.p1-footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #c6cdd1;padding-top:12px;margin-top:auto;font-size:10px;color:#6a7881}
+.p1-footer span:first-child{letter-spacing:.02em}
+
 @media screen{.sheet{zoom:var(--preview-zoom,1)}}
 @media print{@page{size:letter;margin:0}html,body{background:#fff!important;margin:0;padding:0}.toolbar{display:none!important}.pages{padding:0}.sheet{zoom:1!important;width:8.5in;height:11in;box-shadow:none;margin:0;break-after:page;page-break-after:always}.sheet:last-child{break-after:auto;page-break-after:auto}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style></head><body>
 <div class="toolbar"><div><strong>A12 Mortgage Conversation Kit</strong><p>Four-page portrait proof · Development draft · Review before distribution</p></div><button onclick="window.print()">Print / Save PDF</button></div>
 <main class="pages">
-<section class="sheet" data-page="1"><div class="brand"><strong>A12</strong><span>Mortgage solutions</span></div><div class="kicker">Start with your goals</div><h1>Your Mortgage.<br>More Options.</h1><p class="lead">Buying a home, renewing or looking for more room in your budget? A conversation about your mortgage can help you understand your choices.</p>
-<h2>What are you looking to do?</h2><div class="grid">
-<div class="card"><h3>Buy a Home</h3><p>Explore financing options for your next purchase.</p></div><div class="card"><h3>Renew Your Mortgage</h3><p>Review your options before signing a renewal.</p></div>
-<div class="card"><h3>Refinance Your Home</h3><p>See whether changing your mortgage fits your goals.</p></div><div class="card"><h3>Consolidate Debt</h3><p>Explore whether combining eligible debts makes sense.</p></div><div class="card wide"><h3>Increase Cash Flow</h3><p>Explore ways to create more breathing room in your monthly budget.</p></div></div>
-<div class="figure"><div class="figure-label">Illustrative cash-flow scenario</div><div class="compare"><div><span>BEFORE</span><strong>$3,500/mo</strong></div><div><span>AFTER</span><strong>$2,800/mo</strong></div></div><div class="big">$700/month</div><div class="sub">$8,400 per year in lower monthly payments — not necessarily lower total costs.</div><p class="note">Example only; not a quote or guaranteed result. Figures are hypothetical and require verified loan balance, rates, amortization, fees and penalties. Refinancing may extend repayment and increase total interest paid.</p></div>
-<h2>What happens next?</h2><div class="steps"><div class="step"><b>01 · Tell us your goal</b>What would you like to improve?</div><div class="step"><b>02 · Meet a specialist</b>Review your situation and options.</div><div class="step"><b>03 · Compare the costs</b>Understand payments, fees and trade-offs.</div></div>
-<div class="footer"><span>A12 · Design draft · Not a mortgage offer</span><span>01 / 04</span></div></section>
+<section class="sheet sheet--premium" data-page="1">
+  <header class="p1-header"><div class="p1-brand">A12 <span>MORTGAGE</span></div><span class="p1-header-tag">MORTGAGE SOLUTIONS&nbsp;&nbsp; / &nbsp;&nbsp;01</span></header>
+  <div class="p1-hero">
+    <div class="p1-eyebrow">A CONVERSATION WORTH HAVING</div>
+    <h1>Your Mortgage.<br><em>More Options.</em></h1>
+    <p class="p1-lead">Your mortgage is a big part of your financial life. Whether you're buying, renewing or trying to free up cash each month, it's worth knowing what your options really are.</p>
+  </div>
+  <div class="p1-section-top"><h2>What are you looking to do?</h2><small>FIVE PLACES TO START</small></div>
+  <div class="p1-goals">
+    <div class="p1-goal"><span class="p1-goal-index">01</span><strong class="p1-goal-title">Buy a Home</strong><span class="p1-goal-desc">Find out what could work for your next purchase.</span></div>
+    <div class="p1-goal"><span class="p1-goal-index">02</span><strong class="p1-goal-title">Renew Your Mortgage</strong><span class="p1-goal-desc">See your options before signing a new term.</span></div>
+    <div class="p1-goal"><span class="p1-goal-index">03</span><strong class="p1-goal-title">Refinance Your Home</strong><span class="p1-goal-desc">Explore a change to your current mortgage.</span></div>
+    <div class="p1-goal"><span class="p1-goal-index">04</span><strong class="p1-goal-title">Consolidate Debt</strong><span class="p1-goal-desc">Look at the costs of bringing debts together.</span></div>
+    <div class="p1-goal"><span class="p1-goal-index">05</span><strong class="p1-goal-title">Increase Cash Flow</strong><span class="p1-goal-desc">Look for more breathing room in your budget.</span></div>
+  </div>
+  <div class="p1-case">
+    <div class="p1-case-eyebrow">WHAT A PAYMENT CHANGE COULD LOOK LIKE · HYPOTHETICAL</div>
+    <div class="p1-case-figures">
+      <div class="p1-case-figure"><small>BEFORE</small><strong>$3,500/mo</strong></div>
+      <div class="p1-case-figure"><small>AFTER</small><strong>$2,800/mo</strong></div>
+    </div>
+    <div class="p1-case-result"><b>$700/month</b><span><strong>$8,400 per year</strong> in lower payments</span></div>
+    <p class="p1-case-note">Illustration only. Not a quote or guaranteed saving. A lower payment may involve fees, penalties or a longer amortization and more total interest. A mortgage specialist must review the actual balance, rates, costs and eligibility.</p>
+  </div>
+  <div class="p1-next">
+    <div class="p1-next-title">What happens<br><em>next?</em></div>
+    <div class="p1-next-copy"><strong>Start with what matters to you.</strong> We'll introduce you to a qualified mortgage specialist who can review the numbers, explain the trade-offs and help you decide whether a change makes sense.</div>
+  </div>
+  <footer class="p1-footer"><span>A12 &nbsp;·&nbsp; Draft for review &nbsp;·&nbsp; Not a mortgage offer</span><span>01 &nbsp;/&nbsp; 04</span></footer>
+</section>
 <section class="sheet" data-page="2"><div class="brand"><strong>A12</strong><span>Mortgage business opportunity · Draft</span></div><div class="kicker">For agents and future teammates</div><h1>More Ways to Help.<br>More Ways to Earn.</h1><p class="lead">Homes and mortgages come up in everyday money conversations. You can help families get answers — and explore another way to build your business.</p>
 <h2>Keep the process simple</h2><div class="steps"><div class="step"><b>01 · Ask</b>Find out what the person wants to do.</div><div class="step"><b>02 · Introduce</b>With permission, connect them with a mortgage specialist.</div><div class="step"><b>03 · Follow through</b>Make sure they connected. Stay accountable for the relationship.</div></div>
 <div class="figure"><div class="figure-label">Illustrative writing-agent compensation</div><div class="compare"><div><span>FUNDED MORTGAGE VOLUME</span><strong>$500,000</strong></div><div><span>APPROXIMATE WRITING-AGENT AMOUNT</span><strong>$500</strong></div></div><div class="sub">Working example: about $100 per $100,000 funded. The amount shown is for the writing agent, after the broker/upline allocation.</div><p class="note">Illustration only. Actual compensation is subject to current written program rules, licensing or registration, eligibility, funding and required disclosures. No income or payment is guaranteed.</p></div>
