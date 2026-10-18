@@ -1,6 +1,6 @@
 # 8Twelve Mortgage Conversation Kit — Master Specification
 
-**Status:** Active master specification. Owner-directed six-sheet restructuring on 2026-10-18 supersedes the earlier four-sheet format only. All approved objectives, numbers, brokerage boundaries and voice requirements remain locked. Draft pending owner approval. This file is the design/content authority for `advisorpages/sandbox`. The knowledge base supplies the voice, doctrine and supporting facts, not a second competing production spec.
+**Status:** Active master specification. Owner-directed seven-sheet structure (four presentation sheets, three detachable advisor sheets) on 2026-10-18 supersedes the earlier four-sheet format only. All approved objectives, numbers, brokerage boundaries and voice requirements remain locked. Draft pending owner approval. This file is the design/content authority for `advisorpages/sandbox`. The knowledge base supplies the voice, doctrine and supporting facts, not a second competing production spec.
 
 ## Why we are making it
 
@@ -35,7 +35,7 @@ Apply the current KB authority, **not** a frozen paraphrase, whenever writing ne
 
 ## Approved page architecture — two two-page presentations plus separate job aids
 
-The owner found the earlier four-page combined kit too cramped and difficult to scan. The approved correction is **two pages devoted to mortgage solutions**, followed by **two pages devoted to the business opportunity**. The **Mortgage Conversation Guide and Discovery Form remain valuable and must not be deleted or compressed into those four marketing pages**. They are now a **separate two-page advisor tools PDF**, generated from the same HTML source.
+The owner found the earlier four-page combined kit too cramped and difficult to scan. The approved correction is **two pages devoted to mortgage solutions**, followed by **two pages devoted to the business opportunity**. The **Mortgage Conversation Guide and Discovery Form remain valuable and must not be deleted or compressed into those four marketing pages**. They are now a **separate three-page advisor tools PDF**, generated from the same HTML source.
 
 | # | Artifact / audience | Primary purpose | Essential content |
 |---|---|---|---|
@@ -45,8 +45,9 @@ The owner found the earlier four-page combined kit too cramped and difficult to 
 | **4** | Presentation — potential teammates | **Start Part-Time. Build With Support.** | Financial brokerage work, trainer-supported start, licensing, responsibility, optional team-building and a natural invitation. |
 | **5** | Separate agent tool | **Mortgage Conversation Guide.** | Real spoken questions, concerns, personal handoff, follow-up and separate optional recruiting discussion. |
 | **6** | Separate agent tool | **Mortgage Discovery.** | Blank appointment worksheet, optional information, introduction consent, follow-up and data minimization. |
+| **7** | Optional continuation to the discovery form | **Questions. Next Steps.** | Generous ruled handwriting space for specialist questions, personal priorities and agreed follow-up; no sensitive underwriting details. |
 
-**Publishing contract:** The preview shows all six pages in the order above, clearly separating presentation from advisor tools. Render one **four-page PDF** named `mortgage-conversation-kit.pdf` from pages 1–4 and one **two-page PDF** named `mortgage-agent-tools.pdf` from pages 5–6. Produce six individual portrait PNG proofs and one mobile preview screenshot. Print-ready output is **not** a six-page combined sales handout; the guide/form are detachable working documents.
+**Publishing contract:** The preview shows all six pages in the order above, clearly separating presentation from advisor tools. Render one **four-page PDF** named `mortgage-conversation-kit.pdf` from pages 1–4 and one **two-page PDF** named `mortgage-agent-tools.pdf` from pages 5–6. Produce seven individual portrait PNG proofs and one mobile preview screenshot. Print-ready output is **not** a six-page combined sales handout; the guide/form are detachable working documents.
 
 ### Pages 1–2 — mortgage solutions for families
 
@@ -71,16 +72,16 @@ Page 4 explains an actual business-building path: possible part-time start, trai
 
 Practical, short and speakable questions around renewal, payments, buying, debt/refinancing and common responses (“I'm just looking,” “I already have a broker,” “Who is 8Twelve?”). Diagnose first, respect a no, introduce the specialist personally and request permission to share the minimum contact details. Provide a concrete follow-up day. Only properly licensed 8Twelve mortgage professionals discuss mortgage rates, suitability, approvals, underwriting, recommendations and applications. If someone independently asks about joining the business, create a **separate** low-pressure leader introduction.
 
-### Page 6 — working discovery form
+### Pages 6–7 — working discovery form and optional continuation
 
-Large handwriting blanks for name and one chosen contact channel, purpose, timing, purchase/renewal/refinancing details, approximate existing mortgage context, financial goals, questions, introduction permission and follow-up. Consent must clearly name **8Twelve Mortgage** and authorize only name and provided phone/email for a personal specialist introduction. Further worksheet details require separate permission and a secure handoff. No SIN, government ID, bank credentials, credit reports or underwriting records in the public repository.
+Page 6 holds the compact first-appointment facts, goal checkboxes, contact details, explicit introduction consent and the follow-up. Page 7 is an **optional notes continuation**, giving generous lined space for questions the client wants to ask the licensed specialist, their priorities and confirmed next actions. Never shrink the form's lines until they effectively disappear in print. Consent must clearly name **8Twelve Mortgage** and authorize only name and provided phone/email for a personal specialist introduction. Further worksheet details require separate permission and a secure handoff. No SIN, government ID, bank credentials, credit reports or underwriting records in the public repository.
 
 **Protection of objectives:** This restructuring **adds breathing room**; it is not permission to remove recruiting, compensation, caveats, business-building, agent guidance or the form.
 
 
 ## Premium visual and format contract
 
-**Exactly six US Letter 8.5 × 11-inch portrait sheets in the HTML**, each **612 × 792 pt in PDF**. The first four are a client/business presentation; last two are detached agent aids. No A4/landscape, clipped text, overlap or unexpected blank pages. HTML is a shared production source for preview, two PDFs, and six standalone PNGs.
+**Exactly seven US Letter 8.5 × 11-inch portrait sheets in the HTML**, each **612 × 792 pt in PDF**. The first four are a client/business presentation; last three are detached agent aids. No A4/landscape, clipped text, overlap or unexpected blank pages. HTML is a shared production source for preview, two PDFs, and seven standalone PNGs.
 
 **Whitespace has a job:** the earlier kit was correctly judged too dense. Make each sheet understandable within seconds. Give it one dominant message, an obvious first-to-last reading path, larger body text and accessible disclosures, calm page margins, fewer simultaneous components and enough natural white space. Do not squeeze all proof points and sales/process/worksheet information onto one sheet.
 
@@ -101,13 +102,13 @@ The design acceptance test includes a **human skim test**, viewing all six page 
 This repository and GitHub Pages preview are intentionally public **for development only**. Never publish real client data, program contracts, credentials or private company files.
 
 Before declaring any deliverable final:
-1. Validate **six** portrait sheets and intended audience order: client/client, opportunity/opportunity, tool/tool.
+1. Validate **seven** portrait sheets and intended audience order: client/client, opportunity/opportunity, tool/tool.
 2. Check all five mortgage goals, $3,500−$2,800=$700, $700×12=$8,400 and $500,000 ÷ $100,000×$100=approximately $500.
 3. Keep client mortgage information away from recruiting/compensation; the latter belong to Pages 3–4.
 4. Verify 8Twelve credibility claims, attribution and separate-licence boundary; never promise lowest rate, approval or savings.
 5. Confirm the writing agent is shown as receiving the approximate amount **after broker/upline allocation**, with current-program uncertainty and licence eligibility.
 6. Retain distinct optional recruitment discussion, useful agent follow-up and named minimum-data consent.
-7. Run content QA and Chromium rendering. Assert **4-page presentation PDF + 2-page tools PDF**, US Letter geometry, six portrait PNGs and overflow detection.
+7. Run content QA and Chromium rendering. Assert **4-page presentation PDF + 3-page tools PDF**, US Letter geometry, seven portrait PNGs and overflow detection.
 8. Conduct actual visual review of the PNGs/PDFs, particularly financial notes and handwriting room; check mobile.
 9. Obtain current written program, brokerage marketing and applicable compliance checks before distribution. **Owner approval is required** to mark FINAL or APPROVED.
 
@@ -115,15 +116,15 @@ A passing GitHub Actions build means only the automated checks pass. It is not l
 
 ## Current development checkpoint
 
-- Owner requested a more breathable split: two client mortgage pages, two business-opportunity pages, with the existing two valuable tools **retained separately**.
-- `index.html` now uses the six-sheet structure. CI scripts must enforce the new contract and produce two distinct PDFs.
+- Owner requested a more breathable split: two client mortgage pages, two business-opportunity pages, with the existing two valuable tools **retained separately** with an optional notes continuation.
+- `index.html` now uses the seven-sheet structure. CI scripts must enforce the new contract and produce two distinct PDFs.
 - No change to the five mortgage categories, example numbers, commission allocation, KB authority or service/recruiting boundaries.
 - Print proof, human reading-path evaluation, compliance-source verification and final owner review remain essential; status remains **draft**.
 
 
 ## Workflow and change control
 
-**Read this spec and the current KB voice doctrine → draft copy → check facts/math/roles → design six sheets → render both PDFs and six PNGs → run CI → inspect at print/mobile size → owner approves.**
+**Read this spec and the current KB voice doctrine → draft copy → check facts/math/roles → design seven sheets → render both PDFs and seven PNGs → run CI → inspect at print/mobile size → owner approves.**
 
 Treat this file as the production contract; make explicit, reviewed changes when objectives or locked numbers change. GitHub Pages deployment is **not** the same as editorial/compliance approval. Do not modify the knowledge base solely to make the front-end build pass.
 
