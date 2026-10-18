@@ -20,7 +20,7 @@ try {
     return {page:i+1,width:Math.round(sb.width),height:Math.round(sb.height),
       scrollHeight:sheet.scrollHeight,clientHeight:sheet.clientHeight,overflowing};
   }));
-  if(errors.length!==6)throw new Error('Expected exactly six printable sheets, got '+errors.length);
+  if(errors.length!==7)throw new Error('Expected exactly seven printable sheets, got '+errors.length);
   const failures=[];
   for(const e of errors){
     console.log('Page layout:',JSON.stringify(e));
@@ -31,7 +31,7 @@ try {
   if(failures.length)throw new Error(failures.join('\n'));
 
   // Produce six individual page proofs from precisely the same HTML as the PDF.
-  for(let i=0;i<6;i++)await page.locator('.sheet').nth(i).screenshot({
+  for(let i=0;i<7;i++)await page.locator('.sheet').nth(i).screenshot({
     path:'dist/page-'+(i+1)+'.png',animations:'disabled',scale:'css'
   });
 
@@ -51,8 +51,8 @@ try {
   await toolPage.emulateMedia({media:'print'});
   await toolPage.evaluate(()=>document.body.offsetHeight);
   const activeTools=await toolPage.evaluate(()=>[...document.querySelectorAll('.sheet')].filter(x=>getComputedStyle(x).display!=='none').length);
-  if(activeTools!==2)throw new Error('Print-tools media unexpectedly shows '+activeTools+' sheets');
-  await toolPage.pdf({...pdfOpts,path:'dist/mortgage-agent-tools.pdf'}); // two page field aids
+  if(activeTools!==3)throw new Error('Print-tools media unexpectedly shows '+activeTools+' sheets');
+  await toolPage.pdf({...pdfOpts,path:'dist/mortgage-agent-tools.pdf'}); // three page field aids
   await toolPage.close();
 
   // Mobile preview intentionally scales each printable sheet, retaining fixed page geometry.
@@ -67,10 +67,10 @@ try {
     })
   }));
   console.log('Mobile layout:',JSON.stringify(data));
-  if(data.sheets.length!==6||data.scrollWidth>data.width+2||
+  if(data.sheets.length!==7||data.scrollWidth>data.width+2||
      data.sheets.some(s=>s.left< -1||s.right>data.width+1))
     throw new Error('Mobile preview clips a sheet or scrolls horizontally');
   await mobile.screenshot({path:'dist/mobile-preview.png',fullPage:true,animations:'disabled'});
   await mobile.close();
-  console.log('Wrote four-page presentation PDF, two-page advisor tools PDF, six PNGs and mobile proof.');
+  console.log('Wrote four-page presentation PDF, three-page advisor tools PDF, seven PNGs and mobile proof.');
 }finally{await browser.close();}
