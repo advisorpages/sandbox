@@ -1,8 +1,8 @@
 {
-  "name": "a12-mortgage-conversation-kit",
+  "name": "8twelve-mortgage-conversation-kit",
   "private": true,
   "version": "0.1.0",
-  "description": "Four-page mortgage conversation kit development preview",
+  "description": "Four-page 8Twelve Mortgage conversation kit development preview",
   "type": "module",
   "scripts": {
     "verify": "node scripts/verify-kit.mjs",
