@@ -11,12 +11,12 @@ Current voice and dialogue standards live in the **Tribe PRI knowledge base** (`
 
 The **client and recruiting presentation is four pages**: two devoted to mortgage solutions (needs/example, then 8Twelve credibility and introduction), and two devoted to business opportunity (client service/compensation, then trainer-supported growth). The former one-page-per-topic design was too cramped, so this is an intentional editorial split.
 
-Two further **detachable advisor tools** preserve the practical conversation guide and writable mortgage discovery form; **these do not belong in the client/opportunity presentation PDF**.
+The **detachable advisor-tools PDF** preserves the conversation guide, one-page discovery form, and an **optional full-page ruled notes continuation**. These are not part of the client/opportunity presentation.
 
-- [Browser preview](https://advisorpages.github.io/sandbox/) — all six sheets in this order.
+- [Browser preview](https://advisorpages.github.io/sandbox/) — all seven sheets in this order.
 - [Four-page presentation PDF](https://advisorpages.github.io/sandbox/proofs/mortgage-conversation-kit.pdf).
-- [Two-page advisor-tools PDF](https://advisorpages.github.io/sandbox/proofs/mortgage-agent-tools.pdf).
-- Individual portrait previews: `proofs/page-1.png` to `proofs/page-6.png`.
+- [Three-page advisor-tools PDF](https://advisorpages.github.io/sandbox/proofs/mortgage-agent-tools.pdf).
+- Individual portrait previews: `proofs/page-1.png` to `proofs/page-7.png`.
 - Mobile visual QA: `proofs/mobile-preview.png`.
 - `index.html` is the single HTML/CSS source for both PDFs and all previews.
 - Corporate logo and colours are provisional. Correct written **8Twelve Mortgage** name is required.
@@ -32,6 +32,6 @@ npm run render
 python -m pip install pypdf
 python scripts/verify-pdf.py
 ```
-GitHub Actions runs these checks before publishing. It also saves the four-page presentation PDF, separate two-page advisor-tools PDF, six portrait PNGs and mobile QA proof as a workflow artifact.
+GitHub Actions runs these checks before publishing. It also saves the four-page presentation PDF, separate three-page advisor-tools PDF, seven portrait PNGs and mobile QA proof as a workflow artifact.
 
 **A green workflow means code/print checks passed; it does not mean the owner approved the copy, visual design, credibility claims, licensing facts or compensation disclosures for distribution.** Each new version needs a human read-aloud voice review, a visual design review and factual verification against the appropriate program.
