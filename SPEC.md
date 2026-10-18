@@ -47,7 +47,7 @@ The owner found the earlier four-page combined kit too cramped and difficult to 
 | **6** | Separate agent tool | **Mortgage Discovery.** | Blank appointment worksheet, optional information, introduction consent, follow-up and data minimization. |
 | **7** | Optional continuation to the discovery form | **Questions. Next Steps.** | Generous ruled handwriting space for specialist questions, personal priorities and agreed follow-up; no sensitive underwriting details. |
 
-**Publishing contract:** The preview shows all six pages in the order above, clearly separating presentation from advisor tools. Render one **four-page PDF** named `mortgage-conversation-kit.pdf` from pages 1–4 and one **two-page PDF** named `mortgage-agent-tools.pdf` from pages 5–6. Produce seven individual portrait PNG proofs and one mobile preview screenshot. Print-ready output is **not** a six-page combined sales handout; the guide/form are detachable working documents.
+**Publishing contract:** The preview shows all seven pages in the order above, clearly separating presentation from advisor tools. Render one **four-page PDF** named `mortgage-conversation-kit.pdf` from pages 1–4 and one **three-page PDF** named `mortgage-agent-tools.pdf` from pages 5–7. Produce seven individual portrait PNG proofs and one mobile preview screenshot. Print-ready output is **not** a seven-page combined sales handout; the guide/form are detachable working documents.
 
 ### Pages 1–2 — mortgage solutions for families
 
@@ -95,14 +95,14 @@ Page 6 holds the compact first-appointment facts, goal checkboxes, contact detai
 - Correct spelled **8Twelve Mortgage** name; corporate logo/brand graphics are deferred. Do not invent them.
 - Mobile preview must scale each print page without cropping. It is a print-first proof, not necessarily a reflowed mobile article.
 
-The design acceptance test includes a **human skim test**, viewing all six page PNGs at actual print size and on a mobile phone. A green script alone never means visually approved.
+The design acceptance test includes a **human skim test**, viewing all seven page PNGs at actual print size and on a mobile phone. A green script alone never means visually approved.
 
 ## Publishing and quality gates
 
 This repository and GitHub Pages preview are intentionally public **for development only**. Never publish real client data, program contracts, credentials or private company files.
 
 Before declaring any deliverable final:
-1. Validate **seven** portrait sheets and intended audience order: client/client, opportunity/opportunity, tool/tool.
+1. Validate **seven** portrait sheets and intended audience order: client/client, opportunity/opportunity, tool/tool/tool.
 2. Check all five mortgage goals, $3,500−$2,800=$700, $700×12=$8,400 and $500,000 ÷ $100,000×$100=approximately $500.
 3. Keep client mortgage information away from recruiting/compensation; the latter belong to Pages 3–4.
 4. Verify 8Twelve credibility claims, attribution and separate-licence boundary; never promise lowest rate, approval or savings.
