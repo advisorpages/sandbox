@@ -1,4 +1,4 @@
-name: Publish A12 Mortgage Kit Preview
+name: Publish 8Twelve Mortgage Kit Preview
 
 on:
   push:
@@ -38,7 +38,7 @@ jobs:
       - name: Verify content, figures, and audience
         run: npm run verify
 
-      - name: Render all pages and reject overflow
+      - name: Render all pages and validate print + mobile geometry
         run: npm run render
 
       - name: Set up Python for PDF validation
@@ -51,7 +51,7 @@ jobs:
           python -m pip install pypdf
           python scripts/verify-pdf.py
 
-      - name: Save proof PDF and four page previews
+      - name: Save print, mobile and page proofs
         uses: actions/upload-artifact@v4
         with:
           name: mortgage-kit-print-proof
