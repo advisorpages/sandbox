@@ -29,6 +29,8 @@ Apply the current KB authority, **not** a frozen paraphrase, whenever writing ne
 
 **Voice acceptance checklist:** Plain Canadian English; Grade 6–7 for field/client copy; short human sentences; lead with the person's real situation or the dollar example; simple math before theory; calm, warm, credible and direct; explain unfamiliar terms; give a real next step; questions must sound like something someone would say; no stiff corporate wording, hype, manufactured urgency, jargon, guaranteed outcomes, patronizing or forced slogans. An objection is a concern to understand, not a script to bulldoze. Different audiences have different registers; one consistent human voice.
 
+**Cross-brand boundary:** Use the KB's language, warmth and conversation standards, but do not import unrelated company claims, taglines or logos into A12-branded sheets. A12 is the separate licensed mortgage brokerage; the team-building conversation concerns the advisor's financial brokerage business, not automatic employment or licensure with A12. Keep those roles accurate.
+
 **Before approving copy:** Read each headline and spoken line aloud. Ask: "Would this sound natural across a kitchen table?" If not, revise. A passing automated build is *not* voice approval.
 
 ## Four locked pages
