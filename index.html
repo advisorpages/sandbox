@@ -43,6 +43,28 @@ h1{font-size:36px;line-height:1.1;letter-spacing:-.04em;margin:0 0 14px;font-wei
 .p2-close{display:grid;grid-template-columns:151px 1fr;gap:22px;border-top:1px solid #c4cdd1;padding-top:15px;margin-top:19px}
 .p2-close b{font:normal 19px/1.14 Georgia,serif}.p2-close p{font-size:12px;line-height:1.5;color:#4c606e;margin:0}
 
+
+/* Page 3: spoken conversation aid, not a stack of marketing cards. */
+.p3-intro{padding:29px 0 18px}.sheet--premium .p3-intro h1{font-size:48px;line-height:1.04;margin:11px 0 13px}
+.p3-intro p{font-size:14px;line-height:1.48;color:#526572;margin:0;max-width:595px}
+.p3-columns{display:grid;grid-template-columns:1.06fr .94fr;gap:32px;margin-top:9px}
+.p3-column-title{font:normal 20px Georgia,serif;padding-bottom:10px;margin:0;border-bottom:1px solid #96a7b1}
+.p3-question{border-bottom:1px solid #e0e5e7;padding:14px 0 13px}
+.p3-question:last-child{border-bottom:0}
+.p3-question small{font-size:9px;letter-spacing:.16em;color:#687e89;font-weight:750;display:block;margin-bottom:4px}
+.p3-question strong{display:block;font-size:14px;line-height:1.35;color:#1b3342;font-weight:700}
+.p3-question p{font-size:11px;color:#647680;line-height:1.45;margin:4px 0 0}
+.p3-answer{border-bottom:1px solid #e0e5e7;padding:14px 0 13px}
+.p3-answer small{font-size:9px;letter-spacing:.16em;color:#687e89;font-weight:750}
+.p3-answer strong{display:block;font-size:12px;color:#2a3f4c;margin:4px 0 6px}
+.p3-answer p{font-size:12px;color:#526571;margin:0;line-height:1.43}
+.p3-handoff{margin-top:18px;background:#f2f0eb;border-left:3px solid #b89d72;padding:16px 18px}
+.p3-handoff small{font-size:9px;letter-spacing:.15em;font-weight:750;color:#69737b}
+.p3-handoff p{font:17px/1.38 Georgia,serif;color:#253d4d;margin:7px 0 0}
+.p3-follow{margin-top:20px;border-top:1px solid #a8b5bc;padding-top:11px;display:grid;grid-template-columns:126px 1fr;gap:22px}
+.p3-follow h2{font:normal 19px Georgia,serif;margin:0}.p3-follow p{font-size:11px;line-height:1.5;color:#4e616d;margin:0}
+.p3-boundary{font-size:9px;line-height:1.45;color:#73818b;margin:13px 0 0}
+
 /* Page 1: premium editorial design reference. Scoped to avoid altering the other pages. */
 .sheet--premium{--p1-ink:#152635;--p1-blue:#30546a;--p1-soft:#e8e8e3;--p1-stone:#f6f4ef;--p1-gold:#b89d72;padding:49px 56px 43px;color:var(--p1-ink);font-family:Arial,Helvetica,sans-serif}
 .p1-header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #b9c1c5;padding-bottom:15px}
@@ -144,12 +166,33 @@ h1{font-size:36px;line-height:1.1;letter-spacing:-.04em;margin:0 0 14px;font-wei
   </div>
   <footer class="p1-footer"><span>A12 &nbsp;·&nbsp; Development draft &nbsp;·&nbsp; Program terms must be confirmed</span><span>02 &nbsp;/&nbsp; 04</span></footer>
 </section>
-<section class="sheet" data-page="3"><div class="brand"><strong>A12</strong><span>Conversation guide · Draft</span></div><div class="kicker">Advisor reference</div><h1>Mortgage<br>Conversation Guide.</h1><p class="lead">The goal is not to pitch a mortgage. It is to find out whether a review would be useful.</p>
-<h2>Start with one question</h2><div class="panel"><div class="question">“When is your mortgage coming up for renewal?”<small>Useful for homeowners who may not have reviewed alternatives.</small></div><div class="question">“Are you comfortable with your current monthly payments?”<small>Opens a conversation about cash flow without promising savings.</small></div><div class="question">“Any plans to move, renovate or make a large purchase?”<small>Helps clarify upcoming financing needs.</small></div><div class="question">“Have you looked at the full cost of refinancing?”<small>Creates room to discuss penalties, fees and repayment length.</small></div></div>
-<h2>Listen for the real goal</h2><div class="two-col"><div class="panel"><h3>“My renewal is coming.”</h3><p>“When is it due, and have you had a chance to compare your options?”</p></div><div class="panel"><h3>“I'm paying too much.”</h3><p>“Is the main concern the monthly payment or the overall cost?”</p></div><div class="panel"><h3>“I'm just looking.”</h3><p>“Of course. Would a no-pressure review help you understand what's available?”</p></div><div class="panel"><h3>“I already have a broker.”</h3><p>“That's good. Have they walked you through the total costs and alternatives?”</p></div></div>
-<h2>Close with a clear handoff</h2><div class="band">“If you'd like, I can introduce you to a mortgage specialist. They can review the numbers with you, and you can decide what makes sense.”</div>
-<div class="panel"><h3>Follow-up checklist</h3><p>Ask permission → Make the introduction → Confirm contact → Check back. If someone asks about joining the business, offer a separate conversation with a team leader.</p></div>
-<div class="footer"><span>A12 · Conversation training draft</span><span>03 / 04</span></div></section>
+<section class="sheet sheet--premium" data-page="3">
+  <header class="p1-header"><div class="p1-brand">A12 <span>MORTGAGE</span></div><span class="p1-header-tag">CONVERSATION GUIDE&nbsp;&nbsp; / &nbsp;&nbsp;03</span></header>
+  <div class="p3-intro">
+    <div class="p1-eyebrow">A FEW BETTER QUESTIONS</div>
+    <h1>Mortgage<br><em>Conversation Guide.</em></h1>
+    <p>You don't need a perfect script. Start with what matters to the person. Listen first. Then decide whether an introduction would help.</p>
+  </div>
+  <div class="p3-columns">
+    <div>
+      <h2 class="p3-column-title">Where to start</h2>
+      <div class="p3-question"><small>HOMEOWNER / RENEWAL</small><strong>“When does your mortgage come up for renewal?”</strong><p>If it's coming soon: “Have you compared your options yet?”</p></div>
+      <div class="p3-question"><small>PAYMENTS / CASH FLOW</small><strong>“Are you comfortable with what you're paying each month?”</strong><p>Ask whether their concern is the monthly payment or total cost.</p></div>
+      <div class="p3-question"><small>BUYING / MOVING</small><strong>“Any plans to buy, move or renovate?”</strong><p>Ask about their timing. Let a mortgage specialist discuss financing.</p></div>
+      <div class="p3-question"><small>REFINANCING / DEBT</small><strong>“What's the main thing you're hoping to change?”</strong><p>Listen for the goal. Don't suggest a loan before reviewing the trade-offs.</p></div>
+    </div>
+    <div>
+      <h2 class="p3-column-title">When they respond</h2>
+      <div class="p3-answer"><small>“I'M JUST LOOKING.”</small><strong>That's okay.</strong><p>“What are you trying to figure out? Maybe I can connect you with someone who can answer that.”</p></div>
+      <div class="p3-answer"><small>“I ALREADY HAVE A BROKER.”</small><strong>Respect the relationship.</strong><p>“That's good. Have they had a chance to walk you through your options and the total costs?”</p></div>
+      <div class="p3-answer"><small>IF SOMEONE ASKS ABOUT JOINING</small><strong>Make it a separate conversation.</strong><p>“There's a business side to this too. If you're curious, I can introduce you to a team leader who can walk you through the work and the numbers.”</p></div>
+    </div>
+  </div>
+  <div class="p3-handoff"><small>THE PERSONAL INTRODUCTION</small><p>“I've got a mortgage specialist I work with. Would you be open to a conversation so you can see what options you have?”</p></div>
+  <div class="p3-follow"><h2>Then follow through.</h2><p>Ask permission → Make the introduction → Confirm they connected → Check back. You own the relationship. The licensed mortgage specialist handles advice, rates, applications and eligibility.</p></div>
+  <p class="p3-boundary">Do not promise approval, quote mortgage rates, recommend products or request confidential underwriting details. A clear “no” is an answer to respect.</p>
+  <footer class="p1-footer"><span>A12 &nbsp;·&nbsp; Conversation training draft</span><span>03 &nbsp;/&nbsp; 04</span></footer>
+</section>
 <section class="sheet" data-page="4"><div class="brand"><strong>A12</strong><span>Mortgage discovery worksheet · Draft</span></div><div class="kicker">Conversation notes</div><h1>Mortgage Discovery.</h1><p class="lead">Use this worksheet to understand the client's goals before introducing a mortgage specialist. Share information only with the client's permission.</p>
 <div class="fields"><div class="field"><label>Client name</label><div class="line"></div></div><div class="field"><label>Date</label><div class="line"></div></div><div class="field"><label>Preferred contact method</label><div class="line"></div></div><div class="field"><label>Best time to connect</label><div class="line"></div></div></div>
 <h2>What brings you in?</h2><div class="choices">□ Purchase &nbsp;&nbsp; □ Renewal &nbsp;&nbsp; □ Refinance &nbsp;&nbsp; □ Debt consolidation &nbsp;&nbsp; □ Cash flow &nbsp;&nbsp; □ Other</div>
