@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the 4-page presentation and distinct 2-page agent tools, all US Letter."""
+"""Validate 4 presentation pages plus notes and distinct 2-page agent tools, all US Letter."""
 from pathlib import Path
 from pypdf import PdfReader
 import struct
@@ -7,16 +7,18 @@ import struct
 base=Path("dist")
 expected={
   "mortgage-conversation-kit.pdf":[
-    ["YourMortgage.", "MoreOptions.", "$3,500/mo", "$2,800/mo", "$700/month", "$8,400peryear"],
-    ["OneConversation.", "MoreChoices.", "65+", "13072", "8Twelve"],
-    ["MoreWaystoHelp.", "MoreWaystoEarn.", "$500,000", "$500"],
-    ["StartPart-Time.", "BuildWithSupport.", "trainer", "licensing"],
+    ["Whatdoyouwantyourmortgagetodo?", "Torontofamilies", "$5,798", "$4,757", "$1,041", "$171,000", "$85,000", "$520.50", "17.8years", "7.2yearssooner", "4.3yearssooner", "yourhomesecuresthecombinedamount"],
+    ["Why8Twelve", "Mortgage?", "65+", "8Twelve"],
+    ["ReferaMortgage.", "BuildaBusiness.", "$500,000", "$430", "$810"],
+    ["StartPart-Time.", "BuildWithSupport.", "trainer", "Getqualified"],
+    ["IllustrationNotes.", "Regularinvesting", "annualratedividedby12", "13072"],
   ],
   "mortgage-agent-tools.pdf":[
     ["Mortgage", "ConversationGuide.", "8Twelve"],
     ["Mortgage", "Discovery.", "sharemyname", "8Twelve"]
   ]
 }
+source_pages={"mortgage-conversation-kit.pdf": [1,2,3,4,7], "mortgage-agent-tools.pdf": [5,6]}
 all_pages=0
 for filename,pages in expected.items():
     reader=PdfReader(str(base/filename))
@@ -24,20 +26,20 @@ for filename,pages in expected.items():
     for n,(page,terms) in enumerate(zip(reader.pages,pages),1):
         w,h=float(page.mediabox.width),float(page.mediabox.height)
         assert abs(w-612)<.5 and abs(h-792)<.5, f"{filename} p{n}: {w}x{h}pt"
-        extracted="".join((page.extract_text() or "").split())
+        extracted="".join((page.extract_text() or "").split()).casefold()
         for term in terms:
-            assert "".join(term.split()) in extracted, f"{filename} page {n} missing {term}"
+            assert "".join(term.split()).casefold() in extracted, f"{filename} page {n} missing {term}"
         all_pages+=1
-        png=base/f"page-{all_pages}.png"
+        png=base/f"page-{source_pages[filename][n-1]}.png"
         signature=png.read_bytes()
         assert signature[:8]==bytes((137,80,78,71,13,10,26,10)), f"{png}: invalid PNG"
         px_w,px_h=struct.unpack(">II",signature[16:24])
         assert (px_w,px_h)==(816,1056), f"{png}: wrong size {px_w}x{px_h}"
         print(f"PASS {filename} page {n}: 612x792pt, PNG {px_w}x{px_h}")
-assert all_pages==6
+assert all_pages==7
 mobile=(base/"mobile-preview.png").read_bytes()
 assert mobile[:8]==bytes((137,80,78,71,13,10,26,10))
 mw,mh=struct.unpack(">II",mobile[16:24])
 assert mw==390 and mh>844, f"Unexpected mobile image size {mw}x{mh}"
 print(f"PASS mobile preview {mw}x{mh}")
-print("PASS: exactly four presentation sheets and two independent advisor sheets")
+print("PASS: four presentation sheets, their shared notes, and two independent advisor sheets")

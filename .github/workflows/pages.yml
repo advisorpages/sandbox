@@ -17,6 +17,9 @@ concurrency:
 jobs:
   qa-and-deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 8twelve-mortgage-kit
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -55,7 +58,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: mortgage-kit-print-proof
-          path: dist/
+          path: 8twelve-mortgage-kit/dist/
           retention-days: 30
 
       - name: Prepare public development site
@@ -70,7 +73,7 @@ jobs:
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: 8twelve-mortgage-kit/site
 
       - name: Deploy
         id: deployment

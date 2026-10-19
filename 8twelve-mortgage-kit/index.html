@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>8Twelve Mortgage — Solutions & Business Opportunity | Draft</title>
+<style>
+:root{--ink:#172b3b;--muted:#526775;--soft:#eff3f3;--paper:#fff;--gold:#b49a70;--line:#becbd0;--mist:#eaf0f1}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e5ebee;font:15px/1.5 Arial,Helvetica,sans-serif;color:var(--ink)}
+button,a{font:inherit}.toolbar{background:#192e3c;color:white;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.toolbar strong{font-size:17px}.toolbar small{display:block;font-size:12px;color:#c7d7df}.toolbar nav{display:flex;gap:17px;align-items:center;flex-wrap:wrap}
+.toolbar a{color:#f6f6f3;text-decoration:underline;text-underline-offset:4px;font-size:12px}.toolbar button{padding:9px 13px;background:white;color:var(--ink);border:0;cursor:pointer;font-weight:700}
+.section-marker{width:816px;margin:26px auto 9px;padding:0 2px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#567080;font-weight:700}
+.pages{padding:24px 12px 42px}
+.sheet{width:816px;height:1056px;margin:0 auto 28px;background:var(--paper);box-shadow:0 12px 34px #172b3b20;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:51px 62px 45px}
+.kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#476b7f;margin:24px 0 9px}
+h1,h2,h3,p{margin:0}h1,h2,.serif{font-family:Georgia,"Times New Roman",serif;font-weight:400}h1{font-size:54px;letter-spacing:-.05em;line-height:1.04}h1 em{font-weight:400;color:#365c73}h2{font-size:29px;line-height:1.12;letter-spacing:-.035em}h3{font-size:17px;line-height:1.25}.lead{font-size:17px;line-height:1.48;max-width:630px;color:#3e5767;margin:17px 0 0}
+.sublead{font-size:15px;line-height:1.46;color:#4b6574}
+.footer{border-top:1px solid #bac7ce;padding-top:11px;margin-top:auto;display:flex;justify-content:space-between;align-items:center;color:#607580;font-size:10.5px}
+.footer b{font-weight:500}
+.rule-label{font-size:10px;letter-spacing:.14em;color:#587182;text-transform:uppercase;font-weight:700}
+.note{font-size:11.2px;line-height:1.42;color:#566e7b}
+/* PAGE 1: architectural editorial — client needs lead; the illustration supports.
+   Font assets are self-hosted; these families and colours are scoped to this sheet. */
+@font-face{font-family:"DM Serif Display";src:url("assets/fonts/dm-serif-display-regular.ttf") format("truetype");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"DM Serif Display";src:url("assets/fonts/dm-serif-display-italic.ttf") format("truetype");font-style:italic;font-weight:400;font-display:swap}
+@font-face{font-family:Manrope;src:url("assets/fonts/manrope-variable.ttf") format("truetype");font-style:normal;font-weight:200 800;font-display:swap}
+.page1{--ink:#193440;--muted:#52656b;--gold:#c7ae7e;--line:#d6d5cb;background:#f7f5ee;padding:0 48px 30px;font-family:Manrope,sans-serif;color:var(--ink)}
+.page1>*{flex-shrink:0}
+.page1 .presentation-opening{position:relative;isolation:isolate;display:grid;grid-template-columns:290px 1fr;gap:38px;align-items:center;min-height:306px;margin:0 -48px;padding:34px 44px;background:var(--ink);color:#f7f5ee;overflow:hidden}
+.page1 .presentation-opening::before{content:"";position:absolute;z-index:-1;left:-96px;top:88px;width:360px;height:360px;border:1px solid #ffffff0a;transform:rotate(45deg);pointer-events:none}
+.page1 .presentation-opening::after{content:"";position:absolute;z-index:-1;left:-48px;top:136px;width:264px;height:264px;border:1px solid #c7ae7e16;transform:rotate(45deg);pointer-events:none}
+.page1 h1{font:400 46px/1.06 "DM Serif Display",Georgia,serif;letter-spacing:-.025em;position:relative;padding-bottom:24px}
+.page1 h1::after{content:"";position:absolute;bottom:0;left:0;width:42px;height:2px;background:var(--gold)}
+.page1 h1 em{display:inline;font-style:italic;color:#d8c39b}
+.page1 .options{list-style:none;padding:0 0 0 26px;margin:0;border-left:1px solid #ffffff24;display:grid;grid-template-columns:1fr;gap:0;font-size:26px;line-height:1.25;font-weight:500;letter-spacing:-.035em}
+.page1 .options li{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid #ffffff20}
+.page1 .options li:first-child{padding-top:0}
+.page1 .options li:last-child{padding-bottom:0;border-bottom:0}
+.page1 .options li::before{content:"";width:5px;height:5px;transform:rotate(45deg);background:var(--gold);flex-shrink:0}
+.page1 .hero-money{margin-top:18px}
+.page1 .hero-money .example-context{font:400 22px/1.2 "DM Serif Display",Georgia,serif;letter-spacing:-.01em;color:var(--ink)}
+.page1 .example-story{font-size:14px;line-height:1.5;color:var(--muted);margin-top:8px;margin-bottom:12px;max-width:700px}
+.page1 .payment-comparison{width:100%;border-collapse:collapse;table-layout:fixed;margin:6px 0 0;font-size:14px;font-variant-numeric:tabular-nums}
+.page1 .payment-comparison caption.visually-hidden{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.page1 .payment-comparison caption{text-align:left;font-size:14px;color:var(--muted);padding-top:4px;padding-bottom:12px}
+.page1 .payment-comparison th:first-child{width:66%;text-align:left}
+.page1 .payment-comparison th:nth-child(2),.page1 .payment-comparison th:nth-child(3){width:17%}
+.page1 .payment-comparison th,.page1 .payment-comparison td{text-align:right;padding:2px 0;border-bottom:1px solid var(--line);line-height:1.3}
+.page1 .payment-comparison thead th{font-size:11px;font-weight:700;letter-spacing:.035em;text-transform:uppercase;color:var(--muted);padding-top:0;padding-bottom:7px}
+.page1 .payment-comparison tbody th,.page1 .payment-comparison tbody td{padding-top:9px;padding-bottom:9px}
+.page1 .payment-comparison tbody th{font-weight:500;color:#40565e;padding-right:8px;white-space:nowrap}
+.page1 .payment-comparison .debt-name{display:inline-block;min-width:164px;padding-left:10px;border-left:3px solid var(--gold);font-size:15px;line-height:1.25;font-weight:800;letter-spacing:-.02em;color:var(--ink)}
+.page1 .payment-comparison .debt-balance{font-weight:400;color:inherit}
+.page1 .payment-comparison .debt-detail{display:inline;margin-left:0;font-size:14px;line-height:1.3;font-weight:400;color:#617178}
+.page1 .payment-comparison tbody td:last-child{font-weight:600}
+.page1 .payment-comparison .included{color:#7b8989}
+.page1 .payment-comparison tfoot th,.page1 .payment-comparison tfoot td{border-bottom:0;padding-top:14px;padding-bottom:4px;font-size:18px;font-weight:700}
+.page1 .payment-comparison tfoot th{font-size:12px}
+.page1 .payments-difference{position:relative;display:flex;align-items:center;justify-content:flex-end;gap:12px;margin-top:4px;padding-top:22px}
+.page1 .payments-difference::before{content:"";position:absolute;top:0;left:calc(83% - 32px);right:32px;height:8px;border:solid var(--gold);border-width:0 2px 2px;border-radius:0 0 3px 3px}
+.page1 .payments-difference::after{content:"";position:absolute;top:8px;left:calc(91.5% - 32px);height:8px;border-left:2px solid var(--gold)}
+.page1 .payments-difference strong{font:400 30px/1 "DM Serif Display",Georgia,serif;letter-spacing:-.025em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.page1 .payments-difference .difference-label{max-width:114px;font-size:14px;line-height:1.3;color:#40565e}
+.page1 .possibilities{margin:12px -48px 0;padding:10px 48px 8px;background:#eae3d2;border-top:2px solid var(--gold)}
+.page1 .possibilities-title{font:400 26px/1.2 "DM Serif Display",Georgia,serif;letter-spacing:-.015em;color:var(--ink);margin-bottom:10px}
+.page1 .possibilities-title b{font-weight:400;font-style:italic;color:#79603a}
+.page1 .possibility-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 36px}
+.page1 .possibility-grid article{padding-top:9px;border-top:1px solid #c9bea7}
+.page1 .possibility-grid h3{font-size:14px;font-weight:650;line-height:1.25;color:#40565e;margin-bottom:5px}
+.page1 .possibility-grid p.outcome{margin:0;font:400 29px/1.1 "DM Serif Display",Georgia,serif;letter-spacing:-.015em;color:var(--ink);font-variant-numeric:tabular-nums}
+.page1 .possibility-grid p{font-size:14px;line-height:1.4;color:var(--muted);margin-top:5px}
+.page1 .footer{border-color:var(--line);padding-top:9px;color:#60716f;font-size:10px}
+/* PAGE 2: lighter editorial companion — credibility first, navy introduction close. */
+.page2{--ink:#193440;--muted:#52656b;--gold:#c7ae7e;--line:#d6d5cb;background:#f7f5ee;padding:0 48px 30px;font-family:Manrope,sans-serif;color:var(--ink)}
+.page2>*{flex-shrink:0}
+.page2 .team-opening{padding-top:28px}
+.page2 .kicker{margin:16px 0 7px;font-size:10px;letter-spacing:.12em;color:#79603a}
+.page2 h1{font:400 46px/1.06 "DM Serif Display",Georgia,serif;letter-spacing:-.025em}
+.page2 h1 em{color:#79603a}
+.page2 .credibility-points{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:18px;padding:16px;background:#ece8dc;border-top:2px solid var(--gold)}
+.page2 .credibility-points>div+div{padding-left:16px;border-left:1px solid #cfc6b1}
+.page2 .credibility-points b{display:block;font:400 40px/1 "DM Serif Display",Georgia,serif;letter-spacing:-.02em;color:var(--ink)}
+.page2 .credibility-points span{display:block;margin-top:8px;font-size:14px;line-height:1.35;font-weight:500;color:#40565e;max-width:145px}
+.page2 .lender-wall{margin-top:16px}
+.page2 .panel-label{font:400 22px/1.2 "DM Serif Display",Georgia,serif;color:var(--ink);margin-bottom:10px}
+.page2 .lender-logos{list-style:none;display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin:0;padding:6px 0 12px;border-bottom:1px solid var(--line)}
+.page2 .lender-logos li{display:flex;align-items:center;justify-content:center;height:54px;padding:6px 12px}
+.page2 .lender-logos li+li{border-left:1px solid var(--line)}
+.page2 .lender-logos img{max-height:32px;max-width:100%;width:auto;height:auto;display:block}
+.page2 .lender-logos .royal-bank{gap:7px;padding-left:4px;padding-right:4px}
+.page2 .lender-logos .royal-bank img{height:42px;max-height:42px;width:auto}
+.page2 .lender-logos .royal-bank span{font-size:12px;line-height:1.25;font-weight:700;color:#0059b3}
+.page2 .lender-types{display:grid;grid-template-columns:1fr;gap:0;margin-top:16px;border-bottom:1px solid var(--line)}
+.page2 .lender-types article{display:grid;grid-template-columns:246px 1fr;gap:28px;align-items:center;padding:9px 0;border-top:1px solid var(--line)}
+.page2 .lender-types b{font:400 18px/1.2 "DM Serif Display",Georgia,serif;color:var(--ink)}
+.page2 .lender-types p{font-size:14px;line-height:1.4;color:var(--muted)}
+.page2 .next-steps{margin-top:18px}
+.page2 .service-overview{display:grid;grid-template-columns:220px 1fr;gap:28px;padding-top:14px;border-top:2px solid var(--gold)}
+.page2 .next-steps-head h2{font:400 28px/1.12 "DM Serif Display",Georgia,serif;letter-spacing:-.015em}
+.page2 .next-steps-head p{font-size:14px;line-height:1.4;color:var(--muted);margin-top:9px}
+.page2 .team-premise{display:grid;grid-template-columns:1fr;gap:12px;align-content:start}
+.page2 .team-premise p{font-size:14px;line-height:1.4;color:var(--muted);padding-left:16px;border-left:2px solid var(--gold)}
+.page2 .team-premise b{display:block;font-size:14px;font-weight:650;color:var(--ink);margin-bottom:3px}
+.page2 .introduction-process{margin:14px -48px 0;padding:18px 48px 12px;background:var(--ink);color:#f7f5ee}
+.page2 .step-heading{font-size:14px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:#d8c39b}
+.page2 .step-rail{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:12px;padding-top:14px;border-top:1px solid #ffffff26}
+.page2 .step-rail article+article{padding-left:16px;border-left:1px solid #ffffff26}
+.page2 .step-rail small{display:block;font:400 24px/1 "DM Serif Display",Georgia,serif;color:#d8c39b;margin-bottom:10px}
+.page2 .step-rail h3{font:800 18px/1.2 Manrope,sans-serif;letter-spacing:-.02em;color:#fff;min-height:44px}
+.page2 .step-rail p{font-size:13px;line-height:1.45;color:#c4d0d0;margin-top:10px}
+.page2 .footer{border-color:var(--line);padding-top:9px;color:#60716f;font-size:10px}
+/* PAGE 3: editorial opportunity — context, service, illustration, then support. */
+.page3{--ink:#193440;--muted:#52656b;--gold:#c7ae7e;--line:#d6d5cb;background:#f7f5ee;padding:28px 48px 30px;font-family:Manrope,sans-serif;color:var(--ink)}
+.page3>*{flex-shrink:0}
+.page3 .kicker{margin:16px 0 7px;font-size:10px;letter-spacing:.12em;color:#79603a}
+.page3 h1{font:400 46px/1.06 "DM Serif Display",Georgia,serif;letter-spacing:-.025em}
+.page3 h1 em{color:#79603a}
+.page3 .rule-label{font-size:10px;letter-spacing:.12em;color:#79603a}
+.page3 .market-heading{font:400 25px/1.2 "DM Serif Display",Georgia,serif;letter-spacing:-.015em;color:var(--ink);margin-top:26px}
+.page3 .market-context{font-size:14px;line-height:1.5;color:#52656b;margin-top:8px;max-width:660px}
+.page3 .demand{margin-top:16px}
+.page3 .demand-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.page3 .demand-stat{display:flex;flex-direction:column;padding:16px;background:#efede4;border-top:2px solid var(--gold)}
+.page3 .demand-stat .stat-topic{font-size:12px;font-weight:750;letter-spacing:.06em;text-transform:uppercase;color:#6f5834}
+.page3 .demand-stat b{display:block;margin:10px 0;font:400 29px/1.1 "DM Serif Display",Georgia,serif;letter-spacing:-.025em;color:var(--ink);white-space:nowrap}
+.page3 .demand-stat p{font-size:14px;line-height:1.5;color:#40565e;margin:0 0 14px}
+.page3 .demand-stat em{display:block;font-size:12px;line-height:1.4;font-style:normal;color:#52656b;margin-top:auto;padding-top:12px;border-top:1px solid #d0c7b4}
+.page3 .areas{margin-top:26px;padding-top:20px;border-top:1px solid var(--line)}
+.page3 .areas-head{display:flex;flex-direction:column;gap:14px}
+.page3 .areas-head h2{font:400 25px/1.2 "DM Serif Display",Georgia,serif;letter-spacing:-.015em;color:var(--ink)}
+.page3 .role-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;list-style:none;margin:0;padding:0}
+.page3 .role-flow li{position:relative;padding-top:12px;border-top:2px solid var(--gold)}
+.page3 .role-flow li+li::before{content:"→";position:absolute;left:-25px;top:10px;font-size:21px;color:#79603a}
+.page3 .role-flow h3{font-size:16px;line-height:1.3;font-weight:750;color:var(--ink);margin-bottom:7px}
+.page3 .areas-role{font-size:14px;line-height:1.5;color:#40565e}
+.page3 .specialist-role{font-size:14px;line-height:1.5;color:#52656b;margin-top:2px}
+.page3 .specialist-role b{font-weight:650;color:var(--ink)}
+.page3 .earn{margin:18px -48px 0;background:#eae3d2;padding:18px 48px 12px;border-top:2px solid var(--gold)}
+.page3 .earn-title{font:400 29px/1.2 "DM Serif Display",Georgia,serif;letter-spacing:-.015em;color:var(--ink)}
+.page3 .earn-context{font-size:14px;line-height:1.5;color:#40565e;margin-top:6px}
+.page3 .earnings-table{width:100%;border-collapse:collapse;table-layout:fixed;margin-top:12px;font-variant-numeric:tabular-nums}
+.page3 .earnings-table th,.page3 .earnings-table td{border-bottom:1px solid #c9bea7;text-align:right;padding:8px 0;vertical-align:middle}
+.page3 .earnings-table th:first-child{width:42%;text-align:left}
+.page3 .earnings-table thead th{font-size:12px;font-weight:650;color:#52656b;padding-top:0;padding-bottom:7px}
+.page3 .earnings-table tbody th{font-size:15px;line-height:1.3;font-weight:650;color:var(--ink)}
+.page3 .earnings-table tbody th span{display:block;font-size:12px;font-weight:400;color:#52656b;margin-top:3px}
+.page3 .earnings-table b{font:400 31px/1.1 "DM Serif Display",Georgia,serif;letter-spacing:-.02em;color:var(--ink);white-space:nowrap}
+.page3 .earnings-table small{display:block;font-size:12px;line-height:1.4;color:#40565e;margin-top:2px}
+.page3 .family-possibility{font-size:14px;line-height:1.4;color:var(--ink);margin-top:8px}
+.page3 .footer{border-color:var(--line);padding-top:9px;color:#60716f;font-size:10px}
+/* PAGE 4: a clear path to start — practical steps, concerns, then the invitation. */
+.page4{--ink:#193440;--muted:#52656b;--gold:#c7ae7e;--line:#d6d5cb;background:#f7f5ee;padding:28px 48px 24px;font-family:Manrope,sans-serif;color:var(--ink)}
+.page4>*{flex-shrink:0}
+.page4 .kicker{margin:0 0 8px;font-size:10px;letter-spacing:.12em;color:#79603a}
+.page4 h1{font:400 46px/1.06 "DM Serif Display",Georgia,serif;letter-spacing:-.025em}
+.page4 h1 em{color:#79603a}
+.page4 .opportunity-benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 36px;list-style:none;margin:22px 0 0;padding:0}
+.page4 .opportunity-benefits li{padding-left:12px;border-left:2px solid var(--gold)}
+.page4 .opportunity-benefits strong{display:block;font-size:15px;line-height:1.3;font-weight:750;color:var(--ink)}
+.page4 .opportunity-benefits p{font-size:13px;line-height:1.45;color:var(--muted);margin-top:5px}
+.page4 .journey{margin:24px -48px 0;padding:22px 48px 24px;background:#eae3d2;border-top:2px solid var(--gold)}
+.page4 .journey h2{font:400 30px/1.12 "DM Serif Display",Georgia,serif;letter-spacing:-.015em;margin-bottom:14px}
+.page4 .stage-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 36px}
+.page4 .stage{display:grid;grid-template-columns:38px 1fr;gap:7px 12px;padding-top:12px;border-top:1px solid #c9bea7;align-content:start}
+.page4 .stage .number{grid-row:span 2;color:#79603a;font:400 36px/1 "DM Serif Display",Georgia,serif}
+.page4 .stage strong{font-size:18px;font-weight:650;line-height:1.25;letter-spacing:-.02em}
+.page4 .stage p{grid-column:2;font-size:13px;color:#40565e;line-height:1.45}
+.page4 .support{margin-top:22px}
+.page4 .support-title{font:400 27px/1.12 "DM Serif Display",Georgia,serif;letter-spacing:-.015em;margin-top:6px}
+.page4 .support-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 36px;margin-top:16px}
+.page4 .support-pillar{padding-left:14px;border-left:2px solid var(--gold)}
+.page4 .support-pillar h3{font:650 14px/1.3 Manrope,sans-serif;color:var(--ink)}
+.page4 .support-pillar p{font-size:13px;line-height:1.4;color:var(--muted);margin-top:5px}
+.page4 .support>.rule-label{font-size:10px;letter-spacing:.12em;color:#79603a}
+.page4 .invite{margin:24px -48px 0;background:var(--ink);color:#f7f5ee;padding:24px 48px 26px}
+.page4 .invite small{font-size:10px;color:#d8c39b;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+.page4 .invite p{font:400 30px/1.15 "DM Serif Display",Georgia,serif;letter-spacing:-.01em;margin-top:9px}
+.page4 .invite .invite-note{font:400 13px/1.45 Manrope,sans-serif;letter-spacing:0;color:#dce3e0;margin-top:9px}
+.page4 .footer{border-color:var(--line);padding-top:9px;color:#60716f;font-size:10px}
+/* PAGE 5–6: field tools — denser scale so each tool stays on its single sheet. */
+.page5,.page6{padding:34px 54px 30px}
+.page5 .kicker,.page6 .kicker{margin-top:0}
+/* PAGE 5: real field help, not marketing copy */
+.page5 h1{font-size:44px}
+.page5 .lead{font-size:16px;line-height:1.44;margin-top:13px}
+.page5 .question-columns{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:21px}
+.page5 .question-columns h2{font-size:22px;margin-bottom:8px;border-bottom:1px solid #98acb6;padding-bottom:10px}
+.page5 .question{padding:9px 0;border-bottom:1px solid #d7dfe3}
+.page5 .question small{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#66818f;font-weight:700}
+.page5 .question strong{font-size:14.5px;display:block;margin:5px 0;line-height:1.34}
+.page5 .question p{font-size:12.8px;color:#526977;line-height:1.38}
+.page5 .personal{background:#f0f2ef;border-left:3px solid var(--gold);padding:13px 18px;margin-top:19px}
+.page5 .personal strong{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#5c7582}
+.page5 .personal p{font:normal 18px/1.32 Georgia,serif;margin-top:6px}
+.page5 .follow{margin-top:13px;font-size:13px;line-height:1.42;color:#435e6c}
+.page5 .follow strong{color:var(--ink)}
+.page5 .boundary-note{font-size:10.8px;color:#536c78;margin-top:11px}
+/* PAGE 6: guided hand-off worksheet — four parts, readable at a glance. */
+.page6{padding-top:30px;padding-bottom:22px}
+.page6>*{flex-shrink:0}
+.page6 h1{font-size:38px}.page6 .lead{font-size:14px;line-height:1.42;margin-top:4px;max-width:660px}
+.page6 .part{margin-top:18px;padding-top:10px;border-top:1px solid #d6d0c0}
+.page6 .part-head{display:flex;align-items:baseline;gap:10px}
+.page6 .part-num{font:400 21px/1 "DM Serif Display",Georgia,serif;color:#a3874f;min-width:26px}
+.page6 .part-title{font:750 14.5px/1.2 Manrope,sans-serif;letter-spacing:-.01em;color:var(--ink)}
+.page6 .part-title em{font-style:normal;font-weight:500;color:#5c707a}
+.page6 .part-help{font-size:12px;line-height:1.4;color:#5c707a;margin:3px 0 9px 36px}
+.page6 .ask{font-size:12.5px;font-weight:700;line-height:1.35;color:#314c5c;margin:0 0 5px}
+.page6 .choice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px 22px;font-size:12.6px;color:#344e5e;line-height:1.5}
+.page6 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px 26px;margin-top:8px}
+.page6 .form-grid.three{grid-template-columns:1fr 1fr 1fr;gap:9px 22px}
+.page6 .form-grid + .ask{margin-top:8px}
+.page6 .field{display:flex;flex-direction:column}
+.page6 .field label{font-size:12px;display:block;color:#4d6573;margin-bottom:3px}
+.page6 .field .write{margin-top:auto}
+.page6 .write{height:34px;border-bottom:1px solid #9eafb8}
+.page6 .box{display:inline-block;width:13px;height:13px;vertical-align:-2px;border:1px solid #526c7a;margin-right:7px}
+.page6 .notes-lines{height:164px;margin-top:2px;background:repeating-linear-gradient(to bottom,transparent 0,transparent 27px,#b9c9d0 28px,#b9c9d0 29px)}
+.page6 .consent{font-size:12px;line-height:1.4;margin:12px 0 0}
+.page6 .privacy-note{font-size:10.6px;line-height:1.4;color:#435e6c;margin-top:14px;padding-top:8px;border-top:1px solid #d6d0c0}
+/* PAGE 7: dedicated illustration assumptions and disclosures */
+.page7{scroll-margin-top:24px;padding:24px 56px 20px}
+.page7>*{flex-shrink:0}
+.page7 h1{font-size:32px;margin-top:12px}
+.page7 .lead{font-size:13px;line-height:1.38;margin-top:6px}
+.page7 .disclosure-section{margin-top:6px;padding-top:5px;border-top:1px solid var(--line)}
+.page7 .disclosure-section h2{font-size:17px;margin-bottom:4px}
+.page7 .disclosure-section p{font-size:11.5px;line-height:1.32;color:#405c6b}
+.page7 .disclosure-section p+p{margin-top:4px}
+.page7 .debt-assumptions{width:100%;border-collapse:collapse;font-size:11.5px;line-height:1.3;margin:5px 0}
+.page7 .debt-assumptions th,.page7 .debt-assumptions td{padding:2px 8px 2px 0;text-align:left;border-bottom:1px solid #d0d9dd}
+.page7 .debt-assumptions th{font-weight:700;color:#314c5c}
+.page7 .source-note{font-size:10.8px;line-height:1.3;color:#526977}
+.page7 .disclosure-section a{color:#365c73;text-underline-offset:3px;overflow-wrap:anywhere}
+.print-tools .sheet[data-part="presentation"],.print-tools .sheet[data-part="notes"],.print-main .sheet[data-part="tools"]{display:none!important}
+@media screen{.sheet,.section-marker{zoom:var(--preview-zoom,1)}}
+@media print{
+ @page{size:letter;margin:0}
+ html,body{margin:0!important;background:white!important}
+ .toolbar,.section-marker{display:none!important}
+ .pages{padding:0!important}
+ .sheet{zoom:1!important;width:8.5in;height:11in;box-shadow:none;margin:0!important;break-after:page;page-break-after:always}
+ .print-main .sheet[data-page="7"],.print-tools .sheet[data-page="6"]{break-after:auto;page-break-after:auto}
+ *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <div><strong>8Twelve Mortgage — Conversation Kit</strong><small>Two client pages · Two opportunity pages · Two advisor tools · Illustration notes · Development draft</small></div>
+  <nav aria-label="Proof links"><a href="./proofs/mortgage-conversation-kit.pdf" target="_blank" rel="noopener">Presentation + notes PDF</a><a href="./proofs/mortgage-agent-tools.pdf" target="_blank" rel="noopener">Two-page agent tools PDF</a><button type="button" onclick="window.print()">Print</button></nav>
+</div>
+<main class="pages">
+<section class="sheet page1" data-page="1" data-part="presentation">
+  <div class="presentation-opening">
+    <h1 id="mortgage-solutions">What do you want<br><em>your mortgage to do?</em></h1>
+    <ul class="options" aria-label="Mortgage goals">
+      <li>Buy a Home</li>
+      <li>Renew Your Mortgage</li>
+      <li>Refinance Your Home</li>
+      <li>Consolidate Debt</li>
+      <li>Increase Cash Flow</li>
+    </ul>
+  </div>
+  <div class="hero-money">
+    <h2 class="example-context">A Toronto family. Four payments. A little more breathing room.</h2>
+    <p class="example-story">Consider a Toronto family juggling a mortgage, credit cards, a loan and a line of credit. Together, those payments take $5,798 out of their monthly budget. Combining the balances into one mortgage could bring the payment to $4,757, leaving $1,041 more each month for the family’s other priorities.</p>
+    <table class="payment-comparison">
+      <caption class="visually-hidden">Four payments become one.</caption>
+      <thead><tr><th scope="col">Debt</th><th scope="col">Before / month</th><th scope="col">After / month</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><span class="debt-name">Mortgage</span> <span class="debt-detail"><b class="debt-balance">$750,000</b> · 4.79% fixed · 25-year amortization</span></th><td>$4,273</td><td>$4,757</td></tr>
+        <tr><th scope="row"><span class="debt-name">Credit cards</span> <span class="debt-detail"><b class="debt-balance">$25,500</b> · 20.99% · 3% monthly payment</span></th><td>$765</td><td class="included">—</td></tr>
+        <tr><th scope="row"><span class="debt-name">Car or personal loan</span> <span class="debt-detail"><b class="debt-balance">$24,000</b> · 9.99% · 5-year repayment</span></th><td>$510</td><td class="included">—</td></tr>
+        <tr><th scope="row"><span class="debt-name">Line of credit</span> <span class="debt-detail"><b class="debt-balance">$35,500</b> · 8.45% · interest-only</span></th><td>$250</td><td class="included">—</td></tr>
+      </tbody>
+      <tfoot><tr><th scope="row">Total per month</th><td>$5,798</td><td>$4,757</td></tr></tfoot>
+    </table>
+    <div class="payments-difference">
+      <strong>$1,041</strong><span class="difference-label">savings / month</span>
+    </div>
+  </div>
+  <div class="possibilities">
+    <h2 class="possibilities-title">What could <b>$1,041 a month</b> do?</h2>
+    <div class="possibility-grid">
+      <article>
+        <h3>Invest the difference</h3>
+        <p class="outcome">$171,000</p>
+        <p>In 10 years.</p>
+      </article>
+      <article>
+        <h3>Pay extra on your mortgage</h3>
+        <p class="outcome">7.2 years sooner</p>
+        <p>Put the monthly difference toward your mortgage.</p>
+      </article>
+      <article>
+        <h3>Do some of both</h3>
+        <p class="outcome">$85,000 invested</p>
+        <p>Invest half for 10 years; pay off your mortgage 4.3 years sooner.</p>
+      </article>
+      <article>
+        <h3>Give your budget more room</h3>
+        <p class="outcome">$1,041 a month</p>
+        <p>More room for everyday costs.</p>
+      </article>
+    </div>
+  </div>
+  <footer class="footer"><b>8Twelve Mortgage · Development draft</b><span>01 / 04</span></footer>
+</section>
+
+<section class="sheet page2" data-page="2" data-part="presentation">
+  <div class="team-opening">
+  <p class="kicker">The people behind your mortgage conversation</p>
+  <h1 id="mortgage-team">Why 8Twelve <em>Mortgage?</em></h1>
+  <div class="credibility-points">
+    <div aria-label="13 provincial &amp; territorial licences"><b>13</b><span>Provinces &amp; territories</span></div>
+    <div><b>400+</b><span>Licensed mortgage professionals</span></div>
+    <div><b>7,000+</b><span>Mortgage options</span></div>
+    <div><b>65+</b><span>Lender partners</span></div>
+  </div>
+  </div>
+  <div class="lender-wall">
+    <p class="panel-label">Familiar banks. More options beyond them.</p>
+    <ul class="lender-logos" aria-label="Lender partners">
+      <li class="royal-bank"><img src="assets/lenders/rbc.svg" alt="Royal Bank of Canada"><span>RBC<br>Royal Bank</span></li>
+      <li><img src="assets/lenders/td.svg" alt="TD Canada Trust"></li>
+      <li><img src="assets/lenders/scotiabank.svg" alt="Scotiabank"></li>
+      <li><img src="assets/lenders/cibc.svg" alt="CIBC"></li>
+      <li><img src="assets/lenders/bmo.svg" alt="BMO"></li>
+      <li><img src="assets/lenders/national-bank.svg" alt="National Bank of Canada"></li>
+    </ul>
+  </div>
+  <div class="lender-types">
+    <article><b>Major banks</b><p>The banks you know, with mortgage options to compare.</p></article>
+    <article><b>Alternative lenders</b><p>Options if you work for yourself or have had credit setbacks.</p></article>
+    <article><b>Credit unions &amp; other lenders</b><p>More choices for different homes, properties and borrowing needs.</p></article>
+    <article><b>Private lenders</b><p>Short-term options when your situation needs a closer look.</p></article>
+  </div>
+  <div class="next-steps">
+    <div class="service-overview">
+    <div class="next-steps-head">
+      <h2>Help at every step</h2>
+      <p>A personal introduction. Clear answers. Someone to stay in touch.</p>
+    </div>
+    <div class="team-premise">
+      <p><b>We stay with you.</b> We make the introduction and check that you’re connected.</p>
+      <p><b>8Twelve compares your options.</b> A licensed mortgage specialist reviews lenders, explains your choices and helps with the application.</p>
+    </div>
+    </div>
+    <div class="introduction-process">
+    <p class="step-heading">What happens next</p>
+    <div class="step-rail">
+      <article><small>01</small><h3>Tell us what you need</h3><p>Tell us what you want your mortgage to do and when you need it. We’ll ask a few questions to get started.</p></article>
+      <article><small>02</small><h3>Meet your mortgage specialist</h3><p>I’ll introduce you to a licensed mortgage specialist on our 8Twelve team.</p></article>
+      <article><small>03</small><h3>Review your options together</h3><p>Your specialist will walk you through your options in plain language, answer your questions and help you choose what works for you.</p></article>
+    </div>
+    </div>
+  </div>
+  <footer class="footer"><b>8Twelve Mortgage · Development draft</b><span>02 / 04</span></footer>
+</section>
+
+<section class="sheet page3" data-page="3" data-part="presentation">
+  <p class="kicker">The service opportunity</p>
+  <h1>Refer a Mortgage. <em>Build a Business.</em></h1>
+  <h2 class="market-heading">A large market. People looking for help.</h2>
+  <p class="market-context">People are already looking for mortgage advice. A personal introduction can help them take the next step.</p>
+  <div class="demand">
+    <div class="demand-grid">
+      <div class="demand-stat"><span class="stat-topic">A lot of mortgage activity</span><b>$912 billion</b><p>That’s how much mortgage lending took place across Canada in the year ending March 2026.</p><em>CMHC · Aug 2026 [1]</em></div>
+      <div class="demand-stat"><span class="stat-topic">People want guidance</span><b>70%</b><p>Seven in ten recent mortgage customers asked a mortgage professional about their options.</p><em>CMHC · 2025 survey [2]</em></div>
+      <div class="demand-stat"><span class="stat-topic">Help with a first home</span><b>48%</b><p>Nearly half of recent first-time buyers got their mortgage through the broker channel.</p><em>MPC / Bond · 2026 survey [3]</em></div>
+    </div>
+  </div>
+  <div class="areas">
+    <div class="areas-head">
+      <h2>Here’s how you’ll help</h2>
+      <ol class="role-flow" aria-label="Your responsibilities when you join the team">
+        <li><h3>Ask what they need</h3><p class="areas-role">Ask what they’d like to change about their mortgage.</p></li>
+        <li><h3>Make the introduction</h3><p class="areas-role">Connect them with a licensed mortgage specialist on our 8Twelve team.</p></li>
+        <li><h3>Stay in touch</h3><p class="areas-role">Check that they’ve spoken with the specialist. Ask how it’s going.</p></li>
+      </ol>
+    </div>
+  </div>
+  <div class="earn">
+    <h2 class="earn-title">What you could earn</h2>
+    <p class="earn-context">An example with a $500,000 mortgage for each family.</p>
+    <table class="earnings-table">
+      <thead><tr><th scope="col">Families you help</th><th scope="col">Below RVP</th><th scope="col">RVP</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">One family</th><td><b>$430</b></td><td><b>$810</b></td></tr>
+        <tr><th scope="row">One family a week<span>Over 52 weeks</span></th><td><b>$22,360</b><small>/ year</small></td><td><b>$42,120</b><small>/ year</small></td></tr>
+      </tbody>
+    </table>
+    <p class="family-possibility">The business is simple: have a conversation and set the introduction.</p>
+  </div>
+  <footer class="footer"><b>8Twelve Mortgage · Agent training / business-opportunity draft · Sources: illustration notes</b><span>03 / 04</span></footer>
+</section>
+
+<section class="sheet page4" data-page="4" data-part="presentation">
+  <p class="kicker">For someone exploring the opportunity</p>
+  <h1>Start Part-Time. <em>Build With Support.</em></h1>
+  <ul class="opportunity-benefits" aria-label="Benefits of joining the team">
+    <li><strong>Start after work</strong><p>Start part-time around your day job. Meet online or in person.</p></li>
+    <li><strong>No sales quotas</strong><p>Build at a pace that works for you.</p></li>
+    <li><strong>Connect with families across Canada</strong><p>Your introductions can reach beyond your city or province.</p></li>
+    <li><strong>Build your own team, if you want</strong><p>You can put together a team of agents. It’s optional.</p></li>
+  </ul>
+  <div class="journey">
+    <h2>How to get started</h2>
+    <div class="stage-grid">
+    <div class="stage"><span class="number">01</span><strong>Get qualified</strong><p>Complete a background check. That's the only qualification to get started.</p></div>
+    <div class="stage"><span class="number">02</span><strong>Get your link</strong><p>Receive your 8Twelve agent portal link. It's where you submit and track each introduction.</p></div>
+    <div class="stage"><span class="number">03</span><strong>Work with a trainer</strong><p>Your trainer shows you how to spot a mortgage question and make a clean introduction. Practise the conversation together first.</p></div>
+    <div class="stage"><span class="number">04</span><strong>Introduce and grow</strong><p>Introduce people you know to our mortgage specialist. Follow up, stay connected, become referable and grow your business from there.</p></div>
+    </div>
+  </div>
+  <div class="support">
+    <p class="rule-label">Support around you</p>
+    <h2 class="support-title">You won't build this alone.</h2>
+    <div class="support-grid">
+      <article class="support-pillar">
+        <h3>A trainer beside you</h3>
+        <p>Early appointments are trainer-led. You watch, then take part.</p>
+      </article>
+      <article class="support-pillar">
+        <h3>A system to follow</h3>
+        <p>A clear, structured path for what to learn and what to do next.</p>
+      </article>
+      <article class="support-pillar">
+        <h3>A team to lean on</h3>
+        <p>Weekly training, team meetings and people who answer when you ask.</p>
+      </article>
+      <article class="support-pillar">
+        <h3>Direct access to mortgage experts</h3>
+        <p>Talk with a mortgage specialist when a question comes up.</p>
+      </article>
+    </div>
+  </div>
+  <div class="invite">
+    <small>Your next step</small>
+    <p>Could this be a fit for you?</p>
+    <p class="invite-note">Let’s book a conversation with our broker to explore the opportunity.</p>
+  </div>
+  <footer class="footer"><b>Advisor referral opportunity</b><span>04 / 04</span></footer>
+</section>
+
+<div class="section-marker" aria-hidden="true">Separate advisor tools · not part of the four-page presentation</div>
+<section class="sheet page5" data-page="5" data-part="tools">
+  <p class="kicker">Use during a real conversation</p>
+  <h1>Mortgage<br><em>Conversation Guide.</em></h1>
+  <p class="lead">Don't memorize a pitch. Find out what the person is trying to do, then decide whether a personal introduction would help.</p>
+  <div class="question-columns">
+    <div><h2>Where to start</h2>
+      <div class="question"><small>Renewal</small><strong>“When does your mortgage come up for renewal?”</strong><p>If soon: “Have you compared your options yet?”</p></div>
+      <div class="question"><small>Monthly payments</small><strong>“Are you comfortable with what you're paying each month?”</strong><p>Ask if their concern is the payment or the full cost.</p></div>
+      <div class="question"><small>Buying or moving</small><strong>“Any plans to buy or move in the next year?”</strong><p>Ask about timing, not a mortgage approval.</p></div>
+      <div class="question"><small>Debt / refinancing</small><strong>“What's the main thing you're hoping to change?”</strong><p>Listen for the goal. Let the specialist weigh the trade-offs.</p></div>
+    </div>
+    <div><h2>When they respond</h2>
+      <div class="question"><small>“I'm just looking.”</small><strong>“That's fine. What are you trying to figure out?”</strong><p>Offer an introduction only if they want help.</p></div>
+      <div class="question"><small>“I already have a broker.”</small><strong>“That's good. Is there anything you're still trying to work out?”</strong><p>Respect their relationship and their answer.</p></div>
+      <div class="question"><small>“Who is 8Twelve?”</small><strong>“It's a licensed mortgage brokerage with access to different lenders.”</strong><p>Explain that your specialist is someone you know. Don't promise the lowest rate.</p></div>
+      <div class="question"><small>Asks about joining the team</small><strong>Keep this separate.</strong><p>Offer a discussion with a business leader about work, training and qualifications. Don't pivot a client's mortgage need into a pitch.</p></div>
+    </div>
+  </div>
+  <div class="personal"><strong>Personal introduction</strong><p>“I know a licensed mortgage specialist at 8Twelve. Would you be open to me introducing you so they can review your options?”</p></div>
+  <p class="follow"><strong>Follow through:</strong> Ask permission to share a name and chosen contact detail, make the introduction, confirm the connection and agree on a date: “Would Thursday work for me to check back?”</p>
+  <p class="boundary-note">Do not quote rates, promise approval, recommend loans or request confidential underwriting records. 8Twelve is a separate licensed mortgage brokerage. Respect a clear “no.”</p>
+  <footer class="footer"><b>Agent field tool · Not client advertising</b><span>01 / 02</span></footer>
+</section>
+
+<section class="sheet page6" data-page="6" data-part="tools">
+  <h1>Hand-Off <em>Document.</em></h1>
+  <p class="lead">Ask these questions, write down the answers, then hand this to a licensed 8Twelve mortgage specialist so they can prepare. This is not an application and does not start a mortgage review.</p>
+  <div class="part">
+    <div class="part-head"><span class="part-num">01</span><h2 class="part-title">Start with the goal</h2></div>
+    <p class="part-help">Ask these in your own words. Tick what they say.</p>
+    <p class="ask">What are you hoping to do?</p>
+    <div class="choice-grid"><span><i class="box"></i>Buy a home</span><span><i class="box"></i>Renew</span><span><i class="box"></i>Refinance</span><span><i class="box"></i>Consolidate debt</span><span><i class="box"></i>Increase cash flow</span></div>
+    <div class="form-grid">
+      <div class="field"><label>When would you like to make a change?</label><div class="write"></div></div>
+      <div class="field"><label>When does your mortgage come up for renewal?</label><div class="write"></div></div>
+    </div>
+    <p class="ask">What matters most to you?</p>
+    <div class="choice-grid"><span><i class="box"></i>A lower monthly amount</span><span><i class="box"></i>Pay less overall</span><span><i class="box"></i>Pay it off sooner</span><span><i class="box"></i>Use some of your home's equity</span><span><i class="box"></i>More flexibility</span></div>
+  </div>
+  <div class="part">
+    <div class="part-head"><span class="part-num">02</span><h2 class="part-title">The basic numbers</h2></div>
+    <p class="part-help">Only ask what fits the conversation. It's okay to leave blanks.</p>
+    <div class="form-grid three">
+      <div class="field"><label>Roughly, what's your home worth?</label><div class="write"></div></div>
+      <div class="field"><label>Roughly, how much is left on your mortgage?</label><div class="write"></div></div>
+      <div class="field"><label>Roughly, what do you pay each month?</label><div class="write"></div></div>
+    </div>
+  </div>
+  <div class="part">
+    <div class="part-head"><span class="part-num">03</span><h2 class="part-title">Questions and contact</h2></div>
+    <p class="part-help">Ask what they want the specialist to answer, then how to reach them.</p>
+    <p class="ask">What would you like the specialist to answer for you?</p>
+    <div class="notes-lines"></div>
+    <div class="form-grid three">
+      <div class="field"><label>What's your name?</label><div class="write"></div></div>
+      <div class="field"><label>What's the best phone number or email to reach you?</label><div class="write"></div></div>
+      <div class="field"><label>When's a good time to connect?</label><div class="write"></div></div>
+    </div>
+    <p class="consent"><i class="box"></i>Yes, you may share my name and the phone or email above with a licensed 8Twelve Mortgage specialist about this question.<br><i class="box"></i>Not yet — ask again later. Any other worksheet details need separate permission.</p>
+    <p class="privacy-note">The specialist reviews the options and contacts the client directly. The introducer passes the information on; they do not process the mortgage or recommend a product. Do not record SIN, bank credentials, government ID, credit reports or private financial documents. Share completed forms only through an approved secure process.</p>
+  </div>
+  <footer class="footer"><b>Hand-off worksheet · Keep completed forms private</b><span>02 / 02</span></footer>
+</section>
+<div class="section-marker">Illustration notes / Read with the mortgage and business-opportunity pages</div>
+<section class="sheet page7" data-page="7" data-part="notes">
+  <h1 id="illustration-notes" tabindex="-1">Illustration Notes.</h1>
+  <p class="lead">Assumptions behind the mortgage, investing and compensation examples. All figures are illustrative.</p>
+  <div class="disclosure-section">
+    <h2>01 / Mortgage and debt payments</h2>
+    <p>The Toronto family is hypothetical, not a claim about typical households or current market-average rates. Actual balances, rates and payments will differ. The debts move into the mortgage; they aren't erased. Your home secures the combined debt. Fees or penalties may apply. Taking longer to repay your mortgage could mean more total interest. This does not mean you qualify or save overall.</p>
+    <table class="debt-assumptions">
+      <thead><tr><th scope="col">Original debt</th><th scope="col">Balance</th><th scope="col">Assumed rate and payment basis</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Mortgage</th><td>$750,000</td><td>4.79% · 25 years</td></tr>
+        <tr><th scope="row">Credit cards</th><td>$25,500</td><td>20.99% · payment of 3% of the balance</td></tr>
+        <tr><th scope="row">Car or personal loan</th><td>$24,000</td><td>9.99% · 5 years</td></tr>
+        <tr><th scope="row">Line of credit</th><td>$35,500</td><td>8.45% · interest-only</td></tr>
+      </tbody>
+    </table>
+    <p>Both mortgages assume fixed 4.79% annual interest, compounded semiannually, and 25-year amortization with monthly payments: $4,272.81 on $750,000; $4,757.06 on $835,000. Displayed amounts are rounded to whole dollars. Refinancing costs are paid separately. The $1,041 difference is $12,492 over a year only if it continues for 12 months.</p>
+    <p>Both payoff comparisons start with the combined $835,000 balance and $4,757.06 monthly payment. Paying $1,041 extra gives about 17.8 years instead of 25 (7.2 years sooner); paying $520.50 extra gives about 4.3 years sooner. This assumes permitted, fee-free prepayments and the same rate through renewals, not a 25-year fixed-rate term. Actual lender terms and renewal rates may change the results; these are not overall consolidation-cost comparisons.</p>
+    <p>These payments are not a lender quote or an approval. With a federally regulated lender, refinancing is typically capped at 80% of the home's appraised value; $835,000 implies about $1,043,750. A licensed mortgage specialist reviews equity, eligibility, options and full costs.</p>
+  </div>
+  <div class="disclosure-section">
+    <h2>02 / Regular investing</h2>
+    <p>Hypothetical rates, not guaranteed returns. Assumes $1,041 invested at each month-end from a $0 starting balance for 10 years, with monthly compounding at the 6% annual rate divided by 12: $170,598, shown as $171,000. Values include contributions, are rounded to $1,000, and exclude fees, taxes and inflation. Actual returns vary and can be negative.</p>
+    <p>The combined choice invests $520.50/month (about $85,299, shown as $85,000) and pays $520.50 extra on the mortgage. These aren't overall gains from consolidation. Continued contributions are assumed; mortgage payments and available cash may change. The original car loan ends after five years, changing the comparison. Returns and payment differences aren't guaranteed; the difference is not assumed to last 10 years.</p>
+  </div>
+  <div class="disclosure-section">
+    <h2>03 / Roles, advice and compensation</h2>
+    <p>8Twelve is a separate licensed mortgage brokerage. Its licensed specialists provide mortgage advice; the advisor owns the client relationship, introduces you and follows through. An appropriately licensed investment advisor can help you choose investments. Mortgage approval, lower rates and lower overall costs aren't guaranteed. Business-building and recruiting belong to the advisor's own financial brokerage, not 8Twelve. An introduction is not a promise of a commission. This doesn't promise guaranteed clients, mortgage approvals, commissions or success. Results depend on the work you put in.</p>
+    <p>The compensation examples assume the mortgage partner receives 1% ($5,000) per $500,000 loan. Referral factors are 0.00086 below RVP ($430) and 0.00162 for RVP ($810). One per week means 52 completed $500,000 mortgages: 52 × $430 = $22,360 or 52 × $810 = $42,120, before applicable deductions and expenses. Introductions alone do not earn these amounts. 13% HST is withheld and remitted. This is not guaranteed income or a published current pay schedule. Actual payment depends on funding, current written program terms, eligibility, required disclosures and timing. Verify current terms and public-use authorization; the source schedule is internal-use only.</p>
+  </div>
+  <div class="disclosure-section">
+    <h2>04 / Brokerage and market sources</h2>
+    <p>The 65+ lender-partner figure and the 400+ professional and 7,000+ mortgage-product figures are reported by 8Twelve Mortgage at <a href="https://www.8twelve.ca/about">www.8twelve.ca/about</a> and <a href="https://8twelve.mortgage/">8twelve.mortgage</a> (Oct 2026). Its 10 provincial and 3 territorial licences, including Ontario FSRA brokerage licence #13072, are listed at <a href="https://8twelve.mortgage/licenses/">8twelve.mortgage/licenses/</a>. Named lenders and logos on page 2 are illustrative until confirmed as current partners with approved brand use by 8Twelve Mortgage before field distribution. Confirm current claims and permitted use before distribution.</p>
+    <p class="source-note">Page 3 sources: [1] <a href="https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-research/research-reports/housing-finance/residential-mortgage-industry-report">CMHC, Aug 27, 2026 snapshot</a>: $912 billion in mortgage value extended, Q2 2025–Q1 2026, across all channels. [2] <a href="https://assets.cmhc-schl.gc.ca/sites/cmhc/professional/housing-markets-data-and-research/housing-research/surveys/mortgage-consumer-surveys/survey-results-2025/mcs-ebook-2025.pdf#page=12">CMHC 2025 survey, p.12</a>: 70% of recent mortgage consumers contacted professionals, including lenders and brokers, about options. [3] <a href="https://mortgageproscan.ca/docs/default-source/marcomms/consumer-reports/2026-mpc_the-broker-advantage_en.pdf#page=3">MPC/Bond 2026, p.3</a>: 48% of recent first-time buyers used the broker channel. Surveys do not isolate mortgage agents. Checked Oct 19, 2026.</p>
+  </div>
+  <footer class="footer"><b>8Twelve Mortgage · Development draft · Read with the illustrations</b><span>Notes / 01</span></footer>
+</section>
+</main>
+<script>
+function fitPages(){const z=Math.min(1,(window.innerWidth-24)/816);document.documentElement.style.setProperty('--preview-zoom',z)}
+window.addEventListener('resize',fitPages);fitPages();
+</script>
+</body>
+</html>

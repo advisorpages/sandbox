@@ -5,7 +5,9 @@
   "description": "Four-page 8Twelve Mortgage conversation kit development preview",
   "type": "module",
   "scripts": {
+    "dev": "node scripts/dev-server.mjs",
     "verify": "node scripts/verify-kit.mjs",
+    "preview:check": "node scripts/verify-preview.mjs",
     "render": "node scripts/render-qa.mjs"
   },
   "devDependencies": {

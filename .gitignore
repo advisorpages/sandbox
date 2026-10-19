@@ -1,0 +1,8 @@
+# Generic ignores shared by every project in the sandbox.
+# Project-specific rules (build output, caches unique to a tool) belong in
+# that project's own .gitignore.
+
+node_modules/
+__pycache__/
+.DS_Store
+.playwright-mcp/
