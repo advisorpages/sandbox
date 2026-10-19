@@ -66,6 +66,10 @@ jobs:
           mkdir -p site
           cp index.html site/index.html
           cp -R dist site/proofs
+          # Self-hosted lender logos and fonts, referenced by index.html.
+          cp -R assets site/assets
+          test -f site/assets/lenders/rbc.svg
+          test -f site/assets/fonts/manrope-variable.ttf
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
