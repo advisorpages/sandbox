@@ -7,7 +7,7 @@ import struct
 base=Path("dist")
 expected={
   "mortgage-conversation-kit.pdf":[
-    ["Whatdoyouwantyourmortgagetodo?", "Torontofamilies", "$5,798", "$4,757", "$1,041", "$171,000", "$85,000", "$520.50", "17.8years", "7.2yearssooner", "4.3yearssooner", "yourhomesecuresthecombinedamount"],
+    ["Whatdoyouwantyourmortgagetodo?", "Torontofamily", "$5,798", "$4,757", "$1,041", "$721,000", "$256,000", "7.2yearssooner", "4.3yearssooner"],
     ["Why8Twelve", "Mortgage?", "65+", "8Twelve"],
     ["ReferaMortgage.", "BuildaBusiness.", "$500,000", "$430", "$810"],
     ["StartPart-Time.", "BuildWithSupport.", "trainer", "Getqualified"],
@@ -15,7 +15,7 @@ expected={
   ],
   "mortgage-agent-tools.pdf":[
     ["Mortgage", "ConversationGuide.", "8Twelve"],
-    ["Mortgage", "Discovery.", "sharemyname", "8Twelve"]
+    ["Mortgage", "Hand-OffDocument.", "sharemyname", "8Twelve"]
   ]
 }
 source_pages={"mortgage-conversation-kit.pdf": [1,2,3,4,7], "mortgage-agent-tools.pdf": [5,6]}
@@ -27,6 +27,8 @@ for filename,pages in expected.items():
         w,h=float(page.mediabox.width),float(page.mediabox.height)
         assert abs(w-612)<.5 and abs(h-792)<.5, f"{filename} p{n}: {w}x{h}pt"
         extracted="".join((page.extract_text() or "").split()).casefold()
+        for ligature,letters in (("ﬀ","ff"),("ﬁ","fi"),("ﬂ","fl"),("ﬃ","ffi"),("ﬄ","ffl")):
+            extracted=extracted.replace(ligature,letters)
         for term in terms:
             assert "".join(term.split()).casefold() in extracted, f"{filename} page {n} missing {term}"
         all_pages+=1

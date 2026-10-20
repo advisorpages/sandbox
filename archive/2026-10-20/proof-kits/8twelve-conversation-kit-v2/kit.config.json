@@ -1,0 +1,19 @@
+{
+  "slug": "8twelve-conversation-kit-v2",
+  "title": "8Twelve Mortgage Conversation Kit",
+  "brand": "8twelve",
+  "format": "letter-kit",
+  "content": "content.yaml",
+  "checks": "checks.yaml",
+  "gates": {
+    "brief": {
+      "status": "pending"
+    },
+    "copy": {
+      "status": "pending"
+    },
+    "visual": {
+      "status": "pending"
+    }
+  }
+}

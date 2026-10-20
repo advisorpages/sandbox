@@ -1,0 +1,78 @@
+# 8Twelve Mortgage — Page 1 proof
+# The words and figures are copied from the approved 8Twelve kit.
+kit:
+  slug: 8twelve-page1-proof
+  title: 8Twelve Mortgage Conversation Kit — Page 1 Proof
+  brand: 8twelve
+  format: letter-kit
+
+pages:
+  - part: presentation
+    blocks:
+      - type: editorial-opening
+        variant: navy-split
+        slots:
+          title: What do you want
+          emphasis: your mortgage to do?
+          ariaLabel: Mortgage goals
+          goals:
+            - Buy a Home
+            - Renew Your Mortgage
+            - Refinance Your Home
+            - Consolidate Debt
+            - Increase Cash Flow
+
+      - type: comparison-table
+        variant: payment
+        slots:
+          title: A Toronto family. Four payments. A little more breathing room.
+          story: Four payments every month, and nothing left over. The credit cards and line of credit never shrink. They don’t know when they’ll be debt free, their savings stay thin, and they aren’t building anything substantial.
+          caption: Four payments become one.
+          columns:
+            - Debt
+            - Before / month
+            - After / month
+          rows:
+            - name: Mortgage
+              detail: $750,000 · 4.79% fixed · 25-year amortization
+              before: $4,273
+              after: $4,757
+            - name: Credit cards
+              detail: $25,500 · 20.99% · 3% monthly payment
+              before: $765
+              after: null
+            - name: Car or personal loan
+              detail: $24,000 · 9.99% · 5-year repayment
+              before: $510
+              after: null
+            - name: Line of credit
+              detail: $35,500 · 8.45% · interest-only
+              before: $250
+              after: null
+          totalLabel: Total per month
+          totalBefore: $5,798
+          totalAfter: $4,757
+          difference: $1,041
+          differenceLabel: savings / month
+
+      - type: outcome-grid
+        variant: gold-band
+        slots:
+          titleLead: What could
+          titleAmount: $1,041 a month
+          titleTail: do?
+          cards:
+            - heading: Invest the difference
+              outcome: $721,000
+              note: By the time the mortgage is paid off.
+            - heading: Pay extra on your mortgage
+              outcome: 7.2 years sooner
+              note: Put the monthly difference toward your mortgage.
+            - heading: Do some of both
+              outcome: $256,000
+              note: invested at mortgage payoff
+              secondaryOutcome: 4.3 years
+              secondaryNote: sooner
+            - heading: Give your budget more room
+              outcome: $1,041 a month
+              note: More room for everyday costs.

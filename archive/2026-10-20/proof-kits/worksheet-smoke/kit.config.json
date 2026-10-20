@@ -1,0 +1,19 @@
+{
+  "slug": "worksheet-smoke",
+  "title": "Worksheet Smoke Test",
+  "brand": "demo",
+  "format": "worksheet",
+  "content": "content.yaml",
+  "checks": "checks.yaml",
+  "gates": {
+    "brief": {
+      "status": "pending"
+    },
+    "copy": {
+      "status": "pending"
+    },
+    "visual": {
+      "status": "pending"
+    }
+  }
+}

@@ -1,0 +1,470 @@
+# 8Twelve Mortgage Conversation Kit — full seven-sheet parity rebuild.
+# Copy and figures are transcribed from the approved single-file kit.
+kit:
+  slug: 8twelve-conversation-kit-v2
+  title: 8Twelve Mortgage Conversation Kit
+  brand: 8twelve
+  format: letter-kit
+
+pages:
+  # ---------------------------------------------------------------------------
+  # PAGE 1 — client
+  # ---------------------------------------------------------------------------
+  - part: presentation
+    blocks:
+      - type: editorial-opening
+        variant: navy-split
+        slots:
+          title: What do you want
+          emphasis: your mortgage to do?
+          ariaLabel: Mortgage goals
+          goals:
+            - Buy a Home
+            - Renew Your Mortgage
+            - Refinance Your Home
+            - Consolidate Debt
+            - Increase Cash Flow
+
+      - type: comparison-table
+        variant: payment
+        slots:
+          title: A Toronto family. Four payments. A little more breathing room.
+          story: Four payments every month, and nothing left over. The credit cards and line of credit never shrink. They don’t know when they’ll be debt free, their savings stay thin, and they aren’t building anything substantial.
+          caption: Four payments become one.
+          columns:
+            - Debt
+            - Before / month
+            - After / month
+          rows:
+            - name: Mortgage
+              detail: $750,000 · 4.79% fixed · 25-year amortization
+              before: $4,273
+              after: $4,757
+            - name: Credit cards
+              detail: $25,500 · 20.99% · 3% monthly payment
+              before: $765
+              after: null
+            - name: Car or personal loan
+              detail: $24,000 · 9.99% · 5-year repayment
+              before: $510
+              after: null
+            - name: Line of credit
+              detail: $35,500 · 8.45% · interest-only
+              before: $250
+              after: null
+          totalLabel: Total per month
+          totalBefore: $5,798
+          totalAfter: $4,757
+          difference: $1,041
+          differenceLabel: savings / month
+
+      - type: outcome-grid
+        variant: gold-band
+        slots:
+          titleLead: What could
+          titleAmount: $1,041 a month
+          titleTail: do?
+          cards:
+            - heading: Invest the difference
+              outcome: $721,000
+              note: By the time the mortgage is paid off.
+            - heading: Pay extra on your mortgage
+              outcome: 7.2 years sooner
+              note: Put the monthly difference toward your mortgage.
+            - heading: Do some of both
+              outcome: $256,000
+              note: invested at mortgage payoff
+              secondaryOutcome: 4.3 years
+              secondaryNote: sooner
+            - heading: Give your budget more room
+              outcome: $1,041 a month
+              note: More room for everyday costs.
+
+  # ---------------------------------------------------------------------------
+  # PAGE 2 — client credibility and introduction
+  # ---------------------------------------------------------------------------
+  - part: presentation
+    blocks:
+      - type: page-heading
+        variant: standard
+        slots:
+          kicker: The people behind your mortgage conversation
+          title: Why 8Twelve
+          emphasis: Mortgage?
+
+      - type: credibility-strip
+        variant: ivory
+        slots:
+          items:
+            - value: "13"
+              label: Provinces & territories
+              ariaLabel: 13 provincial & territorial licences
+            - value: 400+
+              label: Licensed mortgage professionals
+            - value: 7,000+
+              label: Mortgage options
+            - value: 65+
+              label: Lender partners
+
+      - type: logo-row
+        variant: six-up
+        slots:
+          label: Familiar banks. More options beyond them.
+          ariaLabel: Lender partners
+          logos:
+            - src: assets/lenders/rbc.svg
+              alt: Royal Bank of Canada
+              className: royal-bank
+              text: RBC Royal Bank
+            - src: assets/lenders/td.svg
+              alt: TD Canada Trust
+            - src: assets/lenders/scotiabank.svg
+              alt: Scotiabank
+            - src: assets/lenders/cibc.svg
+              alt: CIBC
+            - src: assets/lenders/bmo.svg
+              alt: BMO
+            - src: assets/lenders/national-bank.svg
+              alt: National Bank of Canada
+
+      - type: lender-types
+        variant: rows
+        slots:
+          rows:
+            - label: Major banks
+              description: The banks you know, with mortgage options to compare.
+            - label: Alternative lenders
+              description: Options if you work for yourself or have had credit setbacks.
+            - label: Credit unions & other lenders
+              description: More choices for different homes, properties and borrowing needs.
+            - label: Private lenders
+              description: Short-term options when your situation needs a closer look.
+
+      - type: service-overview
+        variant: split
+        slots:
+          heading: Help at every step
+          lead: A personal introduction. Clear answers. Someone to stay in touch.
+          roles:
+            - label: We stay with you.
+              text: We make the introduction and check that you’re connected.
+            - label: 8Twelve compares your options.
+              text: A licensed mortgage specialist reviews lenders, explains your choices and helps with the application.
+
+      - type: step-rail
+        variant: navy-panel
+        slots:
+          heading: What happens next
+          steps:
+            - number: "01"
+              title: Tell us what you need
+              text: Tell us what you want your mortgage to do and when you need it. We’ll ask a few questions to get started.
+            - number: "02"
+              title: Meet your mortgage specialist
+              text: I’ll introduce you to a licensed mortgage specialist on our 8Twelve team.
+            - number: "03"
+              title: Review your options together
+              text: Your specialist will walk you through your options in plain language, answer your questions and help you choose what works for you.
+
+  # ---------------------------------------------------------------------------
+  # PAGE 3 — the service opportunity
+  # ---------------------------------------------------------------------------
+  - part: presentation
+    blocks:
+      - type: page-heading
+        variant: standard
+        slots:
+          kicker: The service opportunity
+          title: Refer a Mortgage.
+          emphasis: Build a Business.
+
+      - type: market-cards
+        variant: three-up
+        slots:
+          heading: A large market. People looking for help.
+          items:
+            - topic: A lot of mortgage activity
+              value: $912 billion
+              text: That’s how much mortgage lending took place across Canada in the year ending March 2026.
+              source: CMHC · Aug 2026 [1]
+            - topic: People want guidance
+              value: 70%
+              text: Seven in ten recent mortgage customers asked a mortgage professional about their options.
+              source: CMHC · 2025 survey [2]
+            - topic: Help with a first home
+              value: 48%
+              text: Nearly half of recent first-time buyers got their mortgage through the broker channel.
+              source: MPC / Bond · 2026 survey [3]
+
+      - type: role-flow
+        variant: navy-band
+        slots:
+          heading: Here’s how you’ll guide your clients
+          steps:
+            - title: Ask what they need
+              text: Ask what they’d like to change about their mortgage.
+            - title: Make the introduction
+              text: Connect them with a licensed mortgage specialist on our 8Twelve team.
+            - title: Stay in touch
+              text: Check that they’ve spoken with the specialist. Ask how it’s going.
+
+      - type: earnings-band
+        variant: gold
+        slots:
+          title: What you could earn
+          context: An example with a $500,000 mortgage for each family.
+          columns:
+            - Families you help
+            - Below RVP
+            - RVP
+          rows:
+            - label: One family
+              below: $430
+              rvp: $810
+            - label: One family a week
+              sublabel: Over 52 weeks
+              below: $22,360
+              rvp: $42,120
+              belowSuffix: / year
+              rvpSuffix: / year
+          closing: "The business is simple: have a conversation and set the introduction."
+
+  # ---------------------------------------------------------------------------
+  # PAGE 4 — start part-time
+  # ---------------------------------------------------------------------------
+  - part: presentation
+    blocks:
+      - type: page-heading
+        variant: standard
+        slots:
+          kicker: For someone exploring the opportunity
+          title: Start Part-Time.
+          emphasis: Build With Support.
+
+      - type: benefits-grid
+        variant: two-column
+        slots:
+          items:
+            - heading: Start after work
+              text: Start part-time around your day job. Meet online or in person.
+            - heading: No sales quotas
+              text: Build at a pace that works for you.
+            - heading: Connect with families across Canada
+              text: Your introductions can reach beyond your city or province.
+            - heading: Build your own team, if you want
+              text: You can put together a team of agents. It’s optional.
+
+      - type: journey-grid
+        variant: gold-two-by-two
+        slots:
+          heading: How to get started
+          stages:
+            - number: "01"
+              title: Get qualified
+              text: Complete a background check. That's the only qualification to get started.
+            - number: "02"
+              title: Get your link
+              text: Receive your 8Twelve agent portal link. It's where you submit and track each introduction.
+            - number: "03"
+              title: Work with a trainer
+              text: Your trainer shows you how to spot a mortgage question and make a clean introduction. Practise the conversation together first.
+            - number: "04"
+              title: Introduce and grow
+              text: Introduce people you know to our mortgage specialist. Follow up, stay connected, become referable and grow your business from there.
+
+      - type: support-grid
+        variant: ivory-two-by-two
+        slots:
+          kicker: Support around you
+          title: You won't build this alone.
+          pillars:
+            - heading: A trainer beside you
+              text: Early appointments are trainer-led. You watch, then take part.
+            - heading: A system to follow
+              text: A clear, structured path for what to learn and what to do next.
+            - heading: A team to lean on
+              text: Weekly training, team meetings and people who answer when you ask.
+            - heading: Direct access to mortgage experts
+              text: Talk with a mortgage specialist when a question comes up.
+
+      - type: invite-panel
+        variant: navy
+        slots:
+          kicker: Your next step
+          title: Could this be a fit for you?
+          note: Let’s book a conversation with our broker to explore the opportunity.
+
+  # ---------------------------------------------------------------------------
+  # PAGE 5 — advisor conversation guide
+  # ---------------------------------------------------------------------------
+  - part: tools
+    blocks:
+      - type: page-heading
+        variant: tool
+        slots:
+          kicker: Use during a real conversation
+          title: Mortgage
+          emphasis: Conversation Guide.
+          breakBeforeEmphasis: true
+          lead: "Don't memorize a pitch. Find out what the person is trying to do, then decide whether a personal introduction would help."
+
+      - type: dialogue-guide
+        variant: two-column
+        slots:
+          columns:
+            - heading: Where to start
+              questions:
+                - label: Renewal
+                  prompt: "“When does your mortgage come up for renewal?”"
+                  followUp: "If soon: “Have you compared your options yet?”"
+                - label: Monthly payments
+                  prompt: "“Are you comfortable with what you're paying each month?”"
+                  followUp: Ask if their concern is the payment or the full cost.
+                - label: Buying or moving
+                  prompt: "“Any plans to buy or move in the next year?”"
+                  followUp: Ask about timing, not a mortgage approval.
+                - label: Debt / refinancing
+                  prompt: "“What's the main thing you're hoping to change?”"
+                  followUp: Listen for the goal. Let the specialist weigh the trade-offs.
+            - heading: When they respond
+              questions:
+                - label: "“I'm just looking.”"
+                  prompt: "“That's fine. What are you trying to figure out?”"
+                  followUp: Offer an introduction only if they want help.
+                - label: "“I already have a broker.”"
+                  prompt: "“That's good. Is there anything you're still trying to work out?”"
+                  followUp: Respect their relationship and their answer.
+                - label: "“Who is 8Twelve?”"
+                  prompt: "“It's a licensed mortgage brokerage with access to different lenders.”"
+                  followUp: Explain that your specialist is someone you know. Don't promise the lowest rate.
+                - label: Asks about joining the team
+                  prompt: Keep this separate.
+                  followUp: Offer a discussion with a business leader about work, training and qualifications. Don't pivot a client's mortgage need into a pitch.
+          quoteLabel: Personal introduction
+          quote: "“I know a licensed mortgage specialist at 8Twelve. Would you be open to me introducing you so they can review your options?”"
+          followLabel: "Follow through:"
+          followText: "Ask permission to share a name and chosen contact detail, make the introduction, confirm the connection and agree on a date: “Would Thursday work for me to check back?”"
+          boundary: "Do not quote rates, promise approval, recommend loans or request confidential underwriting records. 8Twelve is a separate licensed mortgage brokerage. Respect a clear “no.”"
+
+  # ---------------------------------------------------------------------------
+  # PAGE 6 — hand-off worksheet
+  # ---------------------------------------------------------------------------
+  - part: tools
+    layout: document
+    blocks:
+      - type: page-heading
+        variant: document
+        slots:
+          title: Hand-Off
+          emphasis: Document.
+          lead: Ask these questions, write down the answers, then hand this to a licensed 8Twelve mortgage specialist so they can prepare. This is not an application and does not start a mortgage review.
+
+      - type: worksheet-parts
+        variant: three-part
+        slots:
+          parts:
+            - number: "01"
+              title: Start with the goal
+              help: Ask these in your own words. Tick what they say.
+              blocks:
+                - ask: What are you hoping to do?
+                  choices:
+                    - Buy a home
+                    - Renew
+                    - Refinance
+                    - Consolidate debt
+                    - Increase cash flow
+                - columns: 2
+                  fields:
+                    - label: When would you like to make a change?
+                    - label: When does your mortgage come up for renewal?
+                - ask: What matters most to you?
+                  choices:
+                    - A lower monthly amount
+                    - Pay less overall
+                    - Pay it off sooner
+                    - Use some of your home's equity
+                    - More flexibility
+            - number: "02"
+              title: The basic numbers
+              help: Only ask what fits the conversation. It's okay to leave blanks.
+              blocks:
+                - columns: 3
+                  fields:
+                    - label: "Roughly, what's your home worth?"
+                    - label: "Roughly, how much is left on your mortgage?"
+                    - label: "Roughly, what do you pay each month?"
+            - number: "03"
+              title: Questions and contact
+              help: Ask what they want the specialist to answer, then how to reach them.
+              blocks:
+                - ask: What would you like the specialist to answer for you?
+                - notesLines: true
+                - columns: 3
+                  fields:
+                    - label: "What's your name?"
+                    - label: "What's the best phone number or email to reach you?"
+                    - label: "When's a good time to connect?"
+                - consent:
+                    - Yes, you may share my name and the phone or email above with a licensed 8Twelve Mortgage specialist about this question.
+                    - Not yet — ask again later. Any other worksheet details need separate permission.
+                  privacyNote: The specialist reviews the options and contacts the client directly. The introducer passes the information on; they do not process the mortgage or recommend a product. Do not record SIN, bank credentials, government ID, credit reports or private financial documents. Share completed forms only through an approved secure process.
+
+  # ---------------------------------------------------------------------------
+  # PAGE 7 — illustration notes
+  # ---------------------------------------------------------------------------
+  - part: notes
+    blocks:
+      - type: page-heading
+        variant: notes
+        slots:
+          title: Illustration Notes.
+          lead: Assumptions behind the mortgage, investing and compensation examples. All figures are illustrative.
+
+      - type: disclosure-sections
+        variant: notes
+        slots:
+          sections:
+            - heading: 01 / Mortgage and debt payments
+              beforeTable:
+                - The Toronto family is hypothetical, not a claim about typical households or current market-average rates. Actual balances, rates and payments will differ. The debts move into the mortgage; they aren't erased. Your home secures the combined debt. Fees or penalties may apply. Taking longer to repay your mortgage could mean more total interest. This does not mean you qualify or save overall.
+              table:
+                columns:
+                  - Original debt
+                  - Balance
+                  - Assumed rate and payment basis
+                rows:
+                  - [Mortgage, "$750,000", "4.79% · 25 years"]
+                  - [Credit cards, "$25,500", "20.99% · payment of 3% of the balance"]
+                  - [Car or personal loan, "$24,000", "9.99% · 5 years"]
+                  - [Line of credit, "$35,500", "8.45% · interest-only"]
+              afterTable:
+                - "Both mortgages assume fixed 4.79% annual interest, compounded semiannually, and 25-year amortization with monthly payments: $4,272.81 on $750,000; $4,757.06 on $835,000. Displayed amounts are rounded to whole dollars. Refinancing costs are paid separately. The $1,041 difference is $12,492 over a year only if it continues for 12 months."
+                - "Both payoff comparisons start with the combined $835,000 balance and $4,757.06 monthly payment. Paying $1,041 extra gives about 17.8 years instead of 25 (7.2 years sooner); paying $520.50 extra gives about 4.3 years sooner. This assumes permitted, fee-free prepayments and the same rate through renewals, not a 25-year fixed-rate term. Actual lender terms and renewal rates may change the results; these are not overall consolidation-cost comparisons."
+                - "These payments are not a lender quote or an approval. With a federally regulated lender, refinancing is typically capped at 80% of the home's appraised value; $835,000 implies about $1,043,750. A licensed mortgage specialist reviews equity, eligibility, options and full costs."
+
+            - heading: 02 / Regular investing
+              paragraphs:
+                - "Hypothetical rates, not guaranteed returns. Assumes $1,041 invested at each month-end from a $0 starting balance for 25 years, with monthly compounding at the 6% annual rate divided by 12: $721,407, shown as $721,000. Values include contributions, are rounded to $1,000, and exclude fees, taxes and inflation. Actual returns vary and can be negative."
+                - "The combined choice invests $520.50/month (about $256,095, shown as $256,000) for the 20.7 years until the mortgage is paid off, and pays $520.50 extra on the mortgage. These aren't overall gains from consolidation. Continued contributions are assumed; mortgage payments and available cash may change. The original car loan ends after five years, changing the comparison. Returns and payment differences aren't guaranteed; the difference is not assumed to last the full amortization."
+
+            - heading: 03 / Roles, advice and compensation
+              paragraphs:
+                - "8Twelve is a separate licensed mortgage brokerage. Its licensed specialists provide mortgage advice; the advisor owns the client relationship, introduces you and follows through. An appropriately licensed investment advisor can help you choose investments. Mortgage approval, lower rates and lower overall costs aren't guaranteed. Business-building and recruiting belong to the advisor's own financial brokerage, not 8Twelve. An introduction is not a promise of a commission. This doesn't promise guaranteed clients, mortgage approvals, commissions or success. Results depend on the work you put in."
+                - "The compensation examples assume the mortgage partner receives 1% ($5,000) per $500,000 loan. Referral factors are 0.00086 below RVP ($430) and 0.00162 for RVP ($810). One per week means 52 completed $500,000 mortgages: 52 × $430 = $22,360 or 52 × $810 = $42,120, before applicable deductions and expenses. Introductions alone do not earn these amounts. 13% HST is withheld and remitted. This is not guaranteed income or a published current pay schedule. Actual payment depends on funding, current written program terms, eligibility, required disclosures and timing. Verify current terms and public-use authorization; the source schedule is internal-use only."
+
+            - heading: 04 / Brokerage and market sources
+              paragraphs:
+                - "The 65+ lender-partner figure and the 400+ professional and 7,000+ mortgage-product figures are reported by 8Twelve Mortgage at www.8twelve.ca/about and 8twelve.mortgage (Oct 2026). Its 10 provincial and 3 territorial licences, including Ontario FSRA brokerage licence #13072, are listed at 8twelve.mortgage/licenses/. Named lenders and logos on page 2 are illustrative until confirmed as current partners with approved brand use by 8Twelve Mortgage before field distribution. Confirm current claims and permitted use before distribution."
+                - "Page 3 sources: [1] CMHC, Aug 27, 2026 snapshot: $912 billion in mortgage value extended, Q2 2025–Q1 2026, across all channels. [2] CMHC 2025 survey, p.12: 70% of recent mortgage consumers contacted professionals, including lenders and brokers, about options. [3] MPC/Bond 2026, p.3: 48% of recent first-time buyers used the broker channel. Surveys do not isolate mortgage agents. Checked Oct 19, 2026."
+              sources:
+                - label: 8Twelve — About
+                  url: https://www.8twelve.ca/about
+                - label: 8Twelve — Licences
+                  url: https://8twelve.mortgage/licenses/
+                - label: CMHC, Aug 27, 2026 snapshot
+                  url: https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-research/research-reports/housing-finance/residential-mortgage-industry-report
+                - label: CMHC 2025 survey, p.12
+                  url: https://assets.cmhc-schl.gc.ca/sites/cmhc/professional/housing-markets-data-and-research/housing-research/surveys/mortgage-consumer-surveys/survey-results-2025/mcs-ebook-2025.pdf#page=12
+                - label: MPC/Bond 2026, p.3
+                  url: https://mortgageproscan.ca/docs/default-source/marcomms/consumer-reports/2026-mpc_the-broker-advantage_en.pdf#page=3

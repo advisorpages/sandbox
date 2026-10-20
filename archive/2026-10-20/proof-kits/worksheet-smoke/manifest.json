@@ -1,0 +1,37 @@
+{
+  "kit": "worksheet-smoke",
+  "brand": "demo",
+  "format": "worksheet",
+  "pages": [
+    {
+      "number": 1,
+      "part": "worksheet"
+    }
+  ],
+  "blocks": [
+    "page-heading",
+    "worksheet-parts"
+  ],
+  "css": [
+    {
+      "source": "brand:demo",
+      "hash": "083c4d71fdfbcbcd0df2c19e5a30aa7a1b6f5ceb34aa06f08ac9d31d4cb3831e"
+    },
+    {
+      "source": "format:worksheet",
+      "hash": "0d73ae468a048592b68312e9bf22d11006a6f54374652642366e08b76251a332"
+    },
+    {
+      "source": "block:page-heading",
+      "hash": "a4c74f35a6e64f117a65131cd7bbd62da0deb72a84096f55481d09f7d7786497"
+    },
+    {
+      "source": "block:worksheet-parts",
+      "hash": "cd47959e9512883e1aa78e5238d29bfdb7fb292477bdc97434738f5648dfa997"
+    },
+    {
+      "source": "format:print",
+      "hash": "6b3631bbe67e33ed01d57fe2487077aca37e5d8da953de9f0e65f0a0dd83fd14"
+    }
+  ]
+}

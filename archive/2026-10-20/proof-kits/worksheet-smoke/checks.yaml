@@ -1,0 +1,4 @@
+# Optional kit-level checks. These verify internal consistency; they are not a source ledger.
+arithmetic: []
+required: []
+forbidden: []
