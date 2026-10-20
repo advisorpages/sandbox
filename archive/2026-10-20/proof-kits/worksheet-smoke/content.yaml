@@ -1,0 +1,58 @@
+# Demo-brand standalone worksheet — proves the worksheet format and white-label seam.
+kit:
+  slug: worksheet-smoke
+  title: Worksheet Smoke Test
+  brand: demo
+  format: worksheet
+
+pages:
+  - part: worksheet
+    blocks:
+      - type: page-heading
+        variant: document
+        slots:
+          title: Client Hand-Off
+          emphasis: Worksheet.
+          lead: A compact worksheet built from the shared blocks and the neutral demo brand.
+
+      - type: worksheet-parts
+        variant: three-part
+        slots:
+          parts:
+            - number: "01"
+              title: Start with the goal
+              help: Ask these in your own words. Tick what they say.
+              blocks:
+                - ask: What are you hoping to do?
+                  choices:
+                    - Buy a home
+                    - Renew
+                    - Refinance
+                    - Consolidate debt
+                - columns: 2
+                  fields:
+                    - label: When would you like to make a change?
+                    - label: When does your mortgage come up for renewal?
+            - number: "02"
+              title: The basic numbers
+              help: Only ask what fits the conversation. It's okay to leave blanks.
+              blocks:
+                - columns: 3
+                  fields:
+                    - label: "Roughly, what's your home worth?"
+                    - label: "Roughly, how much is left on your mortgage?"
+                    - label: "Roughly, what do you pay each month?"
+            - number: "03"
+              title: Questions and contact
+              help: Ask what they want the specialist to answer, then how to reach them.
+              blocks:
+                - ask: What would you like the specialist to answer for you?
+                - notesLines: true
+                - columns: 3
+                  fields:
+                    - label: "What's your name?"
+                    - label: "What's the best phone number or email to reach you?"
+                    - label: "When's a good time to connect?"
+                - consent:
+                    - Yes, you may share my name and contact details for this conversation.
+                  privacyNote: Do not record SIN, bank credentials, government ID, credit reports or private financial documents.

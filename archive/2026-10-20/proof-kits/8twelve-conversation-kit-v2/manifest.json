@@ -1,0 +1,146 @@
+{
+  "kit": "8twelve-conversation-kit-v2",
+  "brand": "8twelve",
+  "format": "letter-kit",
+  "pages": [
+    {
+      "number": 1,
+      "part": "presentation"
+    },
+    {
+      "number": 2,
+      "part": "presentation"
+    },
+    {
+      "number": 3,
+      "part": "presentation"
+    },
+    {
+      "number": 4,
+      "part": "presentation"
+    },
+    {
+      "number": 5,
+      "part": "tools"
+    },
+    {
+      "number": 6,
+      "part": "tools"
+    },
+    {
+      "number": 7,
+      "part": "notes"
+    }
+  ],
+  "blocks": [
+    "editorial-opening",
+    "comparison-table",
+    "outcome-grid",
+    "page-heading",
+    "credibility-strip",
+    "logo-row",
+    "lender-types",
+    "service-overview",
+    "step-rail",
+    "market-cards",
+    "role-flow",
+    "earnings-band",
+    "benefits-grid",
+    "journey-grid",
+    "support-grid",
+    "invite-panel",
+    "dialogue-guide",
+    "worksheet-parts",
+    "disclosure-sections"
+  ],
+  "css": [
+    {
+      "source": "brand:8twelve",
+      "hash": "f5e5ade3ea602006a3e5cb92c2231062c4bb816358a9e1ffd6cea118b9361592"
+    },
+    {
+      "source": "format:letter-kit",
+      "hash": "9f3eb46cff7d2d53d9a605affe37089548da65d8059588fe58db2ea74177d3f3"
+    },
+    {
+      "source": "block:editorial-opening",
+      "hash": "b185a6a60433aeae95bb8af3007cde7b5ff7db85e468940311322eaf75c9d140"
+    },
+    {
+      "source": "block:comparison-table",
+      "hash": "74d6f5c713fb9b2701c7d257f48d49f23d7fe5d24fff3971e78ba3507629d5f6"
+    },
+    {
+      "source": "block:outcome-grid",
+      "hash": "0fcd64e22bc9e7a5a7840583f121831e52326d5bf12a2832156ff519da695b90"
+    },
+    {
+      "source": "block:page-heading",
+      "hash": "a4c74f35a6e64f117a65131cd7bbd62da0deb72a84096f55481d09f7d7786497"
+    },
+    {
+      "source": "block:credibility-strip",
+      "hash": "b14c85127098befb02d3685309e9572d604d243de818c1a3609ea8055393e799"
+    },
+    {
+      "source": "block:logo-row",
+      "hash": "5e20d2bfc947ca6b6f44ad733db169bb6e9a15e0b0367275af4eadec9a188087"
+    },
+    {
+      "source": "block:lender-types",
+      "hash": "eef55453c4145cd51ad2430aa0f3f319a5a4f63179690ed878fe06028ed18d76"
+    },
+    {
+      "source": "block:service-overview",
+      "hash": "9b4132c68e839a8528d4c131a0ce6253e6da1df2d7a93f9a22ced7b2f67416d7"
+    },
+    {
+      "source": "block:step-rail",
+      "hash": "236047cdb44b3c9b74b16adee89cda17059bf909b3cc7e5e9497e9ad5d821dab"
+    },
+    {
+      "source": "block:market-cards",
+      "hash": "0f896c90906c6a480e77fa6b5e9af88b2948b05121d3a9050f523fa92d6a1c5f"
+    },
+    {
+      "source": "block:role-flow",
+      "hash": "7365c5b3bcc795d7b5c3a9ce041f89099fe804c2e751af2e6c3e4e99e545b932"
+    },
+    {
+      "source": "block:earnings-band",
+      "hash": "14ec18d2ed9b74b2b14d9da8bca18154be39c726c50780f4b80a5b98007f3416"
+    },
+    {
+      "source": "block:benefits-grid",
+      "hash": "c826f161b0d0db2b533f2d626154a1e3e25c2530d3636f48fd02e1f656d6ae67"
+    },
+    {
+      "source": "block:journey-grid",
+      "hash": "4d1abf7d6a2868b97755184651dcc58d7ef847e190fb188e9bd325340aae2cfc"
+    },
+    {
+      "source": "block:support-grid",
+      "hash": "274a7ef44086501aecabc5441e309d752ed133497ce8d07252a2e889e3f07f66"
+    },
+    {
+      "source": "block:invite-panel",
+      "hash": "aee3643c607ab36a405dfabae7aa3b7ecd91b6793f0c57a53e753a1467723bf5"
+    },
+    {
+      "source": "block:dialogue-guide",
+      "hash": "92b406cae0e017acc293511089d51c2fdd1c5ada84cbde4e5f66a04d9ff1c7ba"
+    },
+    {
+      "source": "block:worksheet-parts",
+      "hash": "cd47959e9512883e1aa78e5238d29bfdb7fb292477bdc97434738f5648dfa997"
+    },
+    {
+      "source": "block:disclosure-sections",
+      "hash": "bfc46cb65bbdbf9c2adcbb2f6e314c0be20ef7378d83d3a0cfeac18f8a988ee4"
+    },
+    {
+      "source": "format:print",
+      "hash": "6b3631bbe67e33ed01d57fe2487077aca37e5d8da953de9f0e65f0a0dd83fd14"
+    }
+  ]
+}

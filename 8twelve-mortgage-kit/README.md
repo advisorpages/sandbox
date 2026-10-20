@@ -46,7 +46,7 @@ Page 3’s role transition now reads “Your role starts with a conversation” 
 
 Page 3’s team role is now a three-step visual flow: “Ask what they need → Make the introduction → Stay in touch”, with one short explanation per step and a separate line explaining the licensed specialist’s role.
 
-The Page 3 role flow now uses “Here’s how you’ll help” and conversational explanations following `kb/00_DOCTRINE/brand-voice-external.md` and `kb/00_DOCTRINE/voice_and_language.md` (KB commit `2de78035927079dcf2c948b04b22cd63ce6bedd7`).
+The Page 3 role flow now uses “Here’s how you’ll guide your clients” and conversational explanations following `kb/00_DOCTRINE/brand-voice-external.md` and `kb/00_DOCTRINE/voice_and_language.md` (KB commit `2de78035927079dcf2c948b04b22cd63ce6bedd7`).
 
 Page 3’s compensation panel now leads with “What you could earn” and “Example pay for one funded mortgage.” The funded amount and level-specific figures are unchanged.
 

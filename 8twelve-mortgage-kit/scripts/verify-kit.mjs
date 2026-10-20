@@ -25,9 +25,9 @@ check(html.includes('@page{size:letter;margin:0}') && html.includes('width:8.5in
   'US Letter portrait print size');
 check(html.includes('.print-tools .sheet[data-part="presentation"]') && html.includes('.print-main .sheet[data-part="tools"]'),
   'Separate printable presentation and tool PDFs');
-for (let i = 1; i <= 7; i++) {
-  check(has(i, 'class="footer"') && has(i, '8Twelve'), 'Footer and 8Twelve identity: page ' + i);
-}
+for (let i = 1; i <= 7; i++)
+  check(/class="footer"><span>[^<]+<\/span><\/footer>/.test(pages[i - 1].html),
+    'Footer carries only the page number: page ' + i);
 check(pages.every(p => !p.html.includes('class="header"') && !p.html.includes('class="wordmark"')),
   'No page carries the 8Twelve MORTGAGE branding header or part label');
 for (const term of ['Buy a Home','Renew Your Mortgage','Refinance Your Home','Consolidate Debt','Increase Cash Flow'])
@@ -53,7 +53,7 @@ const annual = numberOn(7, /difference is \$([\d,]+) over a year/);
 check(before === 5798 && after === 4757 && difference === 1041 && annual === 12492 &&
   before - after === difference && difference * 12 === annual && has(7, 'only if it continues for 12 months') &&
   has(1, 'savings / month') && !has(1, 'A mortgage guide for Toronto families') &&
-  has(1, 'Consider a Toronto family') && !has(1, 'typical Toronto family') &&
+  has(1, 'nothing left over') && has(1, 'building anything substantial') && !has(1, 'typical Toronto family') &&
   pages[0].html.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').includes('What do you want your mortgage to do?') &&
   !has(1, 'class="header"') && !has(1, 'class="kicker"') && !has(1, 'class="wordmark"'),
   'Displayed Toronto fixed-rate comparison = 5798 → 4757 = 1041/month = 12492/year');
@@ -86,9 +86,9 @@ check(has(1, 'class="payments-difference"') && has(1, '<strong>$1,041</strong>')
 check(has(1, 'What could <b>$1,041 a month</b> do?') &&
   has(1, 'Invest the difference') && has(1, 'Pay extra on your mortgage') &&
   has(1, 'Do some of both') && has(1, 'Give your budget more room') &&
-  has(1, 'everyday costs') && has(1, '$171,000') && has(7, '17.8 years instead of 25') &&
-  has(1, '7.2 years sooner') && has(7, '$520.50') &&
-  has(1, '$85,000') && has(1, '4.3 years sooner'),
+  has(1, 'everyday costs') && has(1, '$721,000') && has(1, 'By the time the mortgage is paid off.') &&
+  has(7, '17.8 years instead of 25') && has(1, '7.2 years sooner') && has(7, '$520.50') &&
+  has(1, '$256,000') && has(1, 'invested at mortgage payoff') && has(1, '4.3 years') && has(1, 'sooner'),
   'Page 1 names four clear options and shows a skimmable outcome for each');
 
 // Independently check the model behind the displayed figures, not just the copy.
@@ -101,21 +101,21 @@ const payoffYears = extra => -Math.log(1 - 835000 * mortgageRate / (consolidated
   Math.log(1 + mortgageRate) / 12;
 const investmentRate = Number(pages[6].html.match(/at the ([\d.]+)% annual rate divided by 12/)?.[1]) / 100 / 12;
 const investmentMonths = Number(pages[6].html.match(/starting balance for (\d+) years, with monthly compounding/)?.[1]) * 12;
-const futureValue = contribution => contribution * ((1 + investmentRate) ** investmentMonths - 1) / investmentRate;
+const futureValue = (contribution, months = investmentMonths) => contribution * ((1 + investmentRate) ** months - 1) / investmentRate;
 check(Math.round(monthlyPayment(750000)) === dollars(paymentRows[0]?.[1]) &&
   Math.round(consolidatedPayment) === after &&
   (25 - payoffYears(difference)).toFixed(1) === '7.2' &&
   payoffYears(difference).toFixed(1) === '17.8' &&
   (25 - payoffYears(difference / 2)).toFixed(1) === '4.3' &&
-  Math.round(futureValue(difference) / 1000) * 1000 === 171000 &&
-  Math.round(futureValue(difference / 2) / 1000) * 1000 === 85000,
+  Math.round(futureValue(difference) / 1000) * 1000 === 721000 &&
+  Math.round(futureValue(difference / 2, payoffYears(difference / 2) * 12) / 1000) * 1000 === 256000,
   'Semiannual fixed-rate mortgage and month-end investment math reproduce the displayed rounded outcomes');
 const preciseNotes = pages[6].html.match(/monthly payments: \$([\d,.]+) on \$750,000; \$([\d,.]+) on \$835,000/);
 check(preciseNotes &&
   Number(preciseNotes[1].replaceAll(',', '')) === Math.round(monthlyPayment(750000) * 100) / 100 &&
   Number(preciseNotes[2].replaceAll(',', '')) === consolidatedPayment &&
   numberOn(7, /12: \$([\d,]+)/) === Math.round(futureValue(difference)) &&
-  numberOn(7, /about \$([\d,]+), shown as \$85,000/) === Math.round(futureValue(difference / 2)),
+  numberOn(7, /about \$([\d,]+), shown as \$256,000/) === Math.round(futureValue(difference / 2, payoffYears(difference / 2) * 12)),
   'Precise mortgage payments and unrounded investment disclosures agree with the model');
 check(pages[6].html.toLowerCase().includes('hypothetical') &&
   has(7, 'penalties') && has(7, 'Taking longer to repay your mortgage') &&
@@ -214,8 +214,8 @@ check(has(3, '$912 billion') && has(3, '70%') && has(3, '48%') &&
   has(3, 'Seven in ten recent mortgage customers asked a mortgage professional about their options.') &&
   has(3, 'Nearly half of recent first-time buyers got their mortgage through the broker channel.') &&
   has(3, 'CMHC · Aug 2026 [1]') && has(3, 'CMHC · 2025 survey [2]') && has(3, 'MPC / Bond · 2026 survey [3]') &&
-  !has(3, '6.6 million') && !has(3, '26%') && has(3, 'Sources: illustration notes'),
-  'Page 3 shows annual lending volume, professional-help demand and first-time-buyer channel use with source references');
+  !has(3, '6.6 million') && !has(3, '26%') && !has(3, 'Sources: illustration notes'),
+  'Page 3 shows annual lending volume, professional-help demand and first-time-buyer channel use with inline source references and no running footnote');
 check(!has(3, '$54,000') && !has(3, '65+') && !has(3, 'over age 65') &&
   !has(3, '$100,000') && !has(3, '$150,000') && !has(3, '1.15M'),
   'Page 3 omits unverified debt, senior, shortfall and renewal-wave figures');
@@ -244,7 +244,7 @@ check(has(4, 'Start part-time around your day job. Meet online or in person.') &
 check(!has(4, '$500,000') && !has(4, '$500') && !has(4, 'broker/upline'),
   'Business development page does not redundantly cram compensation example');
 
-for (const term of ['start', 'part-time', 'trainer', 'background check', 'introduce', 'referral', 'team']) {
+for (const term of ['start', 'part-time', 'trainer', 'background check', 'introduce', 'referable', 'team']) {
   check(pages[3].html.toLowerCase().includes(term.toLowerCase()), 'Page 4 introduction-led business development: ' + term);
 }
 check(has(4, 'How to get started') && has(4, 'Get qualified') && has(4, 'Get your link') &&

@@ -1,0 +1,20 @@
+# Internal consistency checks copied from the approved 8Twelve verifier.
+# These are not a source ledger; human fact-check still governs.
+arithmetic:
+  - "5798 - 4757 = 1041"
+  - "1041 * 12 = 12492"
+required:
+  - "Buy a Home"
+  - "Renew Your Mortgage"
+  - "Refinance Your Home"
+  - "Consolidate Debt"
+  - "Increase Cash Flow"
+  - "Four payments become one."
+  - "$1,041"
+  - "$721,000"
+  - "$256,000"
+forbidden:
+  - "best rate guaranteed"
+  - "guaranteed savings"
+  - "A12"
+  - "Primerica"

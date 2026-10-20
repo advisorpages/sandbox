@@ -1,0 +1,42 @@
+{
+  "kit": "8twelve-page1-proof",
+  "brand": "8twelve",
+  "format": "letter-kit",
+  "pages": [
+    {
+      "number": 1,
+      "part": "presentation"
+    }
+  ],
+  "blocks": [
+    "editorial-opening",
+    "comparison-table",
+    "outcome-grid"
+  ],
+  "css": [
+    {
+      "source": "brand:8twelve",
+      "hash": "1ee9cd2cd6804e7d1cd0a2e82db93cbf1539863880ae91b67d5a8e8ac0981f2f"
+    },
+    {
+      "source": "format:letter-kit",
+      "hash": "58cbfd34e05750e35dd84563feaae7f2e96b479d46dfb8b84909f244c1514565"
+    },
+    {
+      "source": "block:editorial-opening",
+      "hash": "61abf6557cd7998b8d1e41b94a77f124bbc7af17fabbb48075788e624e675f21"
+    },
+    {
+      "source": "block:comparison-table",
+      "hash": "6c8040265ff4adb12b14b3d8c83b30988e821bcb02265fe981690bc20ff4110e"
+    },
+    {
+      "source": "block:outcome-grid",
+      "hash": "4643757991b904ed860841d4aa50b34eab353c0c2e50cd8f4558a94b27222192"
+    },
+    {
+      "source": "format:print",
+      "hash": "6b3631bbe67e33ed01d57fe2487077aca37e5d8da953de9f0e65f0a0dd83fd14"
+    }
+  ]
+}
